@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Façade Engineering | Lingenious Consulting</title>
+<meta name="description" content="Technical assessment and engineering advice for façade systems, building envelopes and existing façade defects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact" class="btn btn-primary nav-cta">Discuss Your Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="disc-hero">
+  <div class="wrap">
+    <div class="disc-breadcrumb"><a href="index.html">Home</a> / <a href="index.html#services">Services</a> / Façade Engineering</div>
+    <div class="eyebrow">Engineering discipline · 03</div>
+    <h1>Façade Engineering</h1>
+    <p class="lede">Technical assessment and engineering advice for façade systems, building envelopes and existing façade defects.</p>
+  </div>
+</section>
+
+<section class="disc-body">
+  <div class="wrap disc-grid">
+    <div>
+      <div class="section-head" style="margin-bottom:24px;">
+        <h2 style="font-size:24px;">What we offer</h2>
+      </div>
+      <ul class="disc-services">
+        <li>Façade design review</li>
+        <li>Structural assessment of façade elements</li>
+        <li>Cladding and attachment assessment</li>
+        <li>Façade inspections</li>
+        <li>Cracking and movement investigations</li>
+        <li>Water ingress and durability coordination</li>
+        <li>Defect diagnosis</li>
+        <li>Remediation strategy</li>
+        <li>Construction-stage façade review</li>
+      </ul>
+      <p class="disc-note">Façade engineering is coordinated with structural design and construction-stage advisory to manage building envelope risk from assessment through remediation.</p>
+    </div>
+    <div class="disc-side">
+      <h3>Discuss a façade engineering scope</h3>
+      <p>Tell us about the site, the stage you're at and what you need — we'll advise how Lingenious can help and the right delivery pathway.</p>
+      <a href="index.html#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Discuss Your Project</a>
+    </div>
+  </div>
+</section>
+
+<section class="disc-other">
+  <div class="wrap">
+    <div class="eyebrow">Other disciplines</div>
+    <div class="disc-other-grid">
+        <a href="civil-engineering.html">Civil Engineering</a>
+        <a href="structural-engineering.html">Structural Engineering</a>
+        <a href="geotechnical-engineering.html">Geotechnical Engineering</a>
+        <a href="fire-safety-engineering.html">Fire Safety Engineering</a>
+        <a href="landscape-site-integration.html">Landscape + Site Integration</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
+        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Engineering</a></li>
+          <li><a href="index.html#services">Project Management</a></li>
+          <li><a href="index.html#services">Construction Advisory</a></li>
+          <li><a href="index.html#services">Infrastructure + Asset Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Engagement</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+</script>
+
+</body>
+</html>
