@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Lingenious Consulting</title>
+<meta name="description" content="Selected engineering commissions, technical assessments, infrastructure inspections and project advisory delivered by Lingenious Consulting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="wrap">
+    <div class="disc-breadcrumb"><a href="index.html">Home</a> / Projects</div>
+    <div class="eyebrow">Selected Projects + Experience</div>
+    <h1>Recent engagements</h1>
+    <p class="lede">Our portfolio includes engineering commissions, technical assessments, infrastructure inspections, project advisory and multidisciplinary delivery support across building and infrastructure environments.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1543496874-2cbb29320035?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span>SITE 01 · BRIDGE INSPECTIONS</span></div>
+        <div class="project-body">
+          <div class="project-tag">Government + Infrastructure</div>
+          <h3>Municipal Bridge Inspection Program</h3>
+          <p>Level 2 bridge inspections, condition assessment and asset reporting across a portfolio of municipal bridge structures.</p>
+          <div class="project-meta">Services: Structural · Asset Advisory</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span>SITE 02 · FAÇADE ASSESSMENT</span></div>
+        <div class="project-body">
+          <div class="project-tag">Commercial</div>
+          <h3>Commercial Building Façade Assessment</h3>
+          <p>Investigation of façade cracking and building movement, including technical assessment and remediation recommendations.</p>
+          <div class="project-meta">Services: Façade · Structural</div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1642452446661-89641983bafc?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span>SITE 03 · SPORTS INFRASTRUCTURE</span></div>
+        <div class="project-body">
+          <div class="project-tag">Government + Community</div>
+          <h3>Community Sports Infrastructure Upgrade</h3>
+          <p>Civil and structural engineering supporting drainage, fencing and infrastructure upgrades at municipal sporting facilities.</p>
+          <div class="project-meta">Services: Civil · Structural</div>
+        </div>
+      </div>
+    </div>
+    <p class="project-label">Relevant experience of our leadership team, delivered prior to and independently of Lingenious Consulting, is noted where applicable.</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Bring us the project, site or technical problem.</h2>
+    <p>Whether you require a defined engineering service, an independent technical assessment or broader project coordination, we will help establish the appropriate scope and delivery pathway.</p>
+    <a href="contact.html" class="btn btn-primary">Discuss Your Project <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
+        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#engineering">Engineering</a></li>
+          <li><a href="services.html#project-management">Project Management</a></li>
+          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
+          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+</script>
+
+</body>
+</html>

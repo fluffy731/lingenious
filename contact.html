@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Lingenious Consulting</title>
+<meta name="description" content="Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="wrap">
+    <div class="disc-breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <div class="eyebrow">Contact</div>
+    <h1>Discuss your project</h1>
+    <p class="lede">Provide us with the project location, current stage and required services. We will review the information and advise whether Lingenious is appropriately positioned to assist.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" style="border-bottom:none;">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <div class="contact-details" style="margin-top:0;">
+        <div><div class="label">Office</div>Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
+        <div><div class="label">Email</div>solomon@lingenious.com.au</div>
+      </div>
+      <div class="mini-map">
+        <iframe src="https://www.google.com/maps?q=Level+2,+18+Prospect+Street,+Box+Hill+VIC+3128&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lingenious Consulting office location"></iframe>
+      </div>
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/xnjeogja" method="POST">
+      <div class="form-row">
+        <div class="field"><label for="name">Name<span class="req">*</span></label><input type="text" id="name" name="name" required></div>
+        <div class="field"><label for="company">Company</label><input type="text" id="company" name="company"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="email">Email<span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+        <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="address">Project address / location</label><input type="text" id="address" name="address"></div>
+        <div class="field"><label for="sector">Project sector</label>
+          <select id="sector" name="sector">
+            <option>Residential</option><option>Commercial</option><option>Government + Community</option><option>Infrastructure</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="stage">Current project stage</label><input type="text" id="stage" name="stage"></div>
+        <div class="field"><label for="timeframe">Preferred timeframe</label><input type="text" id="timeframe" name="timeframe"></div>
+      </div>
+
+      <label style="display:block;margin-bottom:10px;">Required services</label>
+      <div class="checkbox-grid">
+        <label><input type="checkbox" name="services" value="Civil engineering">Civil engineering</label>
+        <label><input type="checkbox" name="services" value="Structural engineering">Structural engineering</label>
+        <label><input type="checkbox" name="services" value="Façade engineering">Façade engineering</label>
+        <label><input type="checkbox" name="services" value="Geotechnical engineering">Geotechnical engineering</label>
+        <label><input type="checkbox" name="services" value="Fire safety engineering">Fire safety engineering</label>
+        <label><input type="checkbox" name="services" value="Landscape and site design">Landscape and site design</label>
+        <label><input type="checkbox" name="services" value="Project management">Project management</label>
+        <label><input type="checkbox" name="services" value="Construction advisory">Construction advisory</label>
+        <label><input type="checkbox" name="services" value="Inspection or defect assessment">Inspection or defect assessment</label>
+        <label><input type="checkbox" name="services" value="Not sure">Not sure</label>
+      </div>
+
+      <div class="field full" style="margin-bottom:16px;">
+        <label for="description">Brief description</label>
+        <textarea id="description" name="description"></textarea>
+      </div>
+      <div class="field full" style="margin-bottom:6px;">
+        <label for="file">File upload</label>
+        <input type="file" id="file" name="file">
+      </div>
+      <p class="form-note">Useful documents may include architectural drawings, surveys, geotechnical reports, engineering documents, photographs, notices, permits or relevant correspondence.</p>
+
+      <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Enquiry</button>
+      <p class="form-note" id="formStatus"></p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Frequently asked</div>
+      <h2>Common questions about engaging an engineering consultant</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Do I need a structural engineer for a small renovation or extension?<span class="faq-icon">+</span></summary>
+        <p>Most councils and building surveyors require structural engineering input wherever works affect load-bearing elements — this often includes alterations, extensions, retaining walls and even some internal renovations. We can advise early whether your project needs structural input or certification.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between a building surveyor and a structural engineer?<span class="faq-icon">+</span></summary>
+        <p>A building surveyor or certifier assesses overall compliance with the National Construction Code and issues permits. A structural engineer designs and certifies the structural elements themselves. Most projects need both, working together.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can Lingenious manage my project as well as provide the engineering?<span class="faq-icon">+</span></summary>
+        <p>Yes. Engineering and project management or construction advisory can be engaged together or separately, depending on how much day-to-day coordination your project needs.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide fire engineering reports and performance solutions?<span class="faq-icon">+</span></summary>
+        <p>Fire safety engineering services are delivered by, or coordinated with, appropriately qualified and registered fire safety practitioners as part of the Lingenious project team.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What areas do you service?<span class="faq-icon">+</span></summary>
+        <p>We are based in Melbourne and work primarily across Victoria, with additional experience across transport, rail and civil infrastructure projects. Get in touch with your project location and we'll advise whether we're well placed to help.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does a structural assessment or defect investigation take?<span class="faq-icon">+</span></summary>
+        <p>Turnaround depends on scope and site access. We aim to acknowledge every enquiry within one business day and will confirm a realistic programme once we understand the site and requirements.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you only work on new projects, or can you help with existing building issues?<span class="faq-icon">+</span></summary>
+        <p>Both. We regularly assess existing buildings and infrastructure for defects, structural adequacy and remediation options, alongside new design and delivery work.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
+        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#engineering">Engineering</a></li>
+          <li><a href="services.html#project-management">Project Management</a></li>
+          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
+          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+  var contactForm = document.getElementById('contactForm');
+  var formStatus = document.getElementById('formStatus');
+  contactForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var actionUrl = contactForm.getAttribute('action');
+    if(!actionUrl || actionUrl.indexOf('YOUR_FORM_ID') !== -1){
+      formStatus.textContent = 'Form not yet connected — set your Formspree endpoint in the form action before going live.';
+      formStatus.style.color = '#c0392b';
+      return;
+    }
+    var submitBtn = contactForm.querySelector('button[type="submit"]');
+    var originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    formStatus.style.color = '';
+
+    fetch(actionUrl, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response){
+      if(response.ok){
+        contactForm.reset();
+        formStatus.textContent = 'Thanks — your enquiry has been sent. We aim to respond within one business day.';
+      } else {
+        formStatus.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+        formStatus.style.color = '#c0392b';
+      }
+    }).catch(function(){
+      formStatus.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+      formStatus.style.color = '#c0392b';
+    }).finally(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    });
+  });
+</script>
+
+</body>
+</html>
