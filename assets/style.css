@@ -19,7 +19,7 @@
   }
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
-  .wrap{max-width:1320px;margin:0 auto;padding:0 40px;}
+  .wrap{max-width:1560px;margin:0 auto;padding:0 40px;}
   .eyebrow{
     font-family:'IBM Plex Mono',monospace;
     font-size:12px;
@@ -84,7 +84,7 @@
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--grey-line);
   }
-  .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 40px;max-width:1320px;margin:0 auto;}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 40px;max-width:1560px;margin:0 auto;}
   .nav-logo img{height:128px;width:auto;}
   .nav-links{display:flex;gap:36px;align-items:center;}
   .nav-links a{font-size:14px;font-weight:600;color:var(--charcoal);position:relative;padding:4px 0;}
@@ -104,7 +104,7 @@
     position:relative;overflow:hidden;
     background:
       linear-gradient(100deg, rgba(255,255,255,.35) 0%, rgba(255,255,255,.08) 38%, rgba(11,31,77,.1) 100%),
-      url('house-hero-background.jpg') 70% 42% / cover no-repeat;
+      url('homepagebackground.png') center 55% / cover no-repeat;
   }
   .hero::after{
     content:"";position:absolute;inset:0;pointer-events:none;
@@ -113,9 +113,9 @@
     -webkit-mask-image:linear-gradient(100deg, transparent 0%, transparent 44%, #000 78%);
     mask-image:linear-gradient(100deg, transparent 0%, transparent 44%, #000 78%);
   }
-  .hero .wrap{position:relative;z-index:1;}
+  .hero .wrap{position:relative;z-index:1;width:100%;}
   .hero-copy{
-    max-width:600px;
+    max-width:760px;
     background:rgba(255,255,255,.88);
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter:blur(10px);
