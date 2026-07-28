@@ -113,6 +113,26 @@
   .nav-links a.active{color:var(--navy);}
   .nav-links a.active::after{width:100%;}
   .nav-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--navy);}
+  .lang-toggle{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:600;letter-spacing:.04em;
+    border:1px solid var(--navy);color:var(--navy);background:transparent;
+    border-radius:20px;padding:6px 16px;cursor:pointer;margin-left:20px;
+    transition:background .15s ease,color .15s ease;
+  }
+  .lang-toggle:hover{background:var(--navy);color:var(--white);}
+
+  /* ---------------- Chinese (Simplified) layout ---------------- */
+  body.lang-zh{font-family:'Noto Sans SC','Inter',-apple-system,sans-serif;}
+  body.lang-zh h1,body.lang-zh h2,body.lang-zh h3{
+    font-family:'Noto Sans SC','Jost','Inter',sans-serif;
+    letter-spacing:0;
+  }
+  body.lang-zh h1{font-size:clamp(30px,4.4vw,46px);line-height:1.45;}
+  body.lang-zh h2{font-size:clamp(24px,3vw,32px);line-height:1.45;}
+  body.lang-zh h3{line-height:1.5;}
+  body.lang-zh .eyebrow{font-family:'Noto Sans SC','IBM Plex Mono',monospace;letter-spacing:.02em;}
+  body.lang-zh p,body.lang-zh .lede,body.lang-zh li,body.lang-zh .band-line{line-height:1.9;}
+  body.lang-zh .lang-toggle{font-family:'Noto Sans SC','IBM Plex Mono',monospace;}
 
   /* HERO */
   .hero{
@@ -405,6 +425,7 @@
     .nav-links{position:fixed;top:96px;left:0;right:0;background:var(--white);flex-direction:column;padding:20px 32px;gap:18px;border-bottom:1px solid var(--grey-line);display:none;}
     .nav-links.open{display:flex;}
     .nav-toggle{display:block;}
+    .lang-toggle{margin-left:auto;}
     .positioning-grid,.about-grid,.contact-grid{grid-template-columns:1fr;}
     .cap-grid,.tile-grid,.project-grid,.why-grid{grid-template-columns:1fr;}
     .hero{height:auto;padding:32px 0;}

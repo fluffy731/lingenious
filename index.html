@@ -7,9 +7,9 @@
 <meta name="description" content="Lingenious Consulting provides civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=2">
 </head>
 <body>
 
@@ -17,14 +17,15 @@
   <div class="nav">
     <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html" class="active">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+      <a href="index.html" class="active" data-zh="首页">Home</a>
+      <a href="services.html" data-zh="服务">Services</a>
+      <a href="about.html" data-zh="关于我们">About</a>
+      <a href="team.html" data-zh="团队">Team</a>
+      <a href="projects.html" data-zh="项目">Projects</a>
+      <a href="contact.html" data-zh="联系我们">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
   </div>
 </header>
@@ -33,12 +34,12 @@
 <section class="hero" id="home">
   <div class="wrap">
     <div class="hero-copy">
-      <div class="eyebrow">Civil · Structural · Façade · Project Advisory</div>
-      <h1>Engineering clarity from concept to completion.</h1>
-      <p class="lede">Lingenious Consulting provides multidisciplinary engineering, project management and construction advisory services across residential, commercial, government and infrastructure projects. From civil and structural engineering to façade, geotechnical and fire safety coordination, we help clients resolve technical risk, compliance, constructability and project delivery.</p>
+      <div class="eyebrow" data-zh="Civil Engineering（土木工程）· Structural Engineering（结构工程）· Façade Engineering（幕墙工程）· Project Advisory（项目顾问）">Civil · Structural · Façade · Project Advisory</div>
+      <h1 data-zh="从概念到竣工，呈现清晰的工程思路。">Engineering clarity from concept to completion.</h1>
+      <p class="lede" data-zh="Lingenious Consulting 提供跨专业的工程、项目管理与施工顾问服务，涵盖住宅、商业、政府及基础设施项目。从 Civil Engineering（土木工程）与 Structural Engineering（结构工程），到 Façade（幕墙）、Geotechnical（岩土）及 Fire Safety（消防安全）工程协调，我们协助客户化解技术风险，并兼顾合规性、可施工性与项目交付。">Lingenious Consulting provides multidisciplinary engineering, project management and construction advisory services across residential, commercial, government and infrastructure projects. From civil and structural engineering to façade, geotechnical and fire safety coordination, we help clients resolve technical risk, compliance, constructability and project delivery.</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn btn-primary">Discuss Your Project <span class="btn-arrow">→</span></a>
-        <a href="services.html" class="btn btn-secondary">View Our Services</a>
+        <a href="contact.html" class="btn btn-primary"><span data-zh="洽谈项目">Discuss Your Project</span> <span class="btn-arrow">→</span></a>
+        <a href="services.html" class="btn btn-secondary" data-zh="查看我们的服务">View Our Services</a>
       </div>
     </div>
   </div>
@@ -48,12 +49,12 @@
 <section class="positioning">
   <div class="wrap positioning-grid">
     <div>
-      <div class="eyebrow">Positioning</div>
-      <h2>Engineering-led. Project-focused. Delivery-aware.</h2>
+      <div class="eyebrow" data-zh="定位">Positioning</div>
+      <h2 data-zh="以工程为核心，聚焦项目，注重交付。">Engineering-led. Project-focused. Delivery-aware.</h2>
     </div>
     <div class="positioning-frame">
-      <p class="lede">Good engineering must do more than satisfy calculations and compliance requirements. It must respond to site constraints, approval pathways, construction methodology, programme, budget and long-term performance.</p>
-      <p class="lede">Lingenious connects engineering decisions with the realities of project delivery, helping clients identify risks early and make informed decisions throughout the project lifecycle.</p>
+      <p class="lede" data-zh="优秀的工程设计不应止步于满足计算与合规要求，还须回应场地限制、报批流程、施工方法、进度、预算及长期性能表现。">Good engineering must do more than satisfy calculations and compliance requirements. It must respond to site constraints, approval pathways, construction methodology, programme, budget and long-term performance.</p>
+      <p class="lede" data-zh="Lingenious 将工程决策与项目交付的实际情况紧密结合，协助客户及早识别风险，并在项目全周期中做出明智决策。">Lingenious connects engineering decisions with the realities of project delivery, helping clients identify risks early and make informed decisions throughout the project lifecycle.</p>
     </div>
   </div>
 </section>
@@ -72,8 +73,8 @@
 <section class="clients" style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Our Clients</div>
-      <h2>Trusted by councils, government and industry</h2>
+      <div class="eyebrow" data-zh="我们的客户">Our Clients</div>
+      <h2 data-zh="深受市政、政府及行业客户信赖">Trusted by councils, government and industry</h2>
     </div>
   </div>
   <div class="clients-marquee">
@@ -119,29 +120,29 @@
 <section>
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Engineering + Advisory Services</div>
-      <h2>Three capabilities, working together</h2>
-      <p class="lede" style="margin-top:14px;">Lingenious provides engineering and advisory services across the planning, design, construction and operational stages of building and infrastructure projects.</p>
+      <div class="eyebrow" data-zh="Engineering + Advisory Services（工程与顾问服务）">Engineering + Advisory Services</div>
+      <h2 data-zh="三大能力，协同运作">Three capabilities, working together</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="Lingenious 在建筑与基础设施项目的规划、设计、施工及运营各阶段，提供工程与顾问服务。">Lingenious provides engineering and advisory services across the planning, design, construction and operational stages of building and infrastructure projects.</p>
     </div>
     <div class="cap-grid">
       <div class="cap-card">
         <div class="num">01</div>
-        <h3>Engineering Services</h3>
-        <p>Civil, structural, façade, geotechnical and fire safety engineering for buildings, sites and infrastructure.</p>
+        <h3 data-zh="Engineering Services（工程服务）">Engineering Services</h3>
+        <p data-zh="为建筑、场地及基础设施提供 Civil（土木）、Structural（结构）、Façade（幕墙）、Geotechnical（岩土）及 Fire Safety（消防安全）工程服务。">Civil, structural, façade, geotechnical and fire safety engineering for buildings, sites and infrastructure.</p>
       </div>
       <div class="cap-card">
         <div class="num">02</div>
-        <h3>Project Management</h3>
-        <p>Technical and project coordination from feasibility and design development through procurement, construction and completion.</p>
+        <h3 data-zh="Project Management（项目管理）">Project Management</h3>
+        <p data-zh="从可行性研究、设计开发，到采购、施工及竣工，提供技术与项目协调服务。">Technical and project coordination from feasibility and design development through procurement, construction and completion.</p>
       </div>
       <div class="cap-card">
         <div class="num">03</div>
-        <h3>Construction + Asset Advisory</h3>
-        <p>Practical technical advice supporting constructability, compliance, defects, asset performance and construction-stage decision-making.</p>
+        <h3 data-zh="Construction + Asset Advisory（施工与资产顾问）">Construction + Asset Advisory</h3>
+        <p data-zh="就可施工性、合规性、缺陷处理、资产性能及施工阶段决策，提供切实可行的技术建议。">Practical technical advice supporting constructability, compliance, defects, asset performance and construction-stage decision-making.</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a href="services.html" class="btn btn-secondary">View All Services <span class="btn-arrow">→</span></a>
+      <a href="services.html" class="btn btn-secondary"><span data-zh="查看全部服务">View All Services</span> <span class="btn-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -149,8 +150,8 @@
 <!-- PHOTO BAND -->
 <section class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1433840496881-cbd845929862?auto=format&amp;fit=crop&amp;w=1600&amp;q=70')">
   <div class="wrap">
-    <div class="eyebrow">Engineering in detail</div>
-    <div class="band-line">Every project starts with a drawing that has to work in the real world.</div>
+    <div class="eyebrow" data-zh="Engineering in Detail（细节中的工程）">Engineering in detail</div>
+    <div class="band-line" data-zh="每个项目，都始于一张必须在现实中站得住脚的图纸。">Every project starts with a drawing that has to work in the real world.</div>
   </div>
 </section>
 
@@ -158,17 +159,17 @@
 <section class="tiles-section" style="padding-top:72px;padding-bottom:72px;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Multidisciplinary capability</div>
-      <h2>Coordinated around the project</h2>
-      <p class="lede" style="margin-top:14px;">Clients may engage Lingenious for a single engineering discipline or appoint us to coordinate multiple technical services through one project structure.</p>
+      <div class="eyebrow" data-zh="Multidisciplinary Capability（多专业能力）">Multidisciplinary capability</div>
+      <h2 data-zh="围绕项目，协同运作">Coordinated around the project</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="客户可就单一工程专业委托 Lingenious，亦可委托我们透过统一的项目架构，协调多项技术服务。">Clients may engage Lingenious for a single engineering discipline or appoint us to coordinate multiple technical services through one project structure.</p>
     </div>
     <div class="tile-grid">
-      <a class="tile" href="civil-engineering.html"><span class="tile-num">01</span><h3>Civil Engineering <span class="tile-arrow">→</span></h3></a>
-      <a class="tile" href="structural-engineering.html"><span class="tile-num">02</span><h3>Structural Engineering <span class="tile-arrow">→</span></h3></a>
-      <a class="tile" href="facade-engineering.html"><span class="tile-num">03</span><h3>Façade Engineering <span class="tile-arrow">→</span></h3></a>
-      <a class="tile" href="geotechnical-engineering.html"><span class="tile-num">04</span><h3>Geotechnical Engineering <span class="tile-arrow">→</span></h3></a>
-      <a class="tile" href="fire-safety-engineering.html"><span class="tile-num">05</span><h3>Fire Safety Engineering <span class="tile-arrow">→</span></h3></a>
-      <a class="tile" href="landscape-site-integration.html"><span class="tile-num">06</span><h3>Landscape + Site Integration <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="civil-engineering.html"><span class="tile-num">01</span><h3><span data-zh="Civil Engineering（土木工程）">Civil Engineering</span> <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="structural-engineering.html"><span class="tile-num">02</span><h3><span data-zh="Structural Engineering（结构工程）">Structural Engineering</span> <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="facade-engineering.html"><span class="tile-num">03</span><h3><span data-zh="Façade Engineering（幕墙工程）">Façade Engineering</span> <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="geotechnical-engineering.html"><span class="tile-num">04</span><h3><span data-zh="Geotechnical Engineering（岩土工程）">Geotechnical Engineering</span> <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="fire-safety-engineering.html"><span class="tile-num">05</span><h3><span data-zh="Fire Safety Engineering（消防工程）">Fire Safety Engineering</span> <span class="tile-arrow">→</span></h3></a>
+      <a class="tile" href="landscape-site-integration.html"><span class="tile-num">06</span><h3><span data-zh="Landscape + Site Integration（景观与场地整合）">Landscape + Site Integration</span> <span class="tile-arrow">→</span></h3></a>
     </div>
   </div>
 </section>
@@ -177,32 +178,32 @@
 <section>
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Selected Projects + Experience</div>
-      <h2>Recent engagements</h2>
-      <p class="lede" style="margin-top:14px;">A portfolio of engineering commissions, technical assessments, infrastructure inspections and multidisciplinary delivery support.</p>
+      <div class="eyebrow" data-zh="Selected Projects + Experience（精选项目与经验）">Selected Projects + Experience</div>
+      <h2 data-zh="近期项目">Recent engagements</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="涵盖工程委托、技术评估、基础设施检测及多专业交付支持的项目组合。">A portfolio of engineering commissions, technical assessments, infrastructure inspections and multidisciplinary delivery support.</p>
     </div>
     <div class="project-grid teaser">
       <div class="project-card">
-        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1543496874-2cbb29320035?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span>SITE 01 · BRIDGE INSPECTIONS</span></div>
+        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1543496874-2cbb29320035?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span data-zh="SITE 01 · BRIDGE INSPECTIONS（桥梁检测）">SITE 01 · BRIDGE INSPECTIONS</span></div>
         <div class="project-body">
-          <div class="project-tag">Government + Infrastructure</div>
-          <h3>Municipal Bridge Inspection Program</h3>
-          <p>Level 2 bridge inspections, condition assessment and asset reporting across a portfolio of municipal bridge structures.</p>
-          <div class="project-meta">Services: Structural · Asset Advisory</div>
+          <div class="project-tag" data-zh="Government + Infrastructure（政府与基础设施）">Government + Infrastructure</div>
+          <h3 data-zh="Municipal Bridge Inspection Program（市政桥梁检测计划）">Municipal Bridge Inspection Program</h3>
+          <p data-zh="为多座市政桥梁结构提供 Level 2（二级）桥梁检测、状况评估及资产报告。">Level 2 bridge inspections, condition assessment and asset reporting across a portfolio of municipal bridge structures.</p>
+          <div class="project-meta" data-zh="服务范围：Structural（结构）· Asset Advisory（资产顾问）">Services: Structural · Asset Advisory</div>
         </div>
       </div>
       <div class="project-card">
-        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span>SITE 02 · FAÇADE ASSESSMENT</span></div>
+        <div class="project-photo" style="background-image:url('https://images.unsplash.com/photo-1745015446589-7ee6f702d8c1?auto=format&amp;fit=crop&amp;w=800&amp;q=70')"><span data-zh="SITE 02 · FAÇADE ASSESSMENT（幕墙评估）">SITE 02 · FAÇADE ASSESSMENT</span></div>
         <div class="project-body">
-          <div class="project-tag">Commercial</div>
-          <h3>Commercial Building Façade Assessment</h3>
-          <p>Investigation of façade cracking and building movement, including technical assessment and remediation recommendations.</p>
-          <div class="project-meta">Services: Façade · Structural</div>
+          <div class="project-tag" data-zh="Commercial（商业）">Commercial</div>
+          <h3 data-zh="Commercial Building Façade Assessment（商业建筑幕墙评估）">Commercial Building Façade Assessment</h3>
+          <p data-zh="调查幕墙开裂及建筑物变形问题，并提供技术评估与修复建议。">Investigation of façade cracking and building movement, including technical assessment and remediation recommendations.</p>
+          <div class="project-meta" data-zh="服务范围：Façade（幕墙）· Structural（结构）">Services: Façade · Structural</div>
         </div>
       </div>
     </div>
     <div style="text-align:center;margin-top:36px;">
-      <a href="projects.html" class="btn btn-secondary">View All Projects <span class="btn-arrow">→</span></a>
+      <a href="projects.html" class="btn btn-secondary"><span data-zh="查看全部项目">View All Projects</span> <span class="btn-arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -211,24 +212,24 @@
 <section style="border-bottom:none;">
   <div class="wrap about-grid">
     <div>
-      <div class="eyebrow">About</div>
-      <h2>Engineering judgement backed by project delivery experience</h2>
-      <p class="lede" style="margin-top:14px;">Lingenious Consulting is an engineering-led professional services firm based in Melbourne. We connect engineering decisions with the realities of project delivery — considering not only whether a solution can be engineered, but whether it can be approved, constructed and maintained.</p>
+      <div class="eyebrow" data-zh="关于我们">About</div>
+      <h2 data-zh="以项目交付经验为基础的工程判断">Engineering judgement backed by project delivery experience</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="Lingenious Consulting 是一家总部位于墨尔本、以工程为核心的专业服务公司。我们将工程决策与项目交付的实际情况相结合——不仅考虑方案在技术上是否可行，更关注其能否获得审批、顺利施工并长期维护。">Lingenious Consulting is an engineering-led professional services firm based in Melbourne. We connect engineering decisions with the realities of project delivery — considering not only whether a solution can be engineered, but whether it can be approved, constructed and maintained.</p>
       <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="about.html" class="btn btn-secondary">More About Us <span class="btn-arrow">→</span></a>
-        <a href="team.html" class="btn btn-secondary">Meet The Team <span class="btn-arrow">→</span></a>
+        <a href="about.html" class="btn btn-secondary"><span data-zh="了解更多">More About Us</span> <span class="btn-arrow">→</span></a>
+        <a href="team.html" class="btn btn-secondary"><span data-zh="认识我们的团队">Meet The Team</span> <span class="btn-arrow">→</span></a>
       </div>
     </div>
     <div class="leader-card corner-mark">
       <div class="leader-head">
         <img src="assets/solomon.jpg" alt="Dr Solomon" class="leader-photo">
         <div>
-          <div class="role">Founder · Managing Director + Principal Engineer</div>
+          <div class="role" data-zh="Founder（创办人）· Managing Director（董事总经理）+ Principal Engineer（首席工程师）">Founder · Managing Director + Principal Engineer</div>
           <h3>Dr Solomon</h3>
-          <div class="subrole">Chartered Civil and Structural Engineer</div>
+          <div class="subrole" data-zh="Chartered Civil and Structural Engineer（特许土木及结构工程师）">Chartered Civil and Structural Engineer</div>
         </div>
       </div>
-      <p>Solomon is a Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery. Holding a PhD in Civil Engineering from Monash University, he leads the technical direction and project advisory functions of Lingenious.</p>
+      <p data-zh="Solomon 是一位特许土木及结构工程师（Chartered Civil and Structural Engineer），在建筑、交通基础设施、结构评估、资产管理及多专业项目交付方面拥有丰富经验。他持有 Monash University（莫纳什大学）土木工程博士（PhD）学位，主导 Lingenious 的技术方向与项目顾问业务。">Solomon is a Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery. Holding a PhD in Civil Engineering from Monash University, he leads the technical direction and project advisory functions of Lingenious.</p>
       <div class="leader-creds">
         <span>PhD</span><span>CPEng</span><span>NER</span><span>RPEV</span><span>RPEQ</span><span>IntPE(Aus)</span><span>APEC Engineer</span>
       </div>
@@ -239,9 +240,9 @@
 <!-- FINAL CTA -->
 <section class="final-cta">
   <div class="wrap">
-    <h2>Bring us the project, site or technical problem.</h2>
-    <p>Whether you require a defined engineering service, an independent technical assessment or broader project coordination, we will help establish the appropriate scope and delivery pathway.</p>
-    <a href="contact.html" class="btn btn-primary">Discuss Your Project <span class="btn-arrow">→</span></a>
+    <h2 data-zh="无论项目、场地或技术难题，欢迎与我们探讨。">Bring us the project, site or technical problem.</h2>
+    <p data-zh="无论您需要明确的工程服务、独立的技术评估，还是更广泛的项目协调，我们都将协助确定合适的服务范围与交付路径。">Whether you require a defined engineering service, an independent technical assessment or broader project coordination, we will help establish the appropriate scope and delivery pathway.</p>
+    <a href="contact.html" class="btn btn-primary"><span data-zh="洽谈项目">Discuss Your Project</span> <span class="btn-arrow">→</span></a>
   </div>
 </section>
 
@@ -250,29 +251,29 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
-        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+        <p data-zh="为住宅、商业、政府及基础设施项目，提供跨专业工程、项目管理与施工顾问服务。">Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-zh="服务">Services</h4>
         <ul>
-          <li><a href="services.html#engineering">Engineering</a></li>
-          <li><a href="services.html#project-management">Project Management</a></li>
-          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
-          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+          <li><a href="services.html#engineering" data-zh="Engineering（工程）">Engineering</a></li>
+          <li><a href="services.html#project-management" data-zh="Project Management（项目管理）">Project Management</a></li>
+          <li><a href="services.html#construction-advisory" data-zh="Construction Advisory（施工顾问）">Construction Advisory</a></li>
+          <li><a href="services.html" data-zh="Infrastructure + Asset Advisory（基础设施与资产顾问）">Infrastructure + Asset Advisory</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-zh="公司">Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-zh="关于我们">About</a></li>
+          <li><a href="team.html" data-zh="团队">Team</a></li>
+          <li><a href="projects.html" data-zh="项目">Projects</a></li>
+          <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
     </div>
   </div>
@@ -285,6 +286,37 @@
   document.querySelectorAll('.nav-links a').forEach(function(a){
     a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
   });
+</script>
+
+<script>
+  (function(){
+    var LANG_KEY = 'lingenious-lang';
+    var toggle = document.getElementById('langToggle');
+    var nodes = document.querySelectorAll('[data-zh]');
+
+    function applyLang(lang){
+      nodes.forEach(function(el){
+        if (el.dataset.enHtml === undefined) el.dataset.enHtml = el.innerHTML;
+        el.innerHTML = lang === 'zh' ? el.dataset.zh : el.dataset.enHtml;
+      });
+      document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en-AU';
+      document.body.classList.toggle('lang-zh', lang === 'zh');
+      if (toggle){
+        toggle.textContent = lang === 'zh' ? 'EN' : '中文';
+        toggle.setAttribute('aria-label', lang === 'zh' ? 'Switch to English' : 'Switch to Chinese (Simplified)');
+      }
+      localStorage.setItem(LANG_KEY, lang);
+    }
+
+    if (toggle){
+      toggle.addEventListener('click', function(){
+        var current = document.body.classList.contains('lang-zh') ? 'zh' : 'en';
+        applyLang(current === 'zh' ? 'en' : 'zh');
+      });
+    }
+
+    applyLang(localStorage.getItem(LANG_KEY) || 'en');
+  })();
 </script>
 
 </body>
