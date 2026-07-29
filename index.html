@@ -286,6 +286,36 @@
   document.querySelectorAll('.nav-links a').forEach(function(a){
     a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
   });
+
+  var marquee = document.querySelector('.clients-marquee');
+  if(marquee){
+    var isDown = false, startX = 0, startScroll = 0, dragged = false;
+    marquee.addEventListener('pointerdown', function(e){
+      isDown = true;
+      dragged = false;
+      marquee.classList.add('dragging');
+      startX = e.pageX;
+      startScroll = marquee.scrollLeft;
+      marquee.setPointerCapture(e.pointerId);
+    });
+    marquee.addEventListener('pointerup', function(){
+      isDown = false;
+      marquee.classList.remove('dragging');
+    });
+    marquee.addEventListener('pointercancel', function(){
+      isDown = false;
+      marquee.classList.remove('dragging');
+    });
+    marquee.addEventListener('pointermove', function(e){
+      if(!isDown) return;
+      var dx = e.pageX - startX;
+      if(Math.abs(dx) > 3) dragged = true;
+      marquee.scrollLeft = startScroll - dx;
+    });
+    marquee.addEventListener('click', function(e){
+      if(dragged){ e.preventDefault(); e.stopPropagation(); }
+    }, true);
+  }
 </script>
 
 <script src="assets/lang-toggle.js"></script>
