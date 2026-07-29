@@ -112,6 +112,23 @@
       <div class="client-logo" aria-hidden="true"><img src="assets/clients/lorden-vella.svg" alt=""></div>
       <div class="client-logo" aria-hidden="true"><img src="assets/clients/stanley-hamilton.png" alt=""></div>
       <div class="client-logo" aria-hidden="true"><img src="assets/clients/rio-capital.png" alt=""></div>
+      <!-- third set so manual drag/scroll can wrap endlessly in both directions -->
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/mansfield-shire-council.svg" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/hume-city-council.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/city-of-monash.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/apgc-group.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/turn-group.webp" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/department-of-defence.svg" alt=""></div>
+      <div class="client-logo dark" aria-hidden="true"><img src="assets/clients/department-of-education-vic.svg" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/byd.svg" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/ksl-kwikserv-group.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/ttw.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/aecom.svg" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/dd-architect-and-interiors.jpg" alt=""></div>
+      <div class="client-logo dark" aria-hidden="true"><img src="assets/clients/bright-moon-buddhist-temple.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/lorden-vella.svg" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/stanley-hamilton.png" alt=""></div>
+      <div class="client-logo" aria-hidden="true"><img src="assets/clients/rio-capital.png" alt=""></div>
     </div>
   </div>
 </section>
@@ -289,6 +306,17 @@
 
   var marquee = document.querySelector('.clients-marquee');
   if(marquee){
+    var track = marquee.querySelector('.clients-track');
+    var setWidth = track.scrollWidth / 3;
+    marquee.scrollLeft = setWidth;
+    marquee.addEventListener('scroll', function(){
+      if(marquee.scrollLeft < setWidth * 0.5){
+        marquee.scrollLeft += setWidth;
+      } else if(marquee.scrollLeft > setWidth * 1.5){
+        marquee.scrollLeft -= setWidth;
+      }
+    });
+
     var isDown = false, startX = 0, startScroll = 0, dragged = false;
     marquee.addEventListener('pointerdown', function(e){
       isDown = true;
