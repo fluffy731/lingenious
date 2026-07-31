@@ -5,13 +5,58 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Lingenious Consulting</title>
 <meta name="description" content="Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<link rel="canonical" href="https://lingenious.com.au/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lingenious Consulting">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://lingenious.com.au/contact.html">
+<meta property="og:title" content="Contact | Lingenious Consulting">
+<meta property="og:description" content="Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<meta property="og:image" content="https://lingenious.com.au/assets/homepagebackground.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact | Lingenious Consulting">
+<meta name="twitter:description" content="Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lingenious Consulting",
+  "url": "https://lingenious.com.au/",
+  "logo": "https://lingenious.com.au/assets/logo-light.png",
+  "image": "https://lingenious.com.au/assets/homepagebackground.png",
+  "description": "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.",
+  "email": "solomon@lingenious.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 2, 18 Prospect Street",
+    "addressLocality": "Box Hill",
+    "addressRegion": "VIC",
+    "postalCode": "3128",
+    "addressCountry": "AU"
+  },
+  "areaServed": "AU-VIC",
+  "founder": { "@type": "Person", "name": "Dr Solomon" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lingenious.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://lingenious.com.au/contact.html" }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
   <div class="nav">
@@ -19,21 +64,22 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
       <a href="about.html">About</a>
       <a href="team.html">Team</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html" class="active">Contact</a>
       <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
-<section class="page-banner">
+<section class="page-banner" id="main-content">
   <div class="wrap">
     <div class="disc-breadcrumb"><a href="index.html">Home</a> / Contact</div>
     <div class="eyebrow">Contact</div>
-    <h1>Discuss your project</h1>
+    <h1>Discuss Your Engineering Project</h1>
     <p class="lede">Provide us with the project location, current stage and required services. We will review the information and advise whether Lingenious is appropriately positioned to assist.</p>
   </div>
 </section>
@@ -44,62 +90,153 @@
     <div class="contact-info">
       <div class="contact-details" style="margin-top:0;">
         <div><div class="label">Office</div>Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
-        <div><div class="label">Email</div>solomon@lingenious.com.au</div>
+        <div><div class="label">Email</div><a href="mailto:solomon@lingenious.com.au">solomon@lingenious.com.au</a></div>
+        <div><div class="label">Phone</div><span class="phone-callout missing" title="A verified phone number has not yet been supplied for publication">Phone number to be confirmed — email us in the meantime</span></div>
+      </div>
+      <div class="response-commit">
+        <span aria-hidden="true">⏱</span>
+        <span>We aim to respond to every enquiry — from either form below — within <strong>one business day</strong>.</span>
       </div>
       <div class="mini-map">
         <iframe src="https://www.google.com/maps?q=Level+2,+18+Prospect+Street,+Box+Hill+VIC+3128&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lingenious Consulting office location"></iframe>
       </div>
     </div>
 
-    <form id="contactForm" action="https://formspree.io/f/xnjeogja" method="POST">
-      <div class="form-row">
-        <div class="field"><label for="name">Name<span class="req">*</span></label><input type="text" id="name" name="name" required></div>
-        <div class="field"><label for="company">Company</label><input type="text" id="company" name="company"></div>
+    <div class="contact-forms">
+      <div class="form-toggle" role="tablist" aria-label="Choose an enquiry type">
+        <button type="button" id="tabFast" role="tab" aria-selected="true" aria-controls="fastForm">Fast Enquiry</button>
+        <button type="button" id="tabDetailed" role="tab" aria-selected="false" aria-controls="detailedForm">Detailed Project Brief</button>
       </div>
-      <div class="form-row">
-        <div class="field"><label for="email">Email<span class="req">*</span></label><input type="email" id="email" name="email" required></div>
-        <div class="field"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"></div>
-      </div>
-      <div class="form-row">
-        <div class="field"><label for="address">Project address / location</label><input type="text" id="address" name="address"></div>
-        <div class="field"><label for="sector">Project sector</label>
-          <select id="sector" name="sector">
-            <option>Residential</option><option>Commercial</option><option>Government + Community</option><option>Infrastructure</option>
+
+      <!-- FAST ENQUIRY -->
+      <form id="fastForm" class="enquiry-form active" action="https://formspree.io/f/xnjeogja" method="POST" novalidate>
+        <input type="hidden" name="enquiry_type" value="Fast enquiry">
+        <input type="hidden" name="_subject" value="New fast enquiry — Lingenious Consulting website">
+
+        <div class="field full" style="margin-bottom:16px;">
+          <label for="fastName">Name<span class="req">*</span></label>
+          <input type="text" id="fastName" name="name" autocomplete="name" required aria-describedby="fastNameError">
+          <p class="field-error" id="fastNameError" role="alert">Please enter your name.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="fastEmail">Email</label>
+            <input type="email" id="fastEmail" name="email" autocomplete="email" aria-describedby="fastContactHint fastEmailError">
+            <p class="field-error" id="fastEmailError" role="alert">Please enter a valid email address.</p>
+          </div>
+          <div class="field">
+            <label for="fastPhone">Phone</label>
+            <input type="tel" id="fastPhone" name="phone" autocomplete="tel" aria-describedby="fastContactHint">
+          </div>
+        </div>
+        <p class="field-hint" id="fastContactHint" style="margin:-8px 0 16px;">Please provide at least one — email or phone — so we can respond.</p>
+        <p class="field-error" id="fastContactError" role="alert" style="margin:-8px 0 16px;">Please provide an email address or a phone number.</p>
+
+        <div class="field full" style="margin-bottom:16px;">
+          <label for="fastType">Project type<span class="req">*</span></label>
+          <select id="fastType" name="project_type" required>
+            <option value="">Select the closest match…</option>
+            <option value="residential-alterations-extensions">Residential alterations and extensions</option>
+            <option value="commercial-fitouts">Commercial buildings and fit-outs</option>
+            <option value="councils-public-infrastructure">Councils and public infrastructure</option>
+            <option value="structural-facade-defects">Structural and façade defect investigation</option>
+            <option value="bridges-transport-assets">Bridges and transport assets</option>
+            <option value="industrial-warehouse">Industrial and warehouse developments</option>
+            <option value="other">Other / not sure</option>
           </select>
         </div>
-      </div>
-      <div class="form-row">
-        <div class="field"><label for="stage">Current project stage</label><input type="text" id="stage" name="stage"></div>
-        <div class="field"><label for="timeframe">Preferred timeframe</label><input type="text" id="timeframe" name="timeframe"></div>
-      </div>
 
-      <label style="display:block;margin-bottom:10px;">Required services</label>
-      <div class="checkbox-grid">
-        <label><input type="checkbox" name="services" value="Civil engineering">Civil engineering</label>
-        <label><input type="checkbox" name="services" value="Structural engineering">Structural engineering</label>
-        <label><input type="checkbox" name="services" value="Façade engineering">Façade engineering</label>
-        <label><input type="checkbox" name="services" value="Geotechnical engineering">Geotechnical engineering</label>
-        <label><input type="checkbox" name="services" value="Fire safety engineering">Fire safety engineering</label>
-        <label><input type="checkbox" name="services" value="Landscape and site design">Landscape and site design</label>
-        <label><input type="checkbox" name="services" value="Project management">Project management</label>
-        <label><input type="checkbox" name="services" value="Construction advisory">Construction advisory</label>
-        <label><input type="checkbox" name="services" value="Inspection or defect assessment">Inspection or defect assessment</label>
-        <label><input type="checkbox" name="services" value="Not sure">Not sure</label>
-      </div>
+        <div class="field full" style="margin-bottom:6px;">
+          <label for="fastDescription">Short project description<span class="req">*</span></label>
+          <textarea id="fastDescription" name="description" maxlength="600" required aria-describedby="fastDescriptionHint fastDescriptionError"></textarea>
+          <p class="field-error" id="fastDescriptionError" role="alert">Please add a short description of your project.</p>
+        </div>
+        <p class="field-hint" id="fastDescriptionHint">A couple of sentences is enough — site, works involved and current stage.</p>
 
-      <div class="field full" style="margin-bottom:16px;">
-        <label for="description">Brief description</label>
-        <textarea id="description" name="description"></textarea>
-      </div>
-      <div class="field full" style="margin-bottom:6px;">
-        <label for="file">File upload</label>
-        <input type="file" id="file" name="file">
-      </div>
-      <p class="form-note">Useful documents may include architectural drawings, surveys, geotechnical reports, engineering documents, photographs, notices, permits or relevant correspondence.</p>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Fast Enquiry</button>
+        <p class="privacy-note">We only use these details to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information is handled.</p>
+        <p class="form-note" id="fastFormStatus" role="status" aria-live="polite"></p>
+      </form>
 
-      <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Enquiry</button>
-      <p class="form-note" id="formStatus"></p>
-    </form>
+      <!-- DETAILED PROJECT BRIEF -->
+      <form id="detailedForm" class="enquiry-form" action="https://formspree.io/f/xnjeogja" method="POST" novalidate>
+        <input type="hidden" name="enquiry_type" value="Detailed project brief">
+        <input type="hidden" name="_subject" value="New detailed project brief — Lingenious Consulting website">
+
+        <div class="form-row">
+          <div class="field"><label for="detName">Name<span class="req">*</span></label><input type="text" id="detName" name="name" autocomplete="name" required aria-describedby="detNameError"><p class="field-error" id="detNameError" role="alert">Please enter your name.</p></div>
+          <div class="field"><label for="detCompany">Company</label><input type="text" id="detCompany" name="company" autocomplete="organization"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="detEmail">Email<span class="req">*</span></label><input type="email" id="detEmail" name="email" autocomplete="email" required aria-describedby="detEmailError"><p class="field-error" id="detEmailError" role="alert">Please enter a valid email address.</p></div>
+          <div class="field"><label for="detPhone">Phone</label><input type="tel" id="detPhone" name="phone" autocomplete="tel"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="detAddress">Project address / location<span class="req">*</span></label><input type="text" id="detAddress" name="address" required aria-describedby="detAddressError"><p class="field-error" id="detAddressError" role="alert">Please enter the project address or location.</p></div>
+          <div class="field"><label for="detType">Project type</label>
+            <select id="detType" name="project_type">
+              <option value="">Select the closest match…</option>
+              <option value="residential-alterations-extensions">Residential alterations and extensions</option>
+              <option value="commercial-fitouts">Commercial buildings and fit-outs</option>
+              <option value="councils-public-infrastructure">Councils and public infrastructure</option>
+              <option value="structural-facade-defects">Structural and façade defect investigation</option>
+              <option value="bridges-transport-assets">Bridges and transport assets</option>
+              <option value="industrial-warehouse">Industrial and warehouse developments</option>
+              <option value="other">Other / not sure</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="detStage">Project stage<span class="req">*</span></label>
+            <select id="detStage" name="stage" required aria-describedby="detStageError">
+              <option value="">Select current stage…</option>
+              <option value="Concept / feasibility">Concept / feasibility</option>
+              <option value="Design development">Design development</option>
+              <option value="Permit / approval">Permit / approval</option>
+              <option value="Construction">Construction</option>
+              <option value="Completed — defect or assessment issue">Completed — defect or assessment issue</option>
+            </select>
+            <p class="field-error" id="detStageError" role="alert">Please select the current project stage.</p>
+          </div>
+          <div class="field"><label for="detTimeframe">Timeframe</label><input type="text" id="detTimeframe" name="timeframe" placeholder="e.g. Within 4 weeks"></div>
+        </div>
+
+        <label style="display:block;margin-bottom:10px;">Required services<span class="req">*</span></label>
+        <div class="checkbox-grid" id="detServicesGroup" aria-describedby="detServicesError">
+          <label><input type="checkbox" name="services" value="Civil engineering">Civil engineering</label>
+          <label><input type="checkbox" name="services" value="Structural engineering">Structural engineering</label>
+          <label><input type="checkbox" name="services" value="Façade engineering">Façade engineering</label>
+          <label><input type="checkbox" name="services" value="Geotechnical engineering">Geotechnical engineering</label>
+          <label><input type="checkbox" name="services" value="Fire safety engineering">Fire safety engineering</label>
+          <label><input type="checkbox" name="services" value="Landscape and site design">Landscape and site design</label>
+          <label><input type="checkbox" name="services" value="Project management">Project management</label>
+          <label><input type="checkbox" name="services" value="Construction advisory">Construction advisory</label>
+          <label><input type="checkbox" name="services" value="Inspection or defect assessment">Inspection or defect assessment</label>
+          <label><input type="checkbox" name="services" value="Not sure">Not sure</label>
+        </div>
+        <p class="field-error" id="detServicesError" role="alert" style="margin:-8px 0 18px;">Please select at least one required service.</p>
+
+        <div class="field full" style="margin-bottom:16px;">
+          <label for="detDescription">Project description</label>
+          <textarea id="detDescription" name="description" maxlength="2000"></textarea>
+        </div>
+
+        <div class="field full upload-field" style="margin-bottom:6px;">
+          <label for="detFile">Document upload</label>
+          <input type="file" id="detFile" name="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.dwg,.zip">
+          <p class="upload-meta">Accepted formats: PDF, JPG, PNG, DOC/DOCX, DWG or ZIP. Maximum file size: 10 MB.</p>
+          <div class="upload-progress" id="uploadProgress"><div class="upload-progress-bar" id="uploadProgressBar"></div></div>
+          <p class="upload-status" id="uploadStatus"></p>
+        </div>
+        <p class="form-note">Useful documents may include architectural drawings, surveys, geotechnical reports, engineering documents, photographs, notices, permits or relevant correspondence.</p>
+
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Project Brief</button>
+        <p class="privacy-note">We only use these details, including any uploaded documents, to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information and uploads are handled.</p>
+        <p class="form-note" id="detailedFormStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -172,52 +309,257 @@
     <div class="footer-bottom">
       <span>© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span class="missing-flag" title="LinkedIn URL not yet provided">LinkedIn (pending)</span></span>
     </div>
   </div>
 </footer>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){
-    document.getElementById('navLinks').classList.toggle('open');
+    var isOpen = document.getElementById('navLinks').classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
   document.querySelectorAll('.nav-links a').forEach(function(a){
     a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
   });
-  var contactForm = document.getElementById('contactForm');
-  var formStatus = document.getElementById('formStatus');
-  contactForm.addEventListener('submit', function(e){
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.getElementById('navLinks').classList.contains('open')){
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('navToggle').focus();
+    }
+  });
+  /* ---- Fast / Detailed tab switching ---- */
+  var tabFast = document.getElementById('tabFast');
+  var tabDetailed = document.getElementById('tabDetailed');
+  var fastForm = document.getElementById('fastForm');
+  var detailedForm = document.getElementById('detailedForm');
+
+  function showForm(which){
+    var showFast = which === 'fast';
+    fastForm.classList.toggle('active', showFast);
+    detailedForm.classList.toggle('active', !showFast);
+    tabFast.setAttribute('aria-selected', showFast ? 'true' : 'false');
+    tabDetailed.setAttribute('aria-selected', !showFast ? 'true' : 'false');
+  }
+  tabFast.addEventListener('click', function(){ showForm('fast'); });
+  tabDetailed.addEventListener('click', function(){ showForm('detailed'); });
+
+  /* ---- Pre-fill project type from ?sector= query param (tailored CTA from Sectors pages) ---- */
+  var sectorParam = new URLSearchParams(window.location.search).get('sector');
+  if (sectorParam) {
+    var fastType = document.getElementById('fastType');
+    var detType = document.getElementById('detType');
+    [fastType, detType].forEach(function(sel){
+      if (sel && sel.querySelector('option[value="' + sectorParam + '"]')) {
+        sel.value = sectorParam;
+      }
+    });
+    var isDetailedIntent = sectorParam === 'councils-public-infrastructure' || sectorParam === 'bridges-transport-assets' || sectorParam === 'industrial-warehouse';
+    if (isDetailedIntent) showForm('detailed');
+  }
+
+  /* ---- Analytics conversion hook (fires only if gtag/GA4 is later installed) ---- */
+  function trackConversion(formType){
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', { form_type: formType });
+    }
+  }
+
+  /* ---- Shared field validation helpers ---- */
+  function setFieldError(fieldEl, errorEl, hasError){
+    if (fieldEl) fieldEl.setAttribute('aria-invalid', hasError ? 'true' : 'false');
+    if (errorEl){
+      var wrapper = errorEl.closest ? errorEl.closest('.field') : null;
+      if (wrapper) wrapper.classList.toggle('has-error', hasError);
+      errorEl.style.display = hasError ? 'block' : 'none';
+    }
+  }
+
+  function validateFastForm(){
+    var valid = true;
+    var name = document.getElementById('fastName');
+    var email = document.getElementById('fastEmail');
+    var phone = document.getElementById('fastPhone');
+    var type = document.getElementById('fastType');
+    var desc = document.getElementById('fastDescription');
+    var contactError = document.getElementById('fastContactError');
+
+    var nameOk = name.value.trim().length > 0;
+    setFieldError(name, document.getElementById('fastNameError'), !nameOk);
+    if (!nameOk) valid = false;
+
+    var emailOk = email.value.trim() === '' || email.checkValidity();
+    setFieldError(email, document.getElementById('fastEmailError'), !emailOk);
+    if (!emailOk) valid = false;
+
+    var contactOk = email.value.trim().length > 0 || phone.value.trim().length > 0;
+    contactError.style.display = contactOk ? 'none' : 'block';
+    setFieldError(email, null, !contactOk);
+    setFieldError(phone, null, !contactOk);
+    if (!contactOk) valid = false;
+
+    var typeOk = type.value !== '';
+    setFieldError(type, null, !typeOk);
+    if (!typeOk) valid = false;
+
+    var descOk = desc.value.trim().length > 0;
+    setFieldError(desc, document.getElementById('fastDescriptionError'), !descOk);
+    if (!descOk) valid = false;
+
+    return valid;
+  }
+
+  function validateDetailedForm(){
+    var valid = true;
+    var name = document.getElementById('detName');
+    var email = document.getElementById('detEmail');
+    var address = document.getElementById('detAddress');
+    var stage = document.getElementById('detStage');
+    var services = document.querySelectorAll('#detServicesGroup input[type="checkbox"]:checked');
+    var servicesError = document.getElementById('detServicesError');
+
+    var nameOk = name.value.trim().length > 0;
+    setFieldError(name, document.getElementById('detNameError'), !nameOk);
+    if (!nameOk) valid = false;
+
+    var emailOk = email.value.trim().length > 0 && email.checkValidity();
+    setFieldError(email, document.getElementById('detEmailError'), !emailOk);
+    if (!emailOk) valid = false;
+
+    var addressOk = address.value.trim().length > 0;
+    setFieldError(address, document.getElementById('detAddressError'), !addressOk);
+    if (!addressOk) valid = false;
+
+    var stageOk = stage.value !== '';
+    setFieldError(stage, document.getElementById('detStageError'), !stageOk);
+    if (!stageOk) valid = false;
+
+    var servicesOk = services.length > 0;
+    servicesError.style.display = servicesOk ? 'none' : 'block';
+    if (!servicesOk) valid = false;
+
+    return valid;
+  }
+
+  /* ---- Fast enquiry submission (fetch — no file upload) ---- */
+  fastForm.addEventListener('submit', function(e){
     e.preventDefault();
-    var actionUrl = contactForm.getAttribute('action');
-    if(!actionUrl || actionUrl.indexOf('YOUR_FORM_ID') !== -1){
-      formStatus.textContent = 'Form not yet connected — set your Formspree endpoint in the form action before going live.';
-      formStatus.style.color = '#c0392b';
+    if (!validateFastForm()){
+      var firstInvalid = fastForm.querySelector('[aria-invalid="true"]');
+      if (firstInvalid) firstInvalid.focus();
       return;
     }
-    var submitBtn = contactForm.querySelector('button[type="submit"]');
+    var status = document.getElementById('fastFormStatus');
+    var submitBtn = fastForm.querySelector('button[type="submit"]');
     var originalText = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending…';
-    formStatus.style.color = '';
+    status.textContent = '';
+    status.style.color = '';
 
-    fetch(actionUrl, {
+    fetch(fastForm.getAttribute('action'), {
       method: 'POST',
-      body: new FormData(contactForm),
+      body: new FormData(fastForm),
       headers: { 'Accept': 'application/json' }
     }).then(function(response){
-      if(response.ok){
-        contactForm.reset();
-        formStatus.textContent = 'Thanks — your enquiry has been sent. We aim to respond within one business day.';
+      if (response.ok){
+        trackConversion('fast_enquiry');
+        window.location.href = 'enquiry-confirmation.html?type=fast';
       } else {
-        formStatus.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
-        formStatus.style.color = '#c0392b';
+        status.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+        status.style.color = '#c0392b';
       }
     }).catch(function(){
-      formStatus.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
-      formStatus.style.color = '#c0392b';
+      status.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+      status.style.color = '#c0392b';
     }).finally(function(){
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
     });
+  });
+
+  /* ---- Detailed brief submission (XHR — supports upload progress) ---- */
+  detailedForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!validateDetailedForm()){
+      var firstInvalid = detailedForm.querySelector('[aria-invalid="true"]');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+    var status = document.getElementById('detailedFormStatus');
+    var submitBtn = detailedForm.querySelector('button[type="submit"]');
+    var originalText = submitBtn.textContent;
+    var progressWrap = document.getElementById('uploadProgress');
+    var progressBar = document.getElementById('uploadProgressBar');
+    var uploadStatus = document.getElementById('uploadStatus');
+    var fileInput = document.getElementById('detFile');
+
+    var maxBytes = 10 * 1024 * 1024;
+    if (fileInput.files && fileInput.files[0] && fileInput.files[0].size > maxBytes){
+      uploadStatus.textContent = 'That file is larger than 10 MB — please choose a smaller file or email it to us directly.';
+      uploadStatus.className = 'upload-status error';
+      fileInput.focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    status.textContent = '';
+    status.style.color = '';
+    uploadStatus.textContent = '';
+    uploadStatus.className = 'upload-status';
+
+    var hasFile = !!(fileInput.files && fileInput.files[0]);
+    if (hasFile){
+      progressWrap.style.display = 'block';
+      progressBar.style.width = '0%';
+    }
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', detailedForm.getAttribute('action'), true);
+    xhr.setRequestHeader('Accept', 'application/json');
+
+    if (hasFile && xhr.upload){
+      xhr.upload.addEventListener('progress', function(evt){
+        if (evt.lengthComputable){
+          var pct = Math.round((evt.loaded / evt.total) * 100);
+          progressBar.style.width = pct + '%';
+        }
+      });
+    }
+
+    xhr.onload = function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      if (xhr.status >= 200 && xhr.status < 300){
+        if (hasFile){
+          progressBar.style.width = '100%';
+          uploadStatus.textContent = 'File uploaded successfully.';
+          uploadStatus.className = 'upload-status success';
+        }
+        trackConversion('detailed_brief');
+        window.location.href = 'enquiry-confirmation.html?type=detailed';
+      } else {
+        status.textContent = 'Something went wrong sending your project brief. Please email solomon@lingenious.com.au directly.';
+        status.style.color = '#c0392b';
+        if (hasFile){
+          uploadStatus.textContent = 'Upload failed — please try again or email the file directly.';
+          uploadStatus.className = 'upload-status error';
+        }
+      }
+    };
+    xhr.onerror = function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+      status.textContent = 'Something went wrong sending your project brief. Please email solomon@lingenious.com.au directly.';
+      status.style.color = '#c0392b';
+      if (hasFile){
+        uploadStatus.textContent = 'Upload failed — please try again or email the file directly.';
+        uploadStatus.className = 'upload-status error';
+      }
+    };
+    xhr.send(new FormData(detailedForm));
   });
 </script>
 

@@ -5,13 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Geotechnical Engineering | Lingenious Consulting</title>
 <meta name="description" content="Ground investigation and geotechnical advice coordinated with foundation, retaining, pavement and earthworks design.">
+<link rel="canonical" href="https://lingenious.com.au/geotechnical-engineering.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lingenious Consulting">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://lingenious.com.au/geotechnical-engineering.html">
+<meta property="og:title" content="Geotechnical Engineering | Lingenious Consulting">
+<meta property="og:description" content="Ground investigation and geotechnical advice coordinated with foundation, retaining, pavement and earthworks design.">
+<meta property="og:image" content="https://lingenious.com.au/assets/homepagebackground.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Geotechnical Engineering | Lingenious Consulting">
+<meta name="twitter:description" content="Ground investigation and geotechnical advice coordinated with foundation, retaining, pavement and earthworks design.">
+<meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lingenious Consulting",
+  "url": "https://lingenious.com.au/",
+  "logo": "https://lingenious.com.au/assets/logo-light.png",
+  "image": "https://lingenious.com.au/assets/homepagebackground.png",
+  "description": "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.",
+  "email": "solomon@lingenious.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 2, 18 Prospect Street",
+    "addressLocality": "Box Hill",
+    "addressRegion": "VIC",
+    "postalCode": "3128",
+    "addressCountry": "AU"
+  },
+  "areaServed": "AU-VIC",
+  "founder": { "@type": "Person", "name": "Dr Solomon" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lingenious.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://lingenious.com.au/services.html" },
+    { "@type": "ListItem", "position": 3, "name": "Geotechnical Engineering", "item": "https://lingenious.com.au/geotechnical-engineering.html" }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
   <div class="nav">
@@ -19,17 +65,18 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="services.html" class="active">Services</a>
+      <a href="sectors.html">Sectors</a>
       <a href="about.html">About</a>
       <a href="team.html">Team</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
       <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
-<section class="disc-hero">
+<section class="disc-hero" id="main-content">
   <div class="wrap">
     <div class="disc-breadcrumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / Geotechnical Engineering</div>
     <div class="eyebrow">Engineering discipline · 04</div>
@@ -116,16 +163,25 @@
     <div class="footer-bottom">
       <span>© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span class="missing-flag" title="LinkedIn URL not yet provided">LinkedIn (pending)</span></span>
     </div>
   </div>
 </footer>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){
-    document.getElementById('navLinks').classList.toggle('open');
+    var isOpen = document.getElementById('navLinks').classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
   document.querySelectorAll('.nav-links a').forEach(function(a){
     a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.getElementById('navLinks').classList.contains('open')){
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('navToggle').focus();
+    }
   });
 </script>
 

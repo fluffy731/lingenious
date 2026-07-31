@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | Lingenious Consulting</title>
+<meta name="description" content="The page you're looking for doesn't exist or may have moved. Find engineering services, sectors, projects and contact details for Lingenious Consulting.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<section class="page-banner" id="main-content">
+  <div class="wrap">
+    <div class="eyebrow">404</div>
+    <h1>Page Not Found</h1>
+    <p class="lede">The page you're looking for doesn't exist, or may have moved. Use the links below to find what you need.</p>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="sector-landing-grid">
+      <a class="sector-landing-card" href="services.html">
+        <h3>Services <span class="tile-arrow">→</span></h3>
+        <p>Engineering and advisory services across civil, structural, façade, geotechnical and fire safety disciplines.</p>
+      </a>
+      <a class="sector-landing-card" href="sectors.html">
+        <h3>Sectors <span class="tile-arrow">→</span></h3>
+        <p>Residential, commercial, council, infrastructure, defect investigation and industrial sector pathways.</p>
+      </a>
+      <a class="sector-landing-card" href="projects.html">
+        <h3>Projects <span class="tile-arrow">→</span></h3>
+        <p>Engineering commissions, technical assessments and infrastructure inspections.</p>
+      </a>
+      <a class="sector-landing-card" href="about.html">
+        <h3>About <span class="tile-arrow">→</span></h3>
+        <p>Learn about Lingenious Consulting and our engineering-led approach.</p>
+      </a>
+      <a class="sector-landing-card" href="team.html">
+        <h3>Team <span class="tile-arrow">→</span></h3>
+        <p>Meet the engineering and advisory team behind the work.</p>
+      </a>
+      <a class="sector-landing-card" href="contact.html">
+        <h3>Contact <span class="tile-arrow">→</span></h3>
+        <p>Start a fast enquiry or send a detailed project brief.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
+        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#engineering">Engineering</a></li>
+          <li><a href="services.html#project-management">Project Management</a></li>
+          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
+          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span class="missing-flag" title="LinkedIn URL not yet provided">LinkedIn (pending)</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    var isOpen = document.getElementById('navLinks').classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.getElementById('navLinks').classList.contains('open')){
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('navToggle').focus();
+    }
+  });
+</script>
+
+</body>
+</html>

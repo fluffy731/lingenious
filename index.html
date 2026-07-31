@@ -3,15 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lingenious Consulting | Engineering + Advisory</title>
-<meta name="description" content="Lingenious Consulting provides civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.">
+<title>Lingenious Consulting | Melbourne Engineering + Advisory Services</title>
+<meta name="description" content="Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<link rel="canonical" href="https://lingenious.com.au/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lingenious Consulting">
+<meta property="og:locale" content="en_AU">
+<meta property="og:url" content="https://lingenious.com.au/">
+<meta property="og:title" content="Lingenious Consulting | Melbourne Engineering + Advisory Services">
+<meta property="og:description" content="Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<meta property="og:image" content="https://lingenious.com.au/assets/homepagebackground.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lingenious Consulting | Melbourne Engineering + Advisory Services">
+<meta name="twitter:description" content="Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory.">
+<meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lingenious Consulting",
+  "url": "https://lingenious.com.au/",
+  "logo": "https://lingenious.com.au/assets/logo-light.png",
+  "image": "https://lingenious.com.au/assets/homepagebackground.png",
+  "description": "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.",
+  "email": "solomon@lingenious.com.au",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Level 2, 18 Prospect Street",
+    "addressLocality": "Box Hill",
+    "addressRegion": "VIC",
+    "postalCode": "3128",
+    "addressCountry": "AU"
+  },
+  "areaServed": "AU-VIC",
+  "founder": { "@type": "Person", "name": "Dr Solomon" }
+}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
   <div class="nav">
@@ -19,6 +54,7 @@
     <nav class="nav-links" id="navLinks">
       <a href="index.html" class="active" data-zh="首页">Home</a>
       <a href="services.html" data-zh="服务">Services</a>
+      <a href="sectors.html">Sectors</a>
       <a href="about.html" data-zh="关于我们">About</a>
       <a href="team.html" data-zh="团队">Team</a>
       <a href="projects.html" data-zh="项目">Projects</a>
@@ -26,12 +62,12 @@
       <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
     <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero" id="main-content">
   <div class="wrap">
     <div class="hero-copy">
       <div class="eyebrow" data-zh="Civil Engineering（土木工程）· Structural Engineering（结构工程）· Façade Engineering（幕墙工程）· Project Advisory（项目顾问）">Civil · Structural · Façade · Project Advisory</div>
@@ -70,7 +106,7 @@
 </div>
 
 <!-- CLIENTS -->
-<section class="clients" style="border-bottom:none;">
+<section class="clients" id="clients" style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow" data-zh="我们的客户">Our Clients</div>
@@ -239,7 +275,7 @@
     </div>
     <div class="leader-card corner-mark">
       <div class="leader-head">
-        <img src="assets/solomon.jpg" alt="Dr Solomon" class="leader-photo">
+        <img src="assets/solomon.jpg" alt="Portrait of Dr Solomon, Founder and Principal Engineer at Lingenious Consulting" class="leader-photo">
         <div>
           <div class="role" data-zh="Founder（创办人）· Managing Director（董事总经理）+ Principal Engineer（首席工程师）">Founder · Managing Director + Principal Engineer</div>
           <h3>Dr Solomon</h3>
@@ -292,16 +328,25 @@
     <div class="footer-bottom">
       <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span class="missing-flag" title="LinkedIn URL not yet provided">LinkedIn (pending)</span></span>
     </div>
   </div>
 </footer>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){
-    document.getElementById('navLinks').classList.toggle('open');
+    var isOpen = document.getElementById('navLinks').classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
   document.querySelectorAll('.nav-links a').forEach(function(a){
     a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.getElementById('navLinks').classList.contains('open')){
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('navToggle').focus();
+    }
   });
 
   var marquee = document.querySelector('.clients-marquee');

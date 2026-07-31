@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiry Received | Lingenious Consulting</title>
+<meta name="description" content="Thank you for contacting Lingenious Consulting. Your enquiry has been received and we aim to respond within one business day.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://lingenious.com.au/enquiry-confirmation.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header>
+  <div class="nav">
+    <a href="index.html" class="nav-logo"><img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="sectors.html">Sectors</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+  </div>
+</header>
+
+<section class="page-banner" id="main-content">
+  <div class="wrap">
+    <div class="disc-breadcrumb"><a href="index.html">Home</a> / <a href="contact.html">Contact</a> / Enquiry Received</div>
+    <div class="eyebrow">Thank you</div>
+    <h1>Your Enquiry Has Been Received</h1>
+    <p class="lede" id="confirmationLede">Thanks for getting in touch with Lingenious Consulting. We aim to respond to every enquiry within one business day.</p>
+  </div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What happens next</div>
+      <h2>We'll review your enquiry and come back to you directly</h2>
+    </div>
+    <ul class="sector-list" style="max-width:640px;">
+      <li>A member of the Lingenious team reviews every enquiry that comes through the website.</li>
+      <li>We aim to respond within one business day, either by email or phone, depending on what you provided.</li>
+      <li>If we need more information — site access, documents or a call — we'll ask for it directly.</li>
+      <li>If you need to add anything in the meantime, email <a href="mailto:solomon@lingenious.com.au" style="color:var(--blue);text-decoration:underline;">solomon@lingenious.com.au</a>.</li>
+    </ul>
+    <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-secondary">Back to Home <span class="btn-arrow">→</span></a>
+      <a href="projects.html" class="btn btn-secondary">View Our Projects <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-light.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
+        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#engineering">Engineering</a></li>
+          <li><a href="services.html#project-management">Project Management</a></li>
+          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
+          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span class="missing-flag" title="LinkedIn URL not yet provided">LinkedIn (pending)</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    var isOpen = document.getElementById('navLinks').classList.toggle('open');
+    this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && document.getElementById('navLinks').classList.contains('open')){
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('navToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('navToggle').focus();
+    }
+  });
+
+  /* Personalise the confirmation message based on which form was submitted, and
+     fire a conversion event here too as a fallback in case the contact page navigated away before its own event completed. */
+  var type = new URLSearchParams(window.location.search).get('type');
+  var lede = document.getElementById('confirmationLede');
+  if (type === 'detailed' && lede){
+    lede.textContent = "Thanks for sending through your project brief. We aim to respond within one business day, and will confirm receipt of any document you uploaded.";
+  } else if (type === 'fast' && lede){
+    lede.textContent = "Thanks for your enquiry. We aim to respond within one business day.";
+  }
+  if (typeof window.gtag === 'function' && type) {
+    window.gtag('event', 'generate_lead', { form_type: type === 'detailed' ? 'detailed_brief' : 'fast_enquiry', confirmation_page: true });
+  }
+</script>
+
+</body>
+</html>
