@@ -1,2 +1,7 @@
 .claude/
 files.zip
+
+# Raw source project files (client drawings, permits, tenders) — never commit/push.
+# Redacted content derived from these lives in assets/projects-data.js and the
+# case-study-*.html / project-sector-*.html pages instead.
+website_projects/

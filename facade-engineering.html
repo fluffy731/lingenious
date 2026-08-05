@@ -120,6 +120,16 @@
   </div>
 </section>
 
+<section class="disc-body" style="padding:56px 0;border-top:1px solid var(--grey-line);">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:24px;">
+      <div class="eyebrow">Related Projects</div>
+      <h2 style="font-size:24px;">Façade engineering project experience</h2>
+    </div>
+    <div class="project-grid" id="relatedProjects"></div>
+  </div>
+</section>
+
 <section class="disc-other">
   <div class="wrap">
     <div class="eyebrow">Other disciplines</div>
@@ -167,6 +177,11 @@
   </div>
 </footer>
 
+<script src="assets/projects-data.js"></script>
+<script src="assets/projects-render.js"></script>
+<script>
+  LingeniousProjects.renderRelated('relatedProjects', 'Facade');
+</script>
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){
     var isOpen = document.getElementById('navLinks').classList.toggle('open');
