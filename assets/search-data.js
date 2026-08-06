@@ -1,0 +1,46 @@
+/*
+  Static site search index. One entry per indexable page.
+  Consumed by assets/search.js. Kept separate from projects-data.js since it
+  covers the whole site, not just case studies.
+*/
+window.LINGENIOUS_SEARCH_INDEX = [
+  { title: "Home", url: "index.html", category: "Page", description: "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory." },
+  { title: "About", url: "about.html", category: "Page", description: "Lingenious Consulting is an engineering-led professional services firm based in Melbourne, providing multidisciplinary engineering, project management and construction advisory." },
+  { title: "Team", url: "team.html", category: "Page", description: "Meet the Lingenious Consulting team — engineering, project management and delivery professionals led by Dr Solomon." },
+  { title: "Services", url: "services.html", category: "Page", description: "Engineering, project management and construction advisory services from Lingenious Consulting, coordinated across residential, commercial, government and infrastructure projects." },
+  { title: "Sectors We Support", url: "sectors.html", category: "Page", description: "Engineering and advisory pathways for residential, commercial, council, infrastructure, defect investigation and industrial sectors." },
+  { title: "Projects", url: "projects.html", category: "Page", description: "Selected engineering commissions, technical assessments, infrastructure inspections and project advisory delivered by Lingenious Consulting." },
+  { title: "Contact", url: "contact.html", category: "Page", description: "Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory." },
+
+  { title: "Civil Engineering", url: "civil-engineering.html", category: "Discipline", description: "Civil engineering solutions for site development, drainage, earthworks, access and supporting infrastructure." },
+  { title: "Structural Engineering", url: "structural-engineering.html", category: "Discipline", description: "Structural engineering for new buildings, alterations, extensions, remedial works and infrastructure assets." },
+  { title: "Façade Engineering", url: "facade-engineering.html", category: "Discipline", description: "Technical assessment and engineering advice for façade systems, building envelopes and existing façade defects." },
+  { title: "Geotechnical Engineering", url: "geotechnical-engineering.html", category: "Discipline", description: "Ground investigation and geotechnical advice coordinated with foundation, retaining, pavement and earthworks design." },
+  { title: "Fire Safety Engineering", url: "fire-safety-engineering.html", category: "Discipline", description: "Fire safety engineering and performance-based advice coordinated with architectural, structural and building compliance requirements." },
+  { title: "Landscape + Site Integration", url: "landscape-site-integration.html", category: "Discipline", description: "Landscape and site design coordinated with drainage, access, civil infrastructure and building requirements." },
+
+  { title: "Residential Alterations + Extensions", url: "sector-residential-alterations-extensions.html", category: "Sector", description: "Structural and civil engineering for residential alterations, extensions and renovations, supporting permits, footings, retaining walls and site drainage." },
+  { title: "Commercial Buildings + Fit-Outs", url: "sector-commercial-fitouts.html", category: "Sector", description: "Structural, façade and project engineering for commercial buildings and tenancy fit-outs, coordinated with builders, architects and lease programmes." },
+  { title: "Councils + Public Infrastructure", url: "sector-councils-public-infrastructure.html", category: "Sector", description: "Civil, structural and asset advisory services for councils and public infrastructure, including inspections, condition assessment and upgrade design." },
+  { title: "Structural + Façade Defect Investigations", url: "sector-structural-facade-defects.html", category: "Sector", description: "Independent structural and façade defect investigation, cause diagnosis and remediation advice for building owners, insurers and managing agents." },
+  { title: "Bridges + Transport Assets", url: "sector-bridges-transport-assets.html", category: "Sector", description: "Bridge and transport asset inspection, condition assessment and structural advisory for councils and infrastructure asset managers." },
+  { title: "Industrial + Warehouse Developments", url: "sector-industrial-warehouse.html", category: "Sector", description: "Civil, structural and geotechnical engineering for industrial and warehouse developments, including pavements, hardstands and large-span structures." },
+
+  { title: "Residential Projects", url: "project-sector-residential.html", category: "Projects", description: "Structural, civil and geotechnical case studies from residential projects delivered by Lingenious Consulting across Melbourne." },
+  { title: "Commercial Projects", url: "project-sector-commercial.html", category: "Projects", description: "Structural, façade and project advisory case studies from commercial projects delivered by Lingenious Consulting." },
+  { title: "Government + Infrastructure Projects", url: "project-sector-government-infrastructure.html", category: "Projects", description: "Civil and structural engineering case studies from council and public infrastructure projects delivered by Lingenious Consulting." },
+
+  { title: "New Residential Dwelling", url: "case-study-residential-structural-geotechnical.html", category: "Case Study", description: "Multidisciplinary structural, civil and geotechnical design for a new residential dwelling on a reactive clay site in eastern Melbourne." },
+  { title: "Medium-Density Residential Development", url: "case-study-residential-medium-density-development.html", category: "Case Study", description: "Structural design and permit coordination for a six-dwelling medium-density residential development in eastern Melbourne." },
+  { title: "Agricultural Production Facility", url: "case-study-commercial-agricultural-portal-frame.html", category: "Case Study", description: "NCC Performance Solution for a 16.5m clear-span steel portal frame at an agricultural production facility in regional Victoria." },
+  { title: "Multi-Building Development — Glazing Systems Certification", url: "case-study-commercial-facade-glazing-certification.html", category: "Case Study", description: "Independent structural verification of window and door glazing systems across a three-building residential development in New South Wales." },
+  { title: "Commercial Tenancy Extension", url: "case-study-commercial-tenancy-extension-advisory.html", category: "Case Study", description: "Independent tender comparison and contractor recommendation for a commercial tenancy extension in Melbourne." },
+  { title: "Vehicle Dealership Pylon Sign", url: "case-study-commercial-dealership-pylon-sign.html", category: "Case Study", description: "Structural design of a free-standing pylon sign for a vehicle dealership in Melbourne, engineered to reuse an existing footing." },
+  { title: "Commercial Office Tower Refurbishment — Fire Safety", url: "case-study-commercial-office-tower-fire-safety.html", category: "Case Study", description: "Fire engineering input supporting refurbishment and upgrade works across occupied CBD commercial office towers in Melbourne." },
+  { title: "Municipal Reserve Safety Fencing Program", url: "case-study-government-reserve-fencing-program.html", category: "Case Study", description: "Multi-site structural design of high safety fencing across council-owned sporting reserves in metropolitan Melbourne." },
+  { title: "Community Sports Facility Drainage Upgrade", url: "case-study-government-sports-facility-drainage.html", category: "Case Study", description: "Civil drainage design for stormwater upgrade works at a council-owned tennis facility in metropolitan Melbourne." },
+  { title: "School Construction — Structural Inspections", url: "case-study-government-school-construction-inspections.html", category: "Case Study", description: "Construction-stage structural inspections, certification and fencing/handrail engineering for new school buildings in Melbourne." },
+  { title: "Government Facility Refurbishment", url: "case-study-government-facility-refurbishment.html", category: "Case Study", description: "Structural subconsultant input supporting refurbishment works at a government-owned facility in Victoria." },
+  { title: "Hospital Fire Safety Compliance — Fire Risk Audit", url: "case-study-government-hospital-fire-safety-audit.html", category: "Case Study", description: "Statutory fire safety audits and fire risk assessments supporting compliance across major hospital campuses in Melbourne." },
+  { title: "Public Market Scaffold Design", url: "case-study-government-public-market-scaffold-design.html", category: "Case Study", description: "Engineered scaffold design for construction access and fall protection at a council-owned public market building in Melbourne." }
+];
