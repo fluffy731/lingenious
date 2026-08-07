@@ -1,3 +1,12 @@
+# The site is currently hidden from search engines.
+# Crawling is intentionally left ALLOWED so that search engines can fetch each
+# page and see its <meta name="robots" content="noindex, follow"> tag. Blocking
+# with Disallow would stop them reading that tag, and previously indexed URLs
+# could keep showing in results.
+#
+# To make the site searchable again: remove the noindex meta tag from every
+# .html page (switch it to "index, follow").
+
 User-agent: *
 Allow: /
 
