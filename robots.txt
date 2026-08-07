@@ -1,13 +1,101 @@
-# The site is currently hidden from search engines.
-# Crawling is intentionally left ALLOWED so that search engines can fetch each
-# page and see its <meta name="robots" content="noindex, follow"> tag. Blocking
-# with Disallow would stop them reading that tag, and previously indexed URLs
-# could keep showing in results.
+# The site is currently hidden from search engines and AI crawlers.
 #
-# To make the site searchable again: remove the noindex meta tag from every
-# .html page (switch it to "index, follow").
+# 1. SEARCH ENGINES
+# Crawling is intentionally left ALLOWED below so that search engines can fetch
+# each page and see its <meta name="robots" content="noindex, follow"> tag.
+# Blocking with Disallow would stop them reading that tag, and previously
+# indexed URLs could keep showing in results.
+#
+# 2. AI CRAWLERS
+# The noindex tag is a search-index directive; it does not reliably stop AI
+# crawlers. Those are opted out by user-agent below. This is honour-based --
+# compliant operators respect it, others ignore it -- and it only affects
+# FUTURE crawls of this site. It cannot remove anything already collected.
+#
+# To make the site searchable again: switch the noindex meta tag on every
+# .html page to "index, follow" and remove the AI crawler groups below.
 
 User-agent: *
 Allow: /
+
+# --- OpenAI ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# --- Anthropic ---
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-User
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# --- Google (Gemini / AI training; does NOT affect Googlebot or Search) ---
+User-agent: Google-Extended
+Disallow: /
+
+# --- Common Crawl (a major source of LLM training data) ---
+User-agent: CCBot
+Disallow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+# --- Meta ---
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# --- Apple ---
+User-agent: Applebot-Extended
+Disallow: /
+
+# --- Microsoft / other ---
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
 
 Sitemap: https://lingenious.com.au/sitemap.xml
