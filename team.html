@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">
@@ -62,25 +62,26 @@
   <div class="nav">
     <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="sectors.html">Sectors</a>
-      <a href="about.html">About</a>
-      <a href="team.html" class="active">Team</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+      <a href="index.html" data-zh="首页">Home</a>
+      <a href="services.html" data-zh="服务">Services</a>
+      <a href="sectors.html" data-zh="行业领域">Sectors</a>
+      <a href="about.html" data-zh="关于我们">About</a>
+      <a href="team.html" class="active" data-zh="团队">Team</a>
+      <a href="projects.html" data-zh="项目">Projects</a>
+      <a href="contact.html" data-zh="联系我们">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
 <section class="page-banner" id="main-content">
   <div class="wrap">
-    <div class="disc-breadcrumb"><a href="index.html">Home</a> / Team</div>
-    <div class="eyebrow">Team</div>
-    <h1>Our Engineering and Advisory Team</h1>
-    <p class="lede">Lingenious is led by Dr Solomon, supported by a growing team of engineering and delivery professionals.</p>
+    <div class="disc-breadcrumb"><a href="index.html" data-zh="首页">Home</a> / <span data-zh="团队">Team</span></div>
+    <div class="eyebrow" data-zh="团队">Team</div>
+    <h1 data-zh="我们的工程与顾问团队">Our Engineering and Advisory Team</h1>
+    <p class="lede" data-zh="Lingenious 由 Solomon 博士领导，并由不断壮大的工程与交付专业团队提供支持。">Lingenious is led by Dr Solomon, supported by a growing team of engineering and delivery professionals.</p>
   </div>
 </section>
 
@@ -91,29 +92,29 @@
       <div class="team-card">
         <img src="assets/solomon.jpg" alt="Portrait of Dr Solomon, Founder and Principal Engineer at Lingenious Consulting" class="team-photo">
         <h3>Dr Solomon</h3>
-        <div class="team-role">Founder · Managing Director + Principal Engineer</div>
-        <p class="team-bio">Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery. Also an Engineers Australia chartership/NER panelist, Standards Australia AS 3600 committee member, and guest lecturer at Monash University, Western Sydney University and TAFE NSW.</p>
+        <div class="team-role" data-zh="创办人 · 董事总经理 + 首席工程师">Founder · Managing Director + Principal Engineer</div>
+        <p class="team-bio" data-zh="特许土木及结构工程师（Chartered Civil and Structural Engineer），在建筑、交通基础设施、结构评估、资产管理及跨专业项目交付方面拥有丰富经验。同时担任 Engineers Australia（澳大利亚工程师协会）Chartership/NER 评审面试官、Standards Australia（澳大利亚标准协会）AS 3600 委员会委员，并在 Monash University（莫纳什大学）、Western Sydney University 及 TAFE NSW 担任客座讲师。">Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery. Also an Engineers Australia chartership/NER panelist, Standards Australia AS 3600 committee member, and guest lecturer at Monash University, Western Sydney University and TAFE NSW.</p>
       </div>
       <div class="team-card">
         <img src="assets/addi2.jpg" alt="Portrait of Addi, Fire Safety Lead at Lingenious Consulting" class="team-photo">
         <h3>Addi</h3>
-        <div class="team-role">Fire Safety Lead</div>
-        <p class="team-bio">Fire Safety Engineer and Auditor with 8+ years' experience across commercial, healthcare, retail, car park and residential projects, from concept design through to construction.</p>
+        <div class="team-role" data-zh="消防安全负责人">Fire Safety Lead</div>
+        <p class="team-bio" data-zh="消防安全工程师及审核员，拥有 8 年以上经验，涵盖商业、医疗、零售、停车场及住宅项目，服务范围从概念设计延伸至施工阶段。">Fire Safety Engineer and Auditor with 8+ years' experience across commercial, healthcare, retail, car park and residential projects, from concept design through to construction.</p>
       </div>
       <div class="team-card">
         <img src="assets/janet.jpg" alt="Portrait of Janet, Landscape Lead at Lingenious Consulting" class="team-photo">
         <h3>Janet</h3>
-        <div class="team-role">Landscape Lead · Design &amp; Construct</div>
+        <div class="team-role" data-zh="景观负责人 · 设计与施工">Landscape Lead · Design &amp; Construct</div>
       </div>
       <div class="team-card">
         <img src="assets/monica.jpg" alt="Portrait of Monica, Business Development Manager at Lingenious Consulting" class="team-photo">
         <h3>Monica</h3>
-        <div class="team-role">Business Development Manager</div>
+        <div class="team-role" data-zh="业务发展经理">Business Development Manager</div>
       </div>
       <div class="team-card">
         <img src="assets/boni.jpg" alt="Portrait of Boni, Finance Manager at Lingenious Consulting" class="team-photo">
         <h3>Boni</h3>
-        <div class="team-role">Finance Manager</div>
+        <div class="team-role" data-zh="财务经理">Finance Manager</div>
       </div>
     </div>
   </div>
@@ -122,17 +123,17 @@
 <!-- PHOTO BAND -->
 <section class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&amp;fit=crop&amp;w=1600&amp;q=70')">
   <div class="wrap">
-    <div class="eyebrow">One coordinated team</div>
-    <div class="band-line">Engineering, delivery and advisory disciplines working from the same drawing.</div>
+    <div class="eyebrow" data-zh="一支协同运作的团队">One coordinated team</div>
+    <div class="band-line" data-zh="工程、交付与顾问各专业，基于同一套图纸协同工作。">Engineering, delivery and advisory disciplines working from the same drawing.</div>
   </div>
 </section>
 
 <!-- FINAL CTA -->
 <section class="final-cta">
   <div class="wrap">
-    <h2>Bring us the project, site or technical problem.</h2>
-    <p>Whether you require a defined engineering service, an independent technical assessment or broader project coordination, we will help establish the appropriate scope and delivery pathway.</p>
-    <a href="contact.html" class="btn btn-primary">Discuss Your Project <span class="btn-arrow">→</span></a>
+    <h2 data-zh="无论项目、场地或技术难题，欢迎与我们探讨。">Bring us the project, site or technical problem.</h2>
+    <p data-zh="无论您需要明确的工程服务、独立的技术评估，还是更广泛的项目协调，我们都将协助确定合适的服务范围与交付路径。">Whether you require a defined engineering service, an independent technical assessment or broader project coordination, we will help establish the appropriate scope and delivery pathway.</p>
+    <a href="contact.html" class="btn btn-primary"><span data-zh="洽谈项目">Discuss Your Project</span> <span class="btn-arrow">→</span></a>
   </div>
 </section>
 
@@ -141,37 +142,38 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
-        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+        <p data-zh="为住宅、商业、政府及基础设施项目提供跨专业工程、项目管理与施工顾问服务。">Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-zh="服务">Services</h4>
         <ul>
-          <li><a href="services.html#engineering">Engineering</a></li>
-          <li><a href="services.html#project-management">Project Management</a></li>
-          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
-          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+          <li><a href="services.html#engineering" data-zh="Engineering（工程）">Engineering</a></li>
+          <li><a href="services.html#project-management" data-zh="Project Management（项目管理）">Project Management</a></li>
+          <li><a href="services.html#construction-advisory" data-zh="Construction Advisory（施工顾问）">Construction Advisory</a></li>
+          <li><a href="services.html" data-zh="Infrastructure + Asset Advisory（基础设施与资产顾问）">Infrastructure + Asset Advisory</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-zh="公司">Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-zh="关于我们">About</a></li>
+          <li><a href="team.html" data-zh="团队">Team</a></li>
+          <li><a href="projects.html" data-zh="项目">Projects</a></li>
+          <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
-      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a></span>
+      <span class="footer-legal"><a href="privacy-policy.html" data-zh="隐私政策">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
 
 <script src="assets/search-data.js"></script>
 <script src="assets/search.js"></script>
+<script src="assets/lang-toggle.js"></script>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){

@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">
@@ -62,26 +62,27 @@
   <div class="nav">
     <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="sectors.html">Sectors</a>
-      <a href="about.html" class="active">About</a>
-      <a href="team.html">Team</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+      <a href="index.html" data-zh="首页">Home</a>
+      <a href="services.html" data-zh="服务">Services</a>
+      <a href="sectors.html" data-zh="行业领域">Sectors</a>
+      <a href="about.html" class="active" data-zh="关于我们">About</a>
+      <a href="team.html" data-zh="团队">Team</a>
+      <a href="projects.html" data-zh="项目">Projects</a>
+      <a href="contact.html" data-zh="联系我们">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
 <section class="page-banner" id="main-content">
   <div class="wrap">
-    <div class="disc-breadcrumb"><a href="index.html">Home</a> / About</div>
-    <div class="eyebrow">About</div>
-    <h1>About Lingenious Consulting</h1>
-    <p class="lede" style="margin-top:8px;font-size:16px;color:#C7D3E5;">Engineering judgement backed by project delivery experience.</p>
-    <p class="lede">Lingenious Consulting is an engineering-led professional services firm based in Melbourne. We provide multidisciplinary engineering, project management and construction advisory services across residential, commercial, government and infrastructure projects.</p>
+    <div class="disc-breadcrumb"><a href="index.html" data-zh="首页">Home</a> / <span data-zh="关于我们">About</span></div>
+    <div class="eyebrow" data-zh="关于我们">About</div>
+    <h1 data-zh="关于 Lingenious Consulting">About Lingenious Consulting</h1>
+    <p class="lede" style="margin-top:8px;font-size:16px;color:#C7D3E5;" data-zh="基于项目交付经验的工程判断力。">Engineering judgement backed by project delivery experience.</p>
+    <p class="lede" data-zh="Lingenious Consulting 是一家总部位于墨尔本、以工程为核心的专业服务公司。我们为住宅、商业、政府及基础设施项目提供跨专业的工程、项目管理与施工顾问服务。">Lingenious Consulting is an engineering-led professional services firm based in Melbourne. We provide multidisciplinary engineering, project management and construction advisory services across residential, commercial, government and infrastructure projects.</p>
   </div>
 </section>
 
@@ -89,34 +90,34 @@
 <section>
   <div class="wrap">
     <div class="section-head">
-      <p class="lede">Our approach is built around practical technical judgement — considering not only whether a solution can be engineered, but whether it can be approved, coordinated, constructed, maintained and delivered within the realities of the project.</p>
+      <p class="lede" data-zh="我们的工作方式建立在务实的技术判断之上——不仅考虑方案在工程上是否可行，更关注其能否获得审批、协调推进、顺利施工、长期维护，并在项目实际条件下顺利交付。">Our approach is built around practical technical judgement — considering not only whether a solution can be engineered, but whether it can be approved, coordinated, constructed, maintained and delivered within the realities of the project.</p>
     </div>
 
     <div class="about-grid">
       <ul class="approach-list">
         <li>
-          <h3>Understand the actual problem</h3>
-          <p>We begin by defining the project constraints, risks and required outcomes rather than applying a predetermined solution.</p>
+          <h3 data-zh="理解真正的问题">Understand the actual problem</h3>
+          <p data-zh="我们首先明确项目的限制条件、风险与所需成果，而非直接套用预设方案。">We begin by defining the project constraints, risks and required outcomes rather than applying a predetermined solution.</p>
         </li>
         <li>
-          <h3>Coordinate the interfaces</h3>
-          <p>Civil, structural, façade, ground, fire and construction requirements often overlap. We identify and manage those interfaces early.</p>
+          <h3 data-zh="协调各专业接口">Coordinate the interfaces</h3>
+          <p data-zh="土木、结构、幕墙、岩土、消防与施工等要求常常相互重叠。我们及早识别并管理这些接口关系。">Civil, structural, façade, ground, fire and construction requirements often overlap. We identify and manage those interfaces early.</p>
         </li>
         <li>
-          <h3>Provide practical advice</h3>
-          <p>Our recommendations consider compliance, constructability, cost, programme, safety and asset performance.</p>
+          <h3 data-zh="提供务实建议">Provide practical advice</h3>
+          <p data-zh="我们的建议兼顾合规性、可施工性、成本、进度、安全与资产性能。">Our recommendations consider compliance, constructability, cost, programme, safety and asset performance.</p>
         </li>
         <li>
-          <h3>Remain involved</h3>
-          <p>Where required, we support clients beyond design through procurement, construction, defects, completion and handover.</p>
+          <h3 data-zh="全程参与">Remain involved</h3>
+          <p data-zh="在需要时，我们的支持不止于设计阶段，延伸至采购、施工、缺陷处理、竣工及移交。">Where required, we support clients beyond design through procurement, construction, defects, completion and handover.</p>
         </li>
         <li>
-          <h3>Responsive Communication</h3>
-          <p>We acknowledge project correspondence and design queries within one business day. If further assessment is needed, we'll confirm a clear response timeframe.</p>
+          <h3 data-zh="及时响应沟通">Responsive Communication</h3>
+          <p data-zh="我们会在一个工作日内回复项目往来邮件及设计咨询。如需进一步评估，我们会明确告知具体的回复时间。">We acknowledge project correspondence and design queries within one business day. If further assessment is needed, we'll confirm a clear response timeframe.</p>
         </li>
         <li>
-          <h3>Value Management</h3>
-          <p>We design for constructability and cost efficiency from the outset. Structural systems, footings and drainage are optimised to reduce cost and complexity without compromising safety or compliance.</p>
+          <h3 data-zh="价值管理">Value Management</h3>
+          <p data-zh="我们从项目伊始即以可施工性与成本效益为设计导向。结构系统、基础及排水系统均经过优化，在不影响安全与合规的前提下降低成本与复杂度。">We design for constructability and cost efficiency from the outset. Structural systems, footings and drainage are optimised to reduce cost and complexity without compromising safety or compliance.</p>
         </li>
       </ul>
 
@@ -124,15 +125,15 @@
         <div class="leader-head">
           <img src="assets/solomon.jpg" alt="Portrait of Dr Solomon, Founder and Principal Engineer at Lingenious Consulting" class="leader-photo">
           <div>
-            <div class="role">Founder · Managing Director + Principal Engineer</div>
+            <div class="role" data-zh="创办人 · 董事总经理 + 首席工程师">Founder · Managing Director + Principal Engineer</div>
             <h3>Dr Solomon</h3>
-            <div class="subrole">Chartered Civil and Structural Engineer</div>
+            <div class="subrole" data-zh="特许土木及结构工程师（Chartered Civil and Structural Engineer）">Chartered Civil and Structural Engineer</div>
           </div>
         </div>
-        <p>Solomon is a Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery.</p>
-        <p>Holding a PhD in Civil Engineering from Monash University, he leads the technical direction and project advisory functions of Lingenious. His experience spans civil and structural engineering, façade and building assessment, infrastructure inspection, construction-stage advisory, defect management, asset handover and major project coordination.</p>
-        <p>His approach combines engineering rigour with practical consideration of constructability, compliance, commercial constraints and long-term asset performance.</p>
-        <p>Beyond client work, Solomon contributes to the profession as an Engineers Australia interview panelist for Chartered and National Engineering Register (NER) assessment in Structural Engineering, a committee member for Standards Australia's AS 3600 (Concrete Structures), a guest lecturer for Monash University's Master of Advanced Engineering program, and an educator with Western Sydney University and TAFE NSW, where he helped devise and now delivers a multidimensional BIM course.</p>
+        <p data-zh="Solomon 是一位特许土木及结构工程师（Chartered Civil and Structural Engineer），在建筑、交通基础设施、结构评估、资产管理及跨专业项目交付方面拥有丰富经验。">Solomon is a Chartered Civil and Structural Engineer with experience across buildings, transport infrastructure, structural assessment, asset management and multidisciplinary project delivery.</p>
+        <p data-zh="他持有 Monash University（莫纳什大学）土木工程博士（PhD）学位，主导 Lingenious 的技术方向与项目顾问业务。其经验涵盖土木与结构工程、幕墙及建筑评估、基础设施检测、施工阶段顾问、缺陷管理、资产移交及重大项目协调。">Holding a PhD in Civil Engineering from Monash University, he leads the technical direction and project advisory functions of Lingenious. His experience spans civil and structural engineering, façade and building assessment, infrastructure inspection, construction-stage advisory, defect management, asset handover and major project coordination.</p>
+        <p data-zh="他将严谨的工程方法与可施工性、合规性、商业限制及资产长期性能等务实考量相结合。">His approach combines engineering rigour with practical consideration of constructability, compliance, commercial constraints and long-term asset performance.</p>
+        <p data-zh="除客户项目外，Solomon 亦积极回馈工程行业：担任 Engineers Australia（澳大利亚工程师协会）结构工程 Chartered 及 National Engineering Register（NER）评审面试官；担任 Standards Australia（澳大利亚标准协会）AS 3600（混凝土结构标准）委员会委员；担任 Monash University Master of Advanced Engineering（高级工程硕士）课程客座讲师；并与 Western Sydney University 及 TAFE NSW 合作，协助开发并亲自讲授一门多维 BIM（Building Information Modelling，建筑信息模型）课程。">Beyond client work, Solomon contributes to the profession as an Engineers Australia interview panelist for Chartered and National Engineering Register (NER) assessment in Structural Engineering, a committee member for Standards Australia's AS 3600 (Concrete Structures), a guest lecturer for Monash University's Master of Advanced Engineering program, and an educator with Western Sydney University and TAFE NSW, where he helped devise and now delivers a multidimensional BIM course.</p>
         <div class="leader-creds">
           <span>PhD</span><span>CPEng</span><span>NER</span><span>RPEV</span><span>RPEQ</span><span>DBP</span><span>IntPE(Aus)</span><span>APEC Engineer</span>
         </div>
@@ -144,8 +145,8 @@
 <!-- PHOTO BAND -->
 <section class="photo-band" style="background-image:url('https://images.unsplash.com/photo-1503789101408-444b37749472?auto=format&amp;fit=crop&amp;w=1600&amp;q=70')">
   <div class="wrap">
-    <div class="eyebrow">Precision, by habit</div>
-    <div class="band-line">Technical judgement built on decades of hands-on engineering practice.</div>
+    <div class="eyebrow" data-zh="精益求精，已成习惯">Precision, by habit</div>
+    <div class="band-line" data-zh="数十年一线工程实践积累而成的技术判断力。">Technical judgement built on decades of hands-on engineering practice.</div>
   </div>
 </section>
 
@@ -153,9 +154,9 @@
 <section class="cred-band" style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Professionally accountable engineering</div>
-      <h2>Our work is led by appropriately qualified and registered engineering professionals</h2>
-      <p class="lede" style="margin-top:14px;">Experience across building, infrastructure and asset environments, backed by chartered and nationally registered credentials.</p>
+      <div class="eyebrow" data-zh="专业问责的工程服务">Professionally accountable engineering</div>
+      <h2 data-zh="我们的工作由具备适当资质与注册资格的工程专业人员主导">Our work is led by appropriately qualified and registered engineering professionals</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="拥有建筑、基础设施及资产领域的丰富经验，并具备特许及国家注册资格支持。">Experience across building, infrastructure and asset environments, backed by chartered and nationally registered credentials.</p>
     </div>
     <div class="cred-list">
       <span class="cred-chip">CPEng</span>
@@ -174,37 +175,37 @@
 <section style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Industry Involvement</div>
-      <h2>Contributing to the profession, not just practising it</h2>
-      <p class="lede" style="margin-top:14px;">Alongside project work, Dr Solomon holds a number of standing roles that shape engineering standards and the next generation of engineers.</p>
+      <div class="eyebrow" data-zh="行业贡献">Industry Involvement</div>
+      <h2 data-zh="不止于执业，更致力于推动行业发展">Contributing to the profession, not just practising it</h2>
+      <p class="lede" style="margin-top:14px;" data-zh="除项目工作外，Solomon 博士还担任多项长期职务，参与制定工程标准并培养新一代工程师。">Alongside project work, Dr Solomon holds a number of standing roles that shape engineering standards and the next generation of engineers.</p>
     </div>
     <div class="why-grid">
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Engineers Australia — Chartership &amp; NER Panelist</h3>
-          <p>Sits on Engineers Australia interview panels assessing candidates for Chartered membership and National Engineering Register (NER) endorsement in Structural Engineering.</p>
+          <h3 data-zh="Engineers Australia（澳大利亚工程师协会）— Chartership 与 NER 评审面试官">Engineers Australia — Chartership &amp; NER Panelist</h3>
+          <p data-zh="担任 Engineers Australia 结构工程领域 Chartered 会员资格及 National Engineering Register（NER）认证的面试评审委员。">Sits on Engineers Australia interview panels assessing candidates for Chartered membership and National Engineering Register (NER) endorsement in Structural Engineering.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Standards Australia — AS 3600 Committee Member</h3>
-          <p>Committee member for AS 3600 (Concrete Structures), contributing to the review and revision of the Australian concrete design standard.</p>
+          <h3 data-zh="Standards Australia（澳大利亚标准协会）— AS 3600 委员会委员">Standards Australia — AS 3600 Committee Member</h3>
+          <p data-zh="担任 AS 3600（混凝土结构）标准委员会委员，参与澳大利亚混凝土设计标准的审查与修订工作。">Committee member for AS 3600 (Concrete Structures), contributing to the review and revision of the Australian concrete design standard.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Monash University — Guest Lecturer</h3>
-          <p>Guest lecturer for the Master of Advanced Engineering program, sharing practice-based structural engineering experience with postgraduate students.</p>
+          <h3 data-zh="Monash University（莫纳什大学）— 客座讲师">Monash University — Guest Lecturer</h3>
+          <p data-zh="担任 Master of Advanced Engineering（高级工程硕士）课程客座讲师，与研究生分享基于实践的结构工程经验。">Guest lecturer for the Master of Advanced Engineering program, sharing practice-based structural engineering experience with postgraduate students.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Western Sydney University + TAFE NSW — BIM Educator</h3>
-          <p>Helped devise, and now delivers, a multidimensional BIM (Building Information Modelling) course developed with Western Sydney University and TAFE NSW.</p>
+          <h3 data-zh="Western Sydney University 与 TAFE NSW — BIM 课程讲师">Western Sydney University + TAFE NSW — BIM Educator</h3>
+          <p data-zh="协助开发并亲自讲授一门与 Western Sydney University 及 TAFE NSW 合作开设的多维 BIM（Building Information Modelling，建筑信息模型）课程。">Helped devise, and now delivers, a multidimensional BIM (Building Information Modelling) course developed with Western Sydney University and TAFE NSW.</p>
         </div>
       </div>
     </div>
@@ -215,36 +216,36 @@
 <section style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Why Lingenious</div>
-      <h2>What clients can expect</h2>
+      <div class="eyebrow" data-zh="为何选择 Lingenious">Why Lingenious</div>
+      <h2 data-zh="客户可以期待什么">What clients can expect</h2>
     </div>
     <div class="why-grid">
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Senior technical involvement</h3>
-          <p>Projects receive direct involvement from experienced engineering and project professionals, rather than being passed through unnecessary management layers.</p>
+          <h3 data-zh="资深技术人员全程参与">Senior technical involvement</h3>
+          <p data-zh="项目由经验丰富的工程与项目专业人员直接参与，而非层层转交、经过不必要的管理环节。">Projects receive direct involvement from experienced engineering and project professionals, rather than being passed through unnecessary management layers.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Integrated coordination</h3>
-          <p>Engineering disciplines are considered together, reducing gaps between civil, structural, façade, ground, fire and construction requirements.</p>
+          <h3 data-zh="一体化协调">Integrated coordination</h3>
+          <p data-zh="各工程专业统筹考量，减少土木、结构、幕墙、岩土、消防与施工要求之间的脱节。">Engineering disciplines are considered together, reducing gaps between civil, structural, façade, ground, fire and construction requirements.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Practical judgement</h3>
-          <p>Recommendations are developed with constructability, approvals, cost, programme and long-term performance in mind.</p>
+          <h3 data-zh="务实判断">Practical judgement</h3>
+          <p data-zh="我们的建议充分考虑可施工性、审批流程、成本、进度及长期性能表现。">Recommendations are developed with constructability, approvals, cost, programme and long-term performance in mind.</p>
         </div>
       </div>
       <div class="why-item">
         <div class="why-mark">—</div>
         <div>
-          <h3>Clear accountability</h3>
-          <p>Clients receive a defined point of coordination, clear scopes and direct communication throughout the engagement.</p>
+          <h3 data-zh="责任清晰">Clear accountability</h3>
+          <p data-zh="客户在整个合作过程中拥有明确的对接窗口、清晰的服务范围及直接沟通渠道。">Clients receive a defined point of coordination, clear scopes and direct communication throughout the engagement.</p>
         </div>
       </div>
     </div>
@@ -254,9 +255,9 @@
 <!-- TEAM TEASER -->
 <section class="final-cta">
   <div class="wrap">
-    <h2>Meet the people behind the work.</h2>
-    <p>Lingenious is led by Dr Solomon, supported by a growing team of engineering and delivery professionals.</p>
-    <a href="team.html" class="btn btn-primary">Meet The Team <span class="btn-arrow">→</span></a>
+    <h2 data-zh="认识项目背后的团队。">Meet the people behind the work.</h2>
+    <p data-zh="Lingenious 由 Solomon 博士领导，并由不断壮大的工程与交付专业团队提供支持。">Lingenious is led by Dr Solomon, supported by a growing team of engineering and delivery professionals.</p>
+    <a href="team.html" class="btn btn-primary"><span data-zh="认识我们的团队">Meet The Team</span> <span class="btn-arrow">→</span></a>
   </div>
 </section>
 
@@ -265,37 +266,38 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
-        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+        <p data-zh="为住宅、商业、政府及基础设施项目提供跨专业工程、项目管理与施工顾问服务。">Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-zh="服务">Services</h4>
         <ul>
-          <li><a href="services.html#engineering">Engineering</a></li>
-          <li><a href="services.html#project-management">Project Management</a></li>
-          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
-          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+          <li><a href="services.html#engineering" data-zh="Engineering（工程）">Engineering</a></li>
+          <li><a href="services.html#project-management" data-zh="Project Management（项目管理）">Project Management</a></li>
+          <li><a href="services.html#construction-advisory" data-zh="Construction Advisory（施工顾问）">Construction Advisory</a></li>
+          <li><a href="services.html" data-zh="Infrastructure + Asset Advisory（基础设施与资产顾问）">Infrastructure + Asset Advisory</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-zh="公司">Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-zh="关于我们">About</a></li>
+          <li><a href="team.html" data-zh="团队">Team</a></li>
+          <li><a href="projects.html" data-zh="项目">Projects</a></li>
+          <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
-      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a></span>
+      <span class="footer-legal"><a href="privacy-policy.html" data-zh="隐私政策">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
 
 <script src="assets/search-data.js"></script>
 <script src="assets/search.js"></script>
+<script src="assets/lang-toggle.js"></script>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){

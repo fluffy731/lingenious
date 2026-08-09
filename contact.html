@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">
@@ -62,25 +62,26 @@
   <div class="nav">
     <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="sectors.html">Sectors</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+      <a href="index.html" data-zh="首页">Home</a>
+      <a href="services.html" data-zh="服务">Services</a>
+      <a href="sectors.html" data-zh="行业领域">Sectors</a>
+      <a href="about.html" data-zh="关于我们">About</a>
+      <a href="team.html" data-zh="团队">Team</a>
+      <a href="projects.html" data-zh="项目">Projects</a>
+      <a href="contact.html" class="active" data-zh="联系我们">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
 <section class="page-banner" id="main-content">
   <div class="wrap">
-    <div class="disc-breadcrumb"><a href="index.html">Home</a> / Contact</div>
-    <div class="eyebrow">Contact</div>
-    <h1>Discuss Your Engineering Project</h1>
-    <p class="lede">Provide us with the project location, current stage and required services. We will review the information and advise whether Lingenious is appropriately positioned to assist.</p>
+    <div class="disc-breadcrumb"><a href="index.html" data-zh="首页">Home</a> / <span data-zh="联系我们">Contact</span></div>
+    <div class="eyebrow" data-zh="联系我们">Contact</div>
+    <h1 data-zh="洽谈您的工程项目">Discuss Your Engineering Project</h1>
+    <p class="lede" data-zh="请提供项目地点、目前所处阶段及所需服务。我们将审阅相关信息，并告知 Lingenious 是否适合为您提供协助。">Provide us with the project location, current stage and required services. We will review the information and advise whether Lingenious is appropriately positioned to assist.</p>
   </div>
 </section>
 
@@ -89,13 +90,13 @@
   <div class="wrap contact-grid">
     <div class="contact-info">
       <div class="contact-details" style="margin-top:0;">
-        <div><div class="label">Office</div>Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
-        <div><div class="label">Email</div><a href="mailto:solomon@lingenious.com.au">solomon@lingenious.com.au</a></div>
-        <div><div class="label">Phone</div><span class="phone-callout missing" title="A verified phone number has not yet been supplied for publication">Phone number to be confirmed — email us in the meantime</span></div>
+        <div><div class="label" data-zh="办公地址">Office</div>Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
+        <div><div class="label" data-zh="电子邮箱">Email</div><a href="mailto:solomon@lingenious.com.au">solomon@lingenious.com.au</a></div>
+        <div><div class="label" data-zh="电话">Phone</div><span class="phone-callout missing" title="A verified phone number has not yet been supplied for publication" data-zh="电话号码待补充——请先通过邮件联系我们">Phone number to be confirmed — email us in the meantime</span></div>
       </div>
       <div class="response-commit">
         <span aria-hidden="true">⏱</span>
-        <span>We aim to respond to every enquiry — from either form below — within <strong>one business day</strong>.</span>
+        <span data-zh="无论通过以下哪种表单联系，我们都会在一个工作日内回复每一位咨询者。">We aim to respond to every enquiry — from either form below — within <strong>one business day</strong>.</span>
       </div>
       <div class="mini-map">
         <iframe src="https://www.google.com/maps?q=Level+2,+18+Prospect+Street,+Box+Hill+VIC+3128&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lingenious Consulting office location"></iframe>
@@ -104,8 +105,8 @@
 
     <div class="contact-forms">
       <div class="form-toggle" role="tablist" aria-label="Choose an enquiry type">
-        <button type="button" id="tabFast" role="tab" aria-selected="true" aria-controls="fastForm">Fast Enquiry</button>
-        <button type="button" id="tabDetailed" role="tab" aria-selected="false" aria-controls="detailedForm">Detailed Project Brief</button>
+        <button type="button" id="tabFast" role="tab" aria-selected="true" aria-controls="fastForm" data-zh="快速咨询">Fast Enquiry</button>
+        <button type="button" id="tabDetailed" role="tab" aria-selected="false" aria-controls="detailedForm" data-zh="详细项目简介">Detailed Project Brief</button>
       </div>
 
       <!-- FAST ENQUIRY -->
@@ -114,48 +115,48 @@
         <input type="hidden" name="_subject" value="New fast enquiry — Lingenious Consulting website">
 
         <div class="field full" style="margin-bottom:16px;">
-          <label for="fastName">Name<span class="req">*</span></label>
+          <label for="fastName"><span data-zh="姓名">Name</span><span class="req">*</span></label>
           <input type="text" id="fastName" name="name" autocomplete="name" required aria-describedby="fastNameError">
-          <p class="field-error" id="fastNameError" role="alert">Please enter your name.</p>
+          <p class="field-error" id="fastNameError" role="alert" data-zh="请填写您的姓名。">Please enter your name.</p>
         </div>
 
         <div class="form-row">
           <div class="field">
-            <label for="fastEmail">Email</label>
+            <label for="fastEmail" data-zh="电子邮箱">Email</label>
             <input type="email" id="fastEmail" name="email" autocomplete="email" aria-describedby="fastContactHint fastEmailError">
-            <p class="field-error" id="fastEmailError" role="alert">Please enter a valid email address.</p>
+            <p class="field-error" id="fastEmailError" role="alert" data-zh="请填写有效的电子邮箱地址。">Please enter a valid email address.</p>
           </div>
           <div class="field">
-            <label for="fastPhone">Phone</label>
+            <label for="fastPhone" data-zh="电话">Phone</label>
             <input type="tel" id="fastPhone" name="phone" autocomplete="tel" aria-describedby="fastContactHint">
           </div>
         </div>
-        <p class="field-hint" id="fastContactHint" style="margin:-8px 0 16px;">Please provide at least one — email or phone — so we can respond.</p>
-        <p class="field-error" id="fastContactError" role="alert" style="margin:-8px 0 16px;">Please provide an email address or a phone number.</p>
+        <p class="field-hint" id="fastContactHint" style="margin:-8px 0 16px;" data-zh="请至少提供一种联系方式（电子邮箱或电话），以便我们回复您。">Please provide at least one — email or phone — so we can respond.</p>
+        <p class="field-error" id="fastContactError" role="alert" style="margin:-8px 0 16px;" data-zh="请提供电子邮箱地址或电话号码。">Please provide an email address or a phone number.</p>
 
         <div class="field full" style="margin-bottom:16px;">
-          <label for="fastType">Project type<span class="req">*</span></label>
+          <label for="fastType"><span data-zh="项目类型">Project type</span><span class="req">*</span></label>
           <select id="fastType" name="project_type" required>
-            <option value="">Select the closest match…</option>
-            <option value="residential-alterations-extensions">Residential alterations and extensions</option>
-            <option value="commercial-fitouts">Commercial buildings and fit-outs</option>
-            <option value="councils-public-infrastructure">Councils and public infrastructure</option>
-            <option value="structural-facade-defects">Structural and façade defect investigation</option>
-            <option value="bridges-transport-assets">Bridges and transport assets</option>
-            <option value="industrial-warehouse">Industrial and warehouse developments</option>
-            <option value="other">Other / not sure</option>
+            <option value="" data-zh="请选择最接近的类型…">Select the closest match…</option>
+            <option value="residential-alterations-extensions" data-zh="住宅改建与扩建">Residential alterations and extensions</option>
+            <option value="commercial-fitouts" data-zh="商业建筑与室内装修">Commercial buildings and fit-outs</option>
+            <option value="councils-public-infrastructure" data-zh="市政府与公共基础设施">Councils and public infrastructure</option>
+            <option value="structural-facade-defects" data-zh="结构与幕墙缺陷调查">Structural and façade defect investigation</option>
+            <option value="bridges-transport-assets" data-zh="桥梁与交通资产">Bridges and transport assets</option>
+            <option value="industrial-warehouse" data-zh="工业与仓储开发项目">Industrial and warehouse developments</option>
+            <option value="other" data-zh="其他 / 不确定">Other / not sure</option>
           </select>
         </div>
 
         <div class="field full" style="margin-bottom:6px;">
-          <label for="fastDescription">Short project description<span class="req">*</span></label>
+          <label for="fastDescription"><span data-zh="项目简要描述">Short project description</span><span class="req">*</span></label>
           <textarea id="fastDescription" name="description" maxlength="600" required aria-describedby="fastDescriptionHint fastDescriptionError"></textarea>
-          <p class="field-error" id="fastDescriptionError" role="alert">Please add a short description of your project.</p>
+          <p class="field-error" id="fastDescriptionError" role="alert" data-zh="请简要描述您的项目。">Please add a short description of your project.</p>
         </div>
-        <p class="field-hint" id="fastDescriptionHint">A couple of sentences is enough — site, works involved and current stage.</p>
+        <p class="field-hint" id="fastDescriptionHint" data-zh="简单几句话即可——例如场地情况、涉及的工作内容及目前所处阶段。">A couple of sentences is enough — site, works involved and current stage.</p>
 
-        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Fast Enquiry</button>
-        <p class="privacy-note">We only use these details to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information is handled.</p>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;" data-zh="发送快速咨询">Send Fast Enquiry</button>
+        <p class="privacy-note" data-zh='我们仅将这些信息用于回复您的咨询。请查看我们的 <a href="privacy-policy.html">隐私政策</a> 以了解咨询信息的处理方式。'>We only use these details to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information is handled.</p>
         <p class="form-note" id="fastFormStatus" role="status" aria-live="polite"></p>
       </form>
 
@@ -165,75 +166,75 @@
         <input type="hidden" name="_subject" value="New detailed project brief — Lingenious Consulting website">
 
         <div class="form-row">
-          <div class="field"><label for="detName">Name<span class="req">*</span></label><input type="text" id="detName" name="name" autocomplete="name" required aria-describedby="detNameError"><p class="field-error" id="detNameError" role="alert">Please enter your name.</p></div>
-          <div class="field"><label for="detCompany">Company</label><input type="text" id="detCompany" name="company" autocomplete="organization"></div>
+          <div class="field"><label for="detName"><span data-zh="姓名">Name</span><span class="req">*</span></label><input type="text" id="detName" name="name" autocomplete="name" required aria-describedby="detNameError"><p class="field-error" id="detNameError" role="alert" data-zh="请填写您的姓名。">Please enter your name.</p></div>
+          <div class="field"><label for="detCompany" data-zh="公司">Company</label><input type="text" id="detCompany" name="company" autocomplete="organization"></div>
         </div>
         <div class="form-row">
-          <div class="field"><label for="detEmail">Email<span class="req">*</span></label><input type="email" id="detEmail" name="email" autocomplete="email" required aria-describedby="detEmailError"><p class="field-error" id="detEmailError" role="alert">Please enter a valid email address.</p></div>
-          <div class="field"><label for="detPhone">Phone</label><input type="tel" id="detPhone" name="phone" autocomplete="tel"></div>
+          <div class="field"><label for="detEmail"><span data-zh="电子邮箱">Email</span><span class="req">*</span></label><input type="email" id="detEmail" name="email" autocomplete="email" required aria-describedby="detEmailError"><p class="field-error" id="detEmailError" role="alert" data-zh="请填写有效的电子邮箱地址。">Please enter a valid email address.</p></div>
+          <div class="field"><label for="detPhone" data-zh="电话">Phone</label><input type="tel" id="detPhone" name="phone" autocomplete="tel"></div>
         </div>
         <div class="form-row">
-          <div class="field"><label for="detAddress">Project address / location<span class="req">*</span></label><input type="text" id="detAddress" name="address" required aria-describedby="detAddressError"><p class="field-error" id="detAddressError" role="alert">Please enter the project address or location.</p></div>
-          <div class="field"><label for="detType">Project type</label>
+          <div class="field"><label for="detAddress"><span data-zh="项目地址 / 地点">Project address / location</span><span class="req">*</span></label><input type="text" id="detAddress" name="address" required aria-describedby="detAddressError"><p class="field-error" id="detAddressError" role="alert" data-zh="请填写项目地址或地点。">Please enter the project address or location.</p></div>
+          <div class="field"><label for="detType" data-zh="项目类型">Project type</label>
             <select id="detType" name="project_type">
-              <option value="">Select the closest match…</option>
-              <option value="residential-alterations-extensions">Residential alterations and extensions</option>
-              <option value="commercial-fitouts">Commercial buildings and fit-outs</option>
-              <option value="councils-public-infrastructure">Councils and public infrastructure</option>
-              <option value="structural-facade-defects">Structural and façade defect investigation</option>
-              <option value="bridges-transport-assets">Bridges and transport assets</option>
-              <option value="industrial-warehouse">Industrial and warehouse developments</option>
-              <option value="other">Other / not sure</option>
+              <option value="" data-zh="请选择最接近的类型…">Select the closest match…</option>
+              <option value="residential-alterations-extensions" data-zh="住宅改建与扩建">Residential alterations and extensions</option>
+              <option value="commercial-fitouts" data-zh="商业建筑与室内装修">Commercial buildings and fit-outs</option>
+              <option value="councils-public-infrastructure" data-zh="市政府与公共基础设施">Councils and public infrastructure</option>
+              <option value="structural-facade-defects" data-zh="结构与幕墙缺陷调查">Structural and façade defect investigation</option>
+              <option value="bridges-transport-assets" data-zh="桥梁与交通资产">Bridges and transport assets</option>
+              <option value="industrial-warehouse" data-zh="工业与仓储开发项目">Industrial and warehouse developments</option>
+              <option value="other" data-zh="其他 / 不确定">Other / not sure</option>
             </select>
           </div>
         </div>
         <div class="form-row">
           <div class="field">
-            <label for="detStage">Project stage<span class="req">*</span></label>
+            <label for="detStage"><span data-zh="项目阶段">Project stage</span><span class="req">*</span></label>
             <select id="detStage" name="stage" required aria-describedby="detStageError">
-              <option value="">Select current stage…</option>
-              <option value="Concept / feasibility">Concept / feasibility</option>
-              <option value="Design development">Design development</option>
-              <option value="Permit / approval">Permit / approval</option>
-              <option value="Construction">Construction</option>
-              <option value="Completed — defect or assessment issue">Completed — defect or assessment issue</option>
+              <option value="" data-zh="请选择当前阶段…">Select current stage…</option>
+              <option value="Concept / feasibility" data-zh="概念 / 可行性研究">Concept / feasibility</option>
+              <option value="Design development" data-zh="设计深化">Design development</option>
+              <option value="Permit / approval" data-zh="许可 / 审批">Permit / approval</option>
+              <option value="Construction" data-zh="施工阶段">Construction</option>
+              <option value="Completed — defect or assessment issue" data-zh="已竣工——存在缺陷或评估问题">Completed — defect or assessment issue</option>
             </select>
-            <p class="field-error" id="detStageError" role="alert">Please select the current project stage.</p>
+            <p class="field-error" id="detStageError" role="alert" data-zh="请选择当前项目阶段。">Please select the current project stage.</p>
           </div>
-          <div class="field"><label for="detTimeframe">Timeframe</label><input type="text" id="detTimeframe" name="timeframe" placeholder="e.g. Within 4 weeks"></div>
+          <div class="field"><label for="detTimeframe" data-zh="时间安排">Timeframe</label><input type="text" id="detTimeframe" name="timeframe" placeholder="e.g. Within 4 weeks"></div>
         </div>
 
-        <label style="display:block;margin-bottom:10px;">Required services<span class="req">*</span></label>
+        <label style="display:block;margin-bottom:10px;"><span data-zh="所需服务">Required services</span><span class="req">*</span></label>
         <div class="checkbox-grid" id="detServicesGroup" aria-describedby="detServicesError">
-          <label><input type="checkbox" name="services" value="Civil engineering">Civil engineering</label>
-          <label><input type="checkbox" name="services" value="Structural engineering">Structural engineering</label>
-          <label><input type="checkbox" name="services" value="Façade engineering">Façade engineering</label>
-          <label><input type="checkbox" name="services" value="Geotechnical engineering">Geotechnical engineering</label>
-          <label><input type="checkbox" name="services" value="Fire safety engineering">Fire safety engineering</label>
-          <label><input type="checkbox" name="services" value="Landscape and site design">Landscape and site design</label>
-          <label><input type="checkbox" name="services" value="Project management">Project management</label>
-          <label><input type="checkbox" name="services" value="Construction advisory">Construction advisory</label>
-          <label><input type="checkbox" name="services" value="Inspection or defect assessment">Inspection or defect assessment</label>
-          <label><input type="checkbox" name="services" value="Not sure">Not sure</label>
+          <label><input type="checkbox" name="services" value="Civil engineering"><span data-zh="土木工程">Civil engineering</span></label>
+          <label><input type="checkbox" name="services" value="Structural engineering"><span data-zh="结构工程">Structural engineering</span></label>
+          <label><input type="checkbox" name="services" value="Façade engineering"><span data-zh="幕墙工程">Façade engineering</span></label>
+          <label><input type="checkbox" name="services" value="Geotechnical engineering"><span data-zh="岩土工程">Geotechnical engineering</span></label>
+          <label><input type="checkbox" name="services" value="Fire safety engineering"><span data-zh="消防工程">Fire safety engineering</span></label>
+          <label><input type="checkbox" name="services" value="Landscape and site design"><span data-zh="景观与场地设计">Landscape and site design</span></label>
+          <label><input type="checkbox" name="services" value="Project management"><span data-zh="项目管理">Project management</span></label>
+          <label><input type="checkbox" name="services" value="Construction advisory"><span data-zh="施工顾问">Construction advisory</span></label>
+          <label><input type="checkbox" name="services" value="Inspection or defect assessment"><span data-zh="检测或缺陷评估">Inspection or defect assessment</span></label>
+          <label><input type="checkbox" name="services" value="Not sure"><span data-zh="不确定">Not sure</span></label>
         </div>
-        <p class="field-error" id="detServicesError" role="alert" style="margin:-8px 0 18px;">Please select at least one required service.</p>
+        <p class="field-error" id="detServicesError" role="alert" style="margin:-8px 0 18px;" data-zh="请至少选择一项所需服务。">Please select at least one required service.</p>
 
         <div class="field full" style="margin-bottom:16px;">
-          <label for="detDescription">Project description</label>
+          <label for="detDescription" data-zh="项目描述">Project description</label>
           <textarea id="detDescription" name="description" maxlength="2000"></textarea>
         </div>
 
         <div class="field full upload-field" style="margin-bottom:6px;">
-          <label for="detFile">Document upload</label>
+          <label for="detFile" data-zh="上传文件">Document upload</label>
           <input type="file" id="detFile" name="file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.dwg,.zip">
-          <p class="upload-meta">Accepted formats: PDF, JPG, PNG, DOC/DOCX, DWG or ZIP. Maximum file size: 10 MB.</p>
+          <p class="upload-meta" data-zh="支持格式：PDF、JPG、PNG、DOC/DOCX、DWG 或 ZIP。文件大小上限：10 MB。">Accepted formats: PDF, JPG, PNG, DOC/DOCX, DWG or ZIP. Maximum file size: 10 MB.</p>
           <div class="upload-progress" id="uploadProgress"><div class="upload-progress-bar" id="uploadProgressBar"></div></div>
           <p class="upload-status" id="uploadStatus"></p>
         </div>
-        <p class="form-note">Useful documents may include architectural drawings, surveys, geotechnical reports, engineering documents, photographs, notices, permits or relevant correspondence.</p>
+        <p class="form-note" data-zh="可提供的有用文件包括建筑图纸、测量报告、岩土工程报告、工程文件、照片、通知、许可证或相关往来文件。">Useful documents may include architectural drawings, surveys, geotechnical reports, engineering documents, photographs, notices, permits or relevant correspondence.</p>
 
-        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;">Send Project Brief</button>
-        <p class="privacy-note">We only use these details, including any uploaded documents, to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information and uploads are handled.</p>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;width:100%;justify-content:center;" data-zh="发送项目简介">Send Project Brief</button>
+        <p class="privacy-note" data-zh='我们仅将这些信息（包括任何上传的文件）用于回复您的咨询。请查看我们的 <a href="privacy-policy.html">隐私政策</a> 以了解咨询信息及上传文件的处理方式。'>We only use these details, including any uploaded documents, to respond to your enquiry. See our <a href="privacy-policy.html">Privacy Policy</a> for how enquiry information and uploads are handled.</p>
         <p class="form-note" id="detailedFormStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
@@ -244,37 +245,37 @@
 <section id="faq" style="border-bottom:none;">
   <div class="wrap">
     <div class="section-head">
-      <div class="eyebrow">Frequently asked</div>
-      <h2>Common questions about engaging an engineering consultant</h2>
+      <div class="eyebrow" data-zh="常见问题">Frequently asked</div>
+      <h2 data-zh="关于聘请工程顾问的常见问题">Common questions about engaging an engineering consultant</h2>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Do I need a structural engineer for a small renovation or extension?<span class="faq-icon">+</span></summary>
-        <p>Most councils and building surveyors require structural engineering input wherever works affect load-bearing elements — this often includes alterations, extensions, retaining walls and even some internal renovations. We can advise early whether your project needs structural input or certification.</p>
+        <summary><span data-zh="小型翻新或加建项目是否需要结构工程师？">Do I need a structural engineer for a small renovation or extension?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="大多数市政府及建筑测量师都要求，凡涉及承重构件的工程均需结构工程师参与——这通常包括改建、扩建、挡土墙，甚至部分室内翻新。我们可以及早为您判断项目是否需要结构工程输入或认证。">Most councils and building surveyors require structural engineering input wherever works affect load-bearing elements — this often includes alterations, extensions, retaining walls and even some internal renovations. We can advise early whether your project needs structural input or certification.</p>
       </details>
       <details class="faq-item">
-        <summary>What's the difference between a building surveyor and a structural engineer?<span class="faq-icon">+</span></summary>
-        <p>A building surveyor or certifier assesses overall compliance with the National Construction Code and issues permits. A structural engineer designs and certifies the structural elements themselves. Most projects need both, working together.</p>
+        <summary><span data-zh="建筑测量师与结构工程师有什么区别？">What's the difference between a building surveyor and a structural engineer?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="建筑测量师（或认证机构）负责评估项目是否整体符合国家建筑规范（NCC）并核发许可证；结构工程师则负责设计并认证结构构件本身。大多数项目需要两者协同配合。">A building surveyor or certifier assesses overall compliance with the National Construction Code and issues permits. A structural engineer designs and certifies the structural elements themselves. Most projects need both, working together.</p>
       </details>
       <details class="faq-item">
-        <summary>Can Lingenious manage my project as well as provide the engineering?<span class="faq-icon">+</span></summary>
-        <p>Yes. Engineering and project management or construction advisory can be engaged together or separately, depending on how much day-to-day coordination your project needs.</p>
+        <summary><span data-zh="Lingenious 除了提供工程服务，是否也能管理我的项目？">Can Lingenious manage my project as well as provide the engineering?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="可以。工程服务与项目管理或施工顾问服务既可一并委托，也可分开委托，具体取决于您的项目所需的日常协调程度。">Yes. Engineering and project management or construction advisory can be engaged together or separately, depending on how much day-to-day coordination your project needs.</p>
       </details>
       <details class="faq-item">
-        <summary>Do you provide fire engineering reports and performance solutions?<span class="faq-icon">+</span></summary>
-        <p>Fire safety engineering services are delivered by, or coordinated with, appropriately qualified and registered fire safety practitioners as part of the Lingenious project team.</p>
+        <summary><span data-zh="是否提供消防工程报告及性能解决方案？">Do you provide fire engineering reports and performance solutions?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="消防安全工程服务由 Lingenious 项目团队中具备适当资质与注册资格的消防安全从业人员提供或协调完成。">Fire safety engineering services are delivered by, or coordinated with, appropriately qualified and registered fire safety practitioners as part of the Lingenious project team.</p>
       </details>
       <details class="faq-item">
-        <summary>What areas do you service?<span class="faq-icon">+</span></summary>
-        <p>We are based in Melbourne and work primarily across Victoria, with additional experience across transport, rail and civil infrastructure projects. Get in touch with your project location and we'll advise whether we're well placed to help.</p>
+        <summary><span data-zh="你们的服务范围覆盖哪些地区？">What areas do you service?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="我们总部位于墨尔本，主要服务维多利亚州，并在交通、轨道及土木基础设施项目方面拥有丰富经验。欢迎告知您的项目地点，我们将为您判断是否适合提供协助。">We are based in Melbourne and work primarily across Victoria, with additional experience across transport, rail and civil infrastructure projects. Get in touch with your project location and we'll advise whether we're well placed to help.</p>
       </details>
       <details class="faq-item">
-        <summary>How long does a structural assessment or defect investigation take?<span class="faq-icon">+</span></summary>
-        <p>Turnaround depends on scope and site access. We aim to acknowledge every enquiry within one business day and will confirm a realistic programme once we understand the site and requirements.</p>
+        <summary><span data-zh="结构评估或缺陷调查通常需要多长时间？">How long does a structural assessment or defect investigation take?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="所需时间取决于服务范围及现场可进入情况。我们承诺在一个工作日内回复每一位咨询者，并在了解现场情况及具体需求后确认切实可行的进度安排。">Turnaround depends on scope and site access. We aim to acknowledge every enquiry within one business day and will confirm a realistic programme once we understand the site and requirements.</p>
       </details>
       <details class="faq-item">
-        <summary>Do you only work on new projects, or can you help with existing building issues?<span class="faq-icon">+</span></summary>
-        <p>Both. We regularly assess existing buildings and infrastructure for defects, structural adequacy and remediation options, alongside new design and delivery work.</p>
+        <summary><span data-zh="你们只承接新项目吗，还是也能处理既有建筑的问题？">Do you only work on new projects, or can you help with existing building issues?</span><span class="faq-icon">+</span></summary>
+        <p data-zh="两者皆可。除新项目设计与交付工作外，我们也定期为既有建筑及基础设施评估缺陷、结构可靠性及修复方案。">Both. We regularly assess existing buildings and infrastructure for defects, structural adequacy and remediation options, alongside new design and delivery work.</p>
       </details>
     </div>
   </div>
@@ -285,37 +286,38 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
-        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+        <p data-zh="为住宅、商业、政府及基础设施项目提供跨专业工程、项目管理与施工顾问服务。">Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-zh="服务">Services</h4>
         <ul>
-          <li><a href="services.html#engineering">Engineering</a></li>
-          <li><a href="services.html#project-management">Project Management</a></li>
-          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
-          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+          <li><a href="services.html#engineering" data-zh="Engineering（工程）">Engineering</a></li>
+          <li><a href="services.html#project-management" data-zh="Project Management（项目管理）">Project Management</a></li>
+          <li><a href="services.html#construction-advisory" data-zh="Construction Advisory（施工顾问）">Construction Advisory</a></li>
+          <li><a href="services.html" data-zh="Infrastructure + Asset Advisory（基础设施与资产顾问）">Infrastructure + Asset Advisory</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-zh="公司">Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-zh="关于我们">About</a></li>
+          <li><a href="team.html" data-zh="团队">Team</a></li>
+          <li><a href="projects.html" data-zh="项目">Projects</a></li>
+          <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
-      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a></span>
+      <span class="footer-legal"><a href="privacy-policy.html" data-zh="隐私政策">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
 
 <script src="assets/search-data.js"></script>
 <script src="assets/search.js"></script>
+<script src="assets/lang-toggle.js"></script>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){

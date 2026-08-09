@@ -19,7 +19,7 @@
 <meta name="twitter:image" content="https://lingenious.com.au/assets/homepagebackground.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Jost:wght@500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style.css?v=2">
 <script type="application/ld+json">
@@ -62,25 +62,26 @@
   <div class="nav">
     <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory"></a>
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="sectors.html" class="active">Sectors</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary nav-cta">Discuss Your Project</a>
+      <a href="index.html" data-zh="首页">Home</a>
+      <a href="services.html" data-zh="服务">Services</a>
+      <a href="sectors.html" class="active" data-zh="行业领域">Sectors</a>
+      <a href="about.html" data-zh="关于我们">About</a>
+      <a href="team.html" data-zh="团队">Team</a>
+      <a href="projects.html" data-zh="项目">Projects</a>
+      <a href="contact.html" data-zh="联系我们">Contact</a>
+      <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
     </nav>
+    <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Chinese (Simplified)">中文</button>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
   </div>
 </header>
 
 <section class="page-banner" id="main-content">
   <div class="wrap">
-    <div class="disc-breadcrumb"><a href="index.html">Home</a> / Sectors</div>
-    <div class="eyebrow">Sectors</div>
-    <h1>Sectors We Support</h1>
-    <p class="lede">Lingenious works across residential, commercial, government and infrastructure environments. Each sector below sets out who it's for, the challenges we typically see, the relevant services and deliverables, and a tailored way to start an enquiry.</p>
+    <div class="disc-breadcrumb"><a href="index.html" data-zh="首页">Home</a> / <span data-zh="行业领域">Sectors</span></div>
+    <div class="eyebrow" data-zh="行业领域">Sectors</div>
+    <h1 data-zh="我们服务的行业领域">Sectors We Support</h1>
+    <p class="lede" data-zh="Lingenious 的业务涵盖住宅、商业、政府及基础设施领域。以下每个行业板块均说明了适用对象、常见挑战、相关服务与交付成果，并提供针对性的咨询方式。">Lingenious works across residential, commercial, government and infrastructure environments. Each sector below sets out who it's for, the challenges we typically see, the relevant services and deliverables, and a tailored way to start an enquiry.</p>
   </div>
 </section>
 
@@ -89,33 +90,33 @@
     <div class="sector-landing-grid">
       <a class="sector-landing-card" href="sector-residential-alterations-extensions.html">
         <span class="tile-num">01</span>
-        <h3>Residential Alterations + Extensions <span class="tile-arrow">→</span></h3>
-        <p>Structural and civil engineering for house alterations, extensions and renovations.</p>
+        <h3><span data-zh="住宅改建与扩建">Residential Alterations + Extensions</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="为住宅改建、扩建及翻新提供结构与土木工程服务。">Structural and civil engineering for house alterations, extensions and renovations.</p>
       </a>
       <a class="sector-landing-card" href="sector-commercial-fitouts.html">
         <span class="tile-num">02</span>
-        <h3>Commercial Buildings + Fit-Outs <span class="tile-arrow">→</span></h3>
-        <p>Structural, façade and project engineering for commercial buildings and tenancy fit-outs.</p>
+        <h3><span data-zh="商业建筑与室内装修">Commercial Buildings + Fit-Outs</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="为商业建筑及租户室内装修提供结构、幕墙及项目工程服务。">Structural, façade and project engineering for commercial buildings and tenancy fit-outs.</p>
       </a>
       <a class="sector-landing-card" href="sector-councils-public-infrastructure.html">
         <span class="tile-num">03</span>
-        <h3>Councils + Public Infrastructure <span class="tile-arrow">→</span></h3>
-        <p>Civil, structural and asset advisory support for councils and public infrastructure owners.</p>
+        <h3><span data-zh="市政府与公共基础设施">Councils + Public Infrastructure</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="为市政府及公共基础设施业主提供土木、结构及资产顾问支持。">Civil, structural and asset advisory support for councils and public infrastructure owners.</p>
       </a>
       <a class="sector-landing-card" href="sector-structural-facade-defects.html">
         <span class="tile-num">04</span>
-        <h3>Structural + Façade Defect Investigations <span class="tile-arrow">→</span></h3>
-        <p>Independent investigation, cause diagnosis and remediation advice for existing buildings.</p>
+        <h3><span data-zh="结构与幕墙缺陷调查">Structural + Façade Defect Investigations</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="为既有建筑提供独立调查、原因诊断及修复建议。">Independent investigation, cause diagnosis and remediation advice for existing buildings.</p>
       </a>
       <a class="sector-landing-card" href="sector-bridges-transport-assets.html">
         <span class="tile-num">05</span>
-        <h3>Bridges + Transport Assets <span class="tile-arrow">→</span></h3>
-        <p>Bridge and transport asset inspection, condition assessment and structural advisory.</p>
+        <h3><span data-zh="桥梁与交通资产">Bridges + Transport Assets</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="桥梁及交通资产检测、状况评估及结构顾问服务。">Bridge and transport asset inspection, condition assessment and structural advisory.</p>
       </a>
       <a class="sector-landing-card" href="sector-industrial-warehouse.html">
         <span class="tile-num">06</span>
-        <h3>Industrial + Warehouse Developments <span class="tile-arrow">→</span></h3>
-        <p>Civil, structural and geotechnical engineering for industrial and warehouse facilities.</p>
+        <h3><span data-zh="工业与仓储开发项目">Industrial + Warehouse Developments</span> <span class="tile-arrow">→</span></h3>
+        <p data-zh="为工业及仓储设施提供土木、结构及岩土工程服务。">Civil, structural and geotechnical engineering for industrial and warehouse facilities.</p>
       </a>
     </div>
   </div>
@@ -124,9 +125,9 @@
 <!-- FINAL CTA -->
 <section class="final-cta">
   <div class="wrap">
-    <h2>Not sure which sector fits your project?</h2>
-    <p>Tell us about the site, the stage you're at and what you need — we'll advise how Lingenious can help and the right delivery pathway.</p>
-    <a href="contact.html" class="btn btn-primary">Discuss Your Project <span class="btn-arrow">→</span></a>
+    <h2 data-zh="不确定哪个行业领域适合您的项目？">Not sure which sector fits your project?</h2>
+    <p data-zh="告诉我们您的场地情况、目前所处阶段及具体需求——我们将为您说明 Lingenious 能提供的协助及合适的交付方式。">Tell us about the site, the stage you're at and what you need — we'll advise how Lingenious can help and the right delivery pathway.</p>
+    <a href="contact.html" class="btn btn-primary"><span data-zh="洽谈项目">Discuss Your Project</span> <span class="btn-arrow">→</span></a>
   </div>
 </section>
 
@@ -135,37 +136,38 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="assets/logo.png" alt="Lingenious Consulting — Engineering + Advisory" class="footer-logo">
-        <p>Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
+        <p data-zh="为住宅、商业、政府及基础设施项目提供跨专业工程、项目管理与施工顾问服务。">Multidisciplinary engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.</p>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
+        <h4 data-zh="服务">Services</h4>
         <ul>
-          <li><a href="services.html#engineering">Engineering</a></li>
-          <li><a href="services.html#project-management">Project Management</a></li>
-          <li><a href="services.html#construction-advisory">Construction Advisory</a></li>
-          <li><a href="services.html">Infrastructure + Asset Advisory</a></li>
+          <li><a href="services.html#engineering" data-zh="Engineering（工程）">Engineering</a></li>
+          <li><a href="services.html#project-management" data-zh="Project Management（项目管理）">Project Management</a></li>
+          <li><a href="services.html#construction-advisory" data-zh="Construction Advisory（施工顾问）">Construction Advisory</a></li>
+          <li><a href="services.html" data-zh="Infrastructure + Asset Advisory（基础设施与资产顾问）">Infrastructure + Asset Advisory</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h4 data-zh="公司">Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" data-zh="关于我们">About</a></li>
+          <li><a href="team.html" data-zh="团队">Team</a></li>
+          <li><a href="projects.html" data-zh="项目">Projects</a></li>
+          <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Lingenious Consulting. All rights reserved.</span>
+      <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
       <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
-      <span class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a></span>
+      <span class="footer-legal"><a href="privacy-policy.html" data-zh="隐私政策">Privacy Policy</a></span>
     </div>
   </div>
 </footer>
 
 <script src="assets/search-data.js"></script>
 <script src="assets/search.js"></script>
+<script src="assets/lang-toggle.js"></script>
 
 <script>
   document.getElementById('navToggle').addEventListener('click', function(){
