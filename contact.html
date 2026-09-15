@@ -32,7 +32,7 @@
   "logo": "https://lingenious.com.au/assets/logo.png",
   "image": "https://lingenious.com.au/assets/homepagebackground.png",
   "description": "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory across residential, commercial, government and infrastructure projects.",
-  "email": "solomon@lingenious.com.au",
+  "email": "engineering@lingenious.com.au",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Level 2, 18 Prospect Street",
@@ -41,8 +41,7 @@
     "postalCode": "3128",
     "addressCountry": "AU"
   },
-  "areaServed": "AU-VIC",
-  "founder": { "@type": "Person", "name": "Dr Solomon" }
+  "areaServed": "AU-VIC"
 }
 </script>
 <script type="application/ld+json">
@@ -67,7 +66,6 @@
       <a href="services.html" data-zh="服务">Services</a>
       <a href="sectors.html" data-zh="行业领域">Sectors</a>
       <a href="about.html" data-zh="关于我们">About</a>
-      <a href="team.html" data-zh="团队">Team</a>
       <a href="projects.html" data-zh="项目">Projects</a>
       <a href="contact.html" class="active" data-zh="联系我们">Contact</a>
       <a href="contact.html" class="btn btn-primary nav-cta" data-zh="洽谈项目">Discuss Your Project</a>
@@ -92,7 +90,7 @@
     <div class="contact-info">
       <div class="contact-details" style="margin-top:0;">
         <div><div class="label" data-zh="办公地址">Office</div>Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
-        <div><div class="label" data-zh="电子邮箱">Email</div><a href="mailto:solomon@lingenious.com.au">solomon@lingenious.com.au</a></div>
+        <div><div class="label" data-zh="电子邮箱">Email</div><a href="mailto:engineering@lingenious.com.au">engineering@lingenious.com.au</a></div>
         <div><div class="label" data-zh="电话">Phone</div><span class="phone-callout missing" title="A verified phone number has not yet been supplied for publication" data-zh="电话号码待补充——请先通过邮件联系我们">Phone number to be confirmed — email us in the meantime</span></div>
       </div>
       <div class="response-commit">
@@ -302,7 +300,6 @@
         <h4 data-zh="公司">Company</h4>
         <ul>
           <li><a href="about.html" data-zh="关于我们">About</a></li>
-          <li><a href="team.html" data-zh="团队">Team</a></li>
           <li><a href="projects.html" data-zh="项目">Projects</a></li>
           <li><a href="contact.html" data-zh="联系我们">Contact</a></li>
         </ul>
@@ -310,7 +307,7 @@
     </div>
     <div class="footer-bottom">
       <span data-zh="© 2026 Lingenious Consulting. 保留所有权利。">© 2026 Lingenious Consulting. All rights reserved.</span>
-      <span>Box Hill, Victoria — solomon@lingenious.com.au</span>
+      <span>Box Hill, Victoria — engineering@lingenious.com.au</span>
       <span class="footer-legal"><a href="privacy-policy.html" data-zh="隐私政策">Privacy Policy</a></span>
     </div>
   </div>
@@ -473,11 +470,11 @@
         trackConversion('fast_enquiry');
         window.location.href = 'enquiry-confirmation.html?type=fast';
       } else {
-        status.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+        status.textContent = 'Something went wrong sending your enquiry. Please email engineering@lingenious.com.au directly.';
         status.style.color = '#c0392b';
       }
     }).catch(function(){
-      status.textContent = 'Something went wrong sending your enquiry. Please email solomon@lingenious.com.au directly.';
+      status.textContent = 'Something went wrong sending your enquiry. Please email engineering@lingenious.com.au directly.';
       status.style.color = '#c0392b';
     }).finally(function(){
       submitBtn.disabled = false;
@@ -547,7 +544,7 @@
         trackConversion('detailed_brief');
         window.location.href = 'enquiry-confirmation.html?type=detailed';
       } else {
-        status.textContent = 'Something went wrong sending your project brief. Please email solomon@lingenious.com.au directly.';
+        status.textContent = 'Something went wrong sending your project brief. Please email engineering@lingenious.com.au directly.';
         status.style.color = '#c0392b';
         if (hasFile){
           uploadStatus.textContent = 'Upload failed — please try again or email the file directly.';
@@ -558,7 +555,7 @@
     xhr.onerror = function(){
       submitBtn.disabled = false;
       submitBtn.textContent = originalText;
-      status.textContent = 'Something went wrong sending your project brief. Please email solomon@lingenious.com.au directly.';
+      status.textContent = 'Something went wrong sending your project brief. Please email engineering@lingenious.com.au directly.';
       status.style.color = '#c0392b';
       if (hasFile){
         uploadStatus.textContent = 'Upload failed — please try again or email the file directly.';

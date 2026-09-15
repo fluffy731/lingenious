@@ -6,7 +6,6 @@
 window.LINGENIOUS_SEARCH_INDEX = [
   { title: "Home", url: "index.html", category: "Page", description: "Melbourne-based engineering and advisory firm providing civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory." },
   { title: "About", url: "about.html", category: "Page", description: "Lingenious Consulting is an engineering-led professional services firm based in Melbourne, providing multidisciplinary engineering, project management and construction advisory." },
-  { title: "Team", url: "team.html", category: "Page", description: "Meet the Lingenious Consulting team — engineering, project management and delivery professionals led by Dr Solomon." },
   { title: "Services", url: "services.html", category: "Page", description: "Engineering, project management and construction advisory services from Lingenious Consulting, coordinated across residential, commercial, government and infrastructure projects." },
   { title: "Sectors We Support", url: "sectors.html", category: "Page", description: "Engineering and advisory pathways for residential, commercial, council, infrastructure, defect investigation and industrial sectors." },
   { title: "Projects", url: "projects.html", category: "Page", description: "Selected engineering commissions, technical assessments, infrastructure inspections and project advisory delivered by Lingenious Consulting." },
