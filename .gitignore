@@ -1,4 +1,7 @@
-.claude/
+# Claude Code: ignore local/session state, but track the vendored project skills
+# so they load automatically in every session (see .claude/skills/README.md).
+.claude/*
+!.claude/skills/
 files.zip
 
 # Raw source project files (client drawings, permits, tenders) — never commit/push.
