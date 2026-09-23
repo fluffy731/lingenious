@@ -7,12 +7,28 @@
 
   Posters are click-to-enlarge: a poster is only useful if its text is readable,
   and card-sized thumbnails are not.
+
+  Bilingual: every translatable node carries data-zh, matching the rest of the
+  site. assets/lang-toggle.js captures its [data-zh] node list once when it
+  loads, so events.html deliberately loads this renderer BEFORE lang-toggle.js
+  — otherwise the cards would render after the capture and never translate.
 */
 (function () {
   function escapeHtml(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
+  }
+
+  // escapeHtml already turns " into &quot;, so this is attribute-safe.
+  function zhAttr(zh) {
+    return zh ? ' data-zh="' + escapeHtml(zh) + '"' : "";
+  }
+
+  // For values already escaped by the caller, which may carry entities such as
+  // &mdash; that must survive into the attribute rather than be escaped again.
+  function zhAttrRaw(zhHtml) {
+    return zhHtml ? ' data-zh="' + zhHtml + '"' : "";
   }
 
   function todayISO() {
@@ -27,6 +43,10 @@
     return (ev.endDate || ev.startDate || "") < today;
   }
 
+  function isExternal(url) {
+    return /^https?:\/\//i.test(url || "");
+  }
+
   function posterHTML(ev) {
     if (!ev.poster) return "";
     var alt = escapeHtml(ev.posterAlt || (ev.name ? "Poster for " + ev.name : "Event poster"));
@@ -34,80 +54,94 @@
       ' data-poster="' + escapeHtml(ev.poster) + '" data-poster-alt="' + alt + '"' +
       ' aria-label="Enlarge poster: ' + alt + '">' +
       '<img src="' + escapeHtml(ev.poster) + '" alt="' + alt + '" loading="lazy">' +
-      '<span class="event-poster-hint" aria-hidden="true">Click to enlarge</span>' +
+      '<span class="event-poster-hint" aria-hidden="true" data-zh="点击放大">Click to enlarge</span>' +
       '</button>';
   }
 
-  function dateHTML(ev) {
-    var label = escapeHtml(ev.dateLabel || "Date to be confirmed");
-    if (ev.dateConfirmed === false && ev.dateLabel) label += " &mdash; date to be confirmed";
-    return label;
+  function draftHTML(ev) {
+    return ev.draft
+      ? '<span class="event-draft" data-zh="详情待确认">Details to be confirmed</span>'
+      : "";
   }
 
-  function isExternal(url) {
-    return /^https?:\/\//i.test(url || "");
+  function dateHTML(ev) {
+    var en = escapeHtml(ev.dateLabel || "Date to be confirmed");
+    var zh = escapeHtml(ev.dateLabelZh || ev.dateLabel || "日期待确认");
+    if (ev.dateConfirmed === false && ev.dateLabel) {
+      en += " &mdash; date to be confirmed";
+      zh += " &mdash; 日期待确认";
+    }
+    return '<div class="event-date"' + zhAttrRaw(zh) + ">" + en + "</div>";
   }
 
   function topicsHTML(ev) {
-    var topics = (ev.topics || []).map(function (t) {
-      return '<span class="card-tag">' + escapeHtml(t) + '</span>';
+    var en = ev.topics || [];
+    var zh = ev.topicsZh || [];
+    if (!en.length) return "";
+    var chips = en.map(function (t, i) {
+      return '<span class="card-tag"' + zhAttr(zh[i]) + ">" + escapeHtml(t) + "</span>";
     }).join("");
-    return topics ? '<div class="card-tag-row">' + topics + '</div>' : "";
+    return '<div class="card-tag-row">' + chips + "</div>";
   }
 
-  function linkHTML(ev) {
+  function ctaHTML(ev, cls) {
     if (!ev.url) return "";
     var ext = isExternal(ev.url);
-    return '<a class="event-link" href="' + escapeHtml(ev.url) + '"' +
-      (ext ? ' target="_blank" rel="noopener noreferrer"' : "") + '>' +
-      escapeHtml(ev.urlLabel || "Event details") +
-      '<span class="btn-arrow">' + (ext ? "&#8599;" : "&rarr;") + '</span>' +
-      '</a>';
+    return '<a class="' + cls + '" href="' + escapeHtml(ev.url) + '"' +
+      (ext ? ' target="_blank" rel="noopener noreferrer"' : "") + ">" +
+      "<span" + zhAttr(ev.urlLabelZh) + ">" + escapeHtml(ev.urlLabel || "Event details") + "</span> " +
+      '<span class="btn-arrow">' + (ext ? "&#8599;" : "&rarr;") + "</span>" +
+      "</a>";
+  }
+
+  function factsHTML(ev) {
+    function row(labelEn, labelZh, valueEn, valueZh) {
+      return "<li>" +
+        '<span class="label"' + zhAttr(labelZh) + ">" + escapeHtml(labelEn) + "</span>" +
+        "<span" + zhAttr(valueZh || "待确认") + ">" + escapeHtml(valueEn || "To be confirmed") + "</span>" +
+        "</li>";
+    }
+    return '<ul class="event-facts">' +
+      row("When", "时间", ev.dateLabel, ev.dateLabelZh) +
+      row("Where", "地点", ev.location, ev.locationZh) +
+      row("Format", "形式", ev.format, ev.formatZh) +
+      "</ul>";
   }
 
   function featuredHTML(ev) {
-    var ext = isExternal(ev.url);
-    var cta = ev.url
-      ? '<a class="btn btn-primary" href="' + escapeHtml(ev.url) + '"' +
-        (ext ? ' target="_blank" rel="noopener noreferrer"' : "") + '>' +
-        escapeHtml(ev.urlLabel || "Event details") +
-        ' <span class="btn-arrow">' + (ext ? "&#8599;" : "&rarr;") + '</span></a>'
-      : "";
-
     return '<div class="event-featured" id="' + escapeHtml(ev.id || "") + '">' +
       posterHTML(ev) +
-      '<div>' +
-        (ev.draft ? '<span class="event-draft">Details to be confirmed</span>' : "") +
-        '<div class="event-date">' + dateHTML(ev) + '</div>' +
-        '<h2>' + escapeHtml(ev.name) + '</h2>' +
-        '<p>' + escapeHtml(ev.summary) + '</p>' +
-        '<ul class="event-facts">' +
-          '<li><span class="label">When</span>' + escapeHtml(ev.dateLabel || "To be confirmed") + '</li>' +
-          '<li><span class="label">Where</span>' + escapeHtml(ev.location || "To be confirmed") + '</li>' +
-          '<li><span class="label">Format</span>' + escapeHtml(ev.format || "To be confirmed") + '</li>' +
-        '</ul>' +
-        '<div class="event-actions">' + cta +
-          '<a class="btn btn-secondary" href="contact.html">Ask us about this event</a>' +
-        '</div>' +
+      "<div>" +
+        draftHTML(ev) +
+        dateHTML(ev) +
+        "<h2" + zhAttr(ev.nameZh) + ">" + escapeHtml(ev.name) + "</h2>" +
+        "<p" + zhAttr(ev.summaryZh) + ">" + escapeHtml(ev.summary) + "</p>" +
+        factsHTML(ev) +
+        '<div class="event-actions">' +
+          ctaHTML(ev, "btn btn-primary") +
+          '<a class="btn btn-secondary" href="contact.html" data-zh="咨询此活动">Ask us about this event</a>' +
+        "</div>" +
         topicsHTML(ev) +
-      '</div>' +
-    '</div>';
+      "</div>" +
+    "</div>";
   }
 
   function cardHTML(ev, past) {
+    var metaEn = (ev.location || "Location to be confirmed") + (ev.format ? " · " + ev.format : "");
+    var metaZh = (ev.locationZh || ev.location || "地点待确认") + (ev.formatZh || ev.format ? " · " + (ev.formatZh || ev.format) : "");
+
     return '<div class="event-card' + (past ? " is-past" : "") + '" id="' + escapeHtml(ev.id || "") + '">' +
       posterHTML(ev) +
       '<div class="event-body">' +
-        (ev.draft ? '<span class="event-draft">Details to be confirmed</span>' : "") +
-        '<div class="event-date">' + dateHTML(ev) + '</div>' +
-        '<h3>' + escapeHtml(ev.name) + '</h3>' +
-        '<p>' + escapeHtml(ev.summary) + '</p>' +
+        draftHTML(ev) +
+        dateHTML(ev) +
+        "<h3" + zhAttr(ev.nameZh) + ">" + escapeHtml(ev.name) + "</h3>" +
+        "<p" + zhAttr(ev.summaryZh) + ">" + escapeHtml(ev.summary) + "</p>" +
         topicsHTML(ev) +
-        '<div class="event-meta">' + escapeHtml(ev.location || "Location to be confirmed") +
-          (ev.format ? " &middot; " + escapeHtml(ev.format) : "") + '</div>' +
-        linkHTML(ev) +
-      '</div>' +
-    '</div>';
+        '<div class="event-meta"' + zhAttr(metaZh) + ">" + escapeHtml(metaEn) + "</div>" +
+        (ev.url ? ctaHTML(ev, "event-link") : "") +
+      "</div>" +
+    "</div>";
   }
 
   /* ---------- poster lightbox ---------- */
@@ -186,12 +220,16 @@
         featuredWrap.innerHTML = featuredHTML(featured);
       } else {
         featuredWrap.innerHTML =
-          '<div class="empty-state">No events are scheduled at the moment. ' +
+          '<div class="empty-state" data-zh="目前暂无已安排的活动。<a href=&quot;contact.html&quot; style=&quot;color:var(--navy);text-decoration:underline;&quot;>联系我们</a>，以了解后续活动安排。">' +
+          "No events are scheduled at the moment. " +
           '<a href="contact.html" style="color:var(--navy);text-decoration:underline;">Get in touch</a> ' +
-          'to hear about upcoming sessions.</div>';
+          "to hear about upcoming sessions.</div>";
         if (featuredSection) {
           var head = featuredSection.querySelector(".section-head h2");
-          if (head) head.textContent = "Nothing scheduled right now";
+          if (head) {
+            head.textContent = "Nothing scheduled right now";
+            head.setAttribute("data-zh", "目前暂无安排");
+          }
         }
       }
     }
