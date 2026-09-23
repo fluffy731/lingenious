@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 848" width="600" height="848" role="img" aria-label="Placeholder — event poster artwork to be added">
+  <defs>
+    <pattern id="lg-poster-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#FFFFFF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="848" fill="#0B1F4D"/>
+  <rect width="600" height="848" fill="url(#lg-poster-grid)"/>
+
+  <!-- corner marks (matches .corner-mark CAD motif) -->
+  <path d="M40 76V40H76" fill="none" stroke="#F47A21" stroke-width="3"/>
+  <path d="M560 772v36h-36" fill="none" stroke="#F47A21" stroke-width="3"/>
+
+  <!-- centre mark (matches .centerline-mark logo glyph) -->
+  <g transform="translate(300 352) scale(2.6) translate(-24 -24)">
+    <path d="M29.1 29.1A10 10 0 1 1 29.1 14.9" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="4.2" stroke-linecap="round"/>
+    <path d="M22 6V38H36" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="4.2" stroke-linecap="square"/>
+  </g>
+
+  <line x1="200" y1="470" x2="400" y2="470" stroke="#F47A21" stroke-width="1"/>
+  <text x="300" y="516" text-anchor="middle" fill="#F47A21"
+        font-family="'IBM Plex Mono', monospace" font-size="17" letter-spacing="3.4">POSTER ARTWORK</text>
+  <text x="300" y="552" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.66"
+        font-family="'IBM Plex Mono', monospace" font-size="15" letter-spacing="2.4">TO BE ADDED</text>
+  <text x="300" y="604" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.42"
+        font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="1.6">assets/events/</text>
+</svg>

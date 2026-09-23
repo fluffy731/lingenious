@@ -10,6 +10,7 @@ window.LINGENIOUS_SEARCH_INDEX = [
   { title: "Services", url: "services.html", category: "Page", description: "Engineering, project management and construction advisory services from Lingenious Consulting, coordinated across residential, commercial, government and infrastructure projects." },
   { title: "Sectors We Support", url: "sectors.html", category: "Page", description: "Engineering and advisory pathways for residential, commercial, council, infrastructure, defect investigation and industrial sectors." },
   { title: "Projects", url: "projects.html", category: "Page", description: "Selected engineering commissions, technical assessments, infrastructure inspections and project advisory delivered by Lingenious Consulting." },
+  { title: "Events", url: "events.html", category: "Page", description: "Industry briefings, technical sessions and events hosted by Lingenious Consulting for building owners, councils, builders and design teams." },
   { title: "Contact", url: "contact.html", category: "Page", description: "Discuss your project with Lingenious Consulting — civil, structural, façade, geotechnical and fire safety engineering, project management and construction advisory." },
 
   { title: "Civil Engineering", url: "civil-engineering.html", category: "Discipline", description: "Civil engineering solutions for site development, drainage, earthworks, access and supporting infrastructure." },
