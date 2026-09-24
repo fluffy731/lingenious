@@ -688,7 +688,7 @@ body.search-open{overflow:hidden;}
 .event-facts{
   list-style:none;display:grid;gap:1px;background:var(--grey-line);
   border:1px solid var(--grey-line);border-radius:6px;overflow:hidden;margin:24px 0 26px;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 }
 .event-facts li{background:var(--white);padding:16px 18px;font-size:13.5px;color:var(--blue);font-weight:600;}
 .event-facts .label{
@@ -748,4 +748,32 @@ body.poster-open{overflow:hidden;}
   .event-featured{grid-template-columns:1fr;gap:26px;padding:22px;}
   .event-featured .event-poster{max-width:280px;}
   .event-facts{grid-template-columns:1fr;}
+}
+
+/* EVENTS — address / capacity / audience line under the facts grid */
+.event-note{font-size:13px;color:#5B6B82;margin:-14px 0 24px;}
+.event-note-sep{color:#B8C4D4;}
+
+/* EVENTS — registration form beside the poster */
+.register-grid{
+  display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);
+  gap:40px;align-items:start;
+}
+.register-grid > #registerPoster{position:sticky;top:120px;}
+.register-summary{
+  background:var(--off-white);border:1px solid var(--grey-line);
+  border-left:3px solid var(--orange);border-radius:5px;
+  padding:16px 18px;margin-bottom:24px;font-size:14px;color:var(--navy);
+}
+.register-summary strong{display:block;font-family:'Jost','Inter',sans-serif;font-size:16px;margin-bottom:4px;}
+.register-summary-meta{display:block;font-size:13px;color:#5B6B82;font-weight:500;}
+.register-payment{
+  font-size:12.5px;color:#5B6B82;background:var(--off-white);
+  border:1px solid var(--grey-line);border-radius:4px;
+  padding:11px 13px;margin-top:18px;
+}
+
+@media (max-width:860px){
+  .register-grid{grid-template-columns:1fr;gap:26px;}
+  .register-grid > #registerPoster{position:static;max-width:280px;}
 }
