@@ -28,8 +28,9 @@
     url           the event's own site
     urlLabel      link text for that site
     registerUrl   optional. When set, becomes the PRIMARY call to action and
-                  demotes `url` to a secondary link. "#register" targets the
-                  registration form further down events.html.
+                  demotes `url` to a secondary link (skipped when both point at
+                  the same place). Registration lives off-site, on the event's
+                  own page, which can track remaining places.
     registerLabel link text for the primary call to action
     topics        tag chips, rendered with .card-tag
 
@@ -41,9 +42,8 @@
   value, so a half-translated entry degrades gracefully instead of rendering
   blank. topicsZh is positional — it lines up index-for-index with topics.
 
-  NOTE ON PAYMENT: entry is collected at the venue on the day. Neither this
-  file nor the registration form handles payment, and no card details are
-  collected anywhere on this site.
+  NOTE ON PAYMENT: entry is collected at the venue on the day. This site takes
+  no payment and collects no card details anywhere.
 */
 window.LINGENIOUS_EVENTS = [
   {
@@ -86,7 +86,7 @@ window.LINGENIOUS_EVENTS = [
     url: "https://events.lingenious.com.au/oct2026",
     urlLabel: "Event site",
     urlLabelZh: "活动网站",
-    registerUrl: "#register",
+    registerUrl: "https://events.lingenious.com.au/oct2026",
     registerLabel: "Register for this event",
     registerLabelZh: "报名参加",
     topics: ["Fire Engineering", "Technical Sharing"],
@@ -122,7 +122,7 @@ window.LINGENIOUS_EVENTS = [
     url: "https://events.lingenious.com.au/facade-2027",
     urlLabel: "Event site",
     urlLabelZh: "活动网站",
-    registerUrl: "#register",
+    registerUrl: "https://events.lingenious.com.au/facade-2027",
     registerLabel: "Register for this event",
     registerLabelZh: "报名参加",
     topics: ["Façade", "Compliance"],

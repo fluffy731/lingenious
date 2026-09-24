@@ -5,9 +5,9 @@
   correct as dates roll by without anyone editing markup. The soonest upcoming
   event is promoted to a featured block; the rest render as poster cards.
 
-  That same soonest event also drives the registration form — its poster,
-  its summary line and its hidden fields — so the form can never drift out of
-  sync with the event being advertised above it.
+  Registration is handled off-site, per each event's registerUrl. This page
+  deliberately does not host its own form: the event's own registration page
+  tracks remaining places, which a static form cannot.
 
   Posters are click-to-enlarge: a poster is only useful if its text is readable,
   and card-sized thumbnails are not.
@@ -138,7 +138,7 @@
         "</a>";
     }
 
-    if (ev.url) {
+    if (ev.url && ev.url !== ev.registerUrl) {
       var ext = isExternal(ev.url);
       out += '<a class="btn ' + (ev.registerUrl ? "btn-secondary" : "btn-primary") + '"' +
         ' href="' + escapeHtml(ev.url) + '"' +
@@ -149,10 +149,7 @@
         "</a>";
     }
 
-    // Only offered when there is no registration path to compete with.
-    if (!ev.registerUrl) {
-      out += '<a class="btn btn-secondary" href="contact.html" data-zh="咨询此活动">Ask us about this event</a>';
-    }
+    out += '<a class="btn btn-secondary" href="contact.html" data-zh="咨询此活动">Ask us about this event</a>';
 
     return '<div class="event-actions">' + out + "</div>";
   }
@@ -257,56 +254,6 @@
     });
   }
 
-  /* ---------- registration form ---------- */
-
-  /*
-    Points the registration form at whichever event is currently featured and
-    mirrors that event's poster beside it. The hidden fields are what actually
-    reaches the inbox, so they are filled from the same data the page displays.
-  */
-  function renderRegister(ev) {
-    // id is "register" so the featured event's #register CTA resolves to it.
-    var section = document.getElementById("register");
-    if (!section) return;
-
-    if (!ev) {
-      section.hidden = true;
-      return;
-    }
-    section.hidden = false;
-
-    var posterWrap = document.getElementById("registerPoster");
-    if (posterWrap) posterWrap.innerHTML = posterHTML(ev);
-
-    var summary = document.getElementById("registerSummary");
-    if (summary) {
-      var bits = [
-        [ev.dateLabel, ev.dateLabelZh],
-        [ev.timeLabel, ev.timeLabelZh],
-        [ev.venue || ev.location, ev.venueZh || ev.locationZh],
-        [ev.costLabel, ev.costLabelZh]
-      ].filter(function (b) { return b[0]; });
-
-      summary.innerHTML =
-        '<strong' + zhAttr(ev.nameZh) + ">" + escapeHtml(ev.name) + "</strong>" +
-        '<span class="register-summary-meta">' +
-        bits.map(function (b) {
-          return "<span" + zhAttr(b[1] || b[0]) + ">" + escapeHtml(b[0]) + "</span>";
-        }).join('<span aria-hidden="true"> &middot; </span>') +
-        "</span>";
-    }
-
-    function setVal(id, value) {
-      var el = document.getElementById(id);
-      if (el) el.value = value || "";
-    }
-    setVal("regEventName", ev.name);
-    setVal("regEventDate", [ev.dateLabel, ev.timeLabel].filter(Boolean).join(", "));
-    setVal("regEventVenue", [ev.venue, ev.address].filter(Boolean).join(", "));
-    setVal("regSubject", "Event registration — " + ev.name +
-      (ev.dateLabel ? " (" + ev.dateLabel + ")" : ""));
-  }
-
   /* ---------- page render ---------- */
 
   function render() {
@@ -357,7 +304,6 @@
       if (pastSection && !past.length) pastSection.hidden = true;
     }
 
-    renderRegister(featured);
     initLightbox();
   }
 
