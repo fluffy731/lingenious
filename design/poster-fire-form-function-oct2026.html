@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<title>Fire, Form &amp; Function — poster source</title>
+<meta name="robots" content="noindex, nofollow">
+<!--
+  Print/screen source for the October 2026 poster. Rendered to
+  assets/events/fire-form-function-oct2026-v2.jpg at 1414x2000 with:
+    chrome --headless --window-size=1414,2000 --virtual-time-budget=12000 \n           --screenshot=out.png design/poster-fire-form-function-oct2026.html
+  qr-oct2026.png is generated from https://events.lingenious.com.au/oct2026
+  (python qrcode, ERROR_CORRECT_H). Palette mixes the Lingenious brand with
+  acidity.com.au's own CSS custom properties, read from their live site.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* Lingenious brand */
+  :root{
+    --navy:#0B1F4D;
+    --orange:#F47A21;
+    /* Acidity brand, lifted from acidity.com.au CSS custom properties */
+    --paper:#F2F0E9;
+    --ink:#0B0C0C;
+    --bn-blue:#1546D8;
+    --rust:#C74837;
+    --acid:#D7FF39;
+    --paper-deep:#DEDBD2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1414px;height:2000px;}
+  body{
+    font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background:var(--paper);
+    color:var(--navy);
+    display:flex;flex-direction:column;
+    overflow:hidden;
+  }
+  .mono{font-family:'IBM Plex Mono','Courier New',monospace;}
+
+  /* ---- journal rail: Acidity's masthead device ---- */
+  .rail{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:26px 74px;
+    border-bottom:1.5px solid var(--navy);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:17px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--navy);
+  }
+  .rail .mid{color:var(--rust);}
+
+  /* ---- header ---- */
+  header{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:52px 74px 0;
+  }
+  .brand{font-size:30px;font-weight:700;letter-spacing:-.01em;}
+  .brand .x{color:var(--orange);margin:0 12px;font-weight:600;}
+  .brand .venue{font-weight:600;}
+  .kicker{font-family:'IBM Plex Mono',monospace;font-size:17px;letter-spacing:.06em;color:#4A5568;}
+
+  main{flex:1;padding:0 74px 58px;display:flex;flex-direction:column;position:relative;}
+
+  /* ---- I-beam mark, echoing the original poster; reads as 工 ---- */
+  .mark{position:absolute;top:34px;right:74px;width:392px;height:392px;}
+
+  .chip{
+    align-self:flex-start;
+    display:inline-block;background:var(--acid);color:var(--ink);
+    font-family:'IBM Plex Mono',monospace;font-weight:600;
+    font-size:19px;letter-spacing:.2em;text-transform:uppercase;
+    padding:9px 16px;margin-top:70px;
+  }
+
+  h1{
+    font-family:'Oswald','Helvetica Neue',sans-serif;
+    font-weight:700;
+    font-size:188px;line-height:.93;
+    letter-spacing:-.005em;
+    text-transform:uppercase;
+    margin-top:26px;
+    max-width:880px;
+  }
+  h1 .amp{color:var(--orange);}
+
+  .billing{margin-top:54px;max-width:820px;display:grid;gap:22px;}
+  .bill{display:grid;grid-template-columns:64px 1fr;gap:22px;align-items:start;}
+  .bill .no{
+    font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:600;
+    color:var(--paper);background:var(--navy);
+    width:54px;height:54px;display:flex;align-items:center;justify-content:center;
+  }
+  .bill.two .no{background:var(--rust);}
+  .bill h2{
+    font-family:'Oswald',sans-serif;font-weight:600;font-size:40px;
+    text-transform:uppercase;letter-spacing:.01em;line-height:1.05;margin-bottom:8px;
+  }
+  .bill.two h2{color:var(--rust);}
+  .bill p{font-size:25px;line-height:1.42;color:#3C4759;}
+
+  /* ---- details ---- */
+  .rule{height:2px;background:var(--navy);margin-top:auto;}
+  .details{display:grid;grid-template-columns:1.08fr 1fr;gap:48px;margin-top:38px;}
+  .details h3{
+    font-family:'Oswald',sans-serif;font-weight:600;font-size:46px;
+    text-transform:uppercase;letter-spacing:.005em;margin-bottom:14px;
+  }
+  .details h3.venue-name{text-transform:none;letter-spacing:-.01em;}
+  .details p{font-size:26px;line-height:1.46;color:#3C4759;}
+  .details .price{color:var(--navy);font-weight:600;}
+  .audience{
+    font-family:'IBM Plex Mono',monospace;font-size:20px;letter-spacing:.03em;
+    color:var(--bn-blue);margin:34px 0 auto;
+  }
+
+  /* ---- footer band ---- */
+  footer{
+    background:var(--navy);color:var(--paper);
+    padding:46px 400px 46px 74px;display:flex;gap:44px;align-items:center;
+    position:relative;overflow:hidden;
+  }
+  /* Blue Note sleeve diagonals */
+  .stripes{position:absolute;right:-90px;bottom:-150px;width:470px;height:420px;transform:rotate(-34deg);}
+  .stripes i{display:block;height:20px;margin-bottom:16px;}
+  .qr{width:212px;height:212px;background:#fff;padding:12px;flex-shrink:0;}
+  .qr img{width:100%;height:100%;display:block;}
+  .cta{position:relative;z-index:1;}
+  .cta .big{
+    font-family:'Oswald',sans-serif;font-weight:700;font-size:62px;line-height:1.02;
+    text-transform:uppercase;
+  }
+  .cta .url{
+    font-family:'IBM Plex Mono',monospace;font-size:28px;color:var(--orange);
+    margin-top:16px;letter-spacing:.01em;
+  }
+  .cta .addr{font-size:19px;color:#B9C6DA;margin-top:14px;}
+</style>
+</head>
+<body>
+
+<div class="rail">
+  <span>Lingenious Journal</span>
+  <span class="mid">Session 01 / Oct 2026</span>
+  <span>37.8183° S 144.9985° E</span>
+</div>
+
+<header>
+  <div class="brand">Lingenious Consulting <span class="x">×</span> <span class="venue">acidity.</span></div>
+  <div class="kicker">Integrated Design + Engineering</div>
+</header>
+
+<main>
+  <svg class="mark" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect x="12" y="12" width="176" height="176" rx="74" stroke="#C74837" stroke-width="2.2"/>
+    <rect x="24" y="24" width="152" height="152" rx="64" stroke="#F47A21" stroke-width="2.2"/>
+    <rect x="36" y="36" width="128" height="128" rx="54" stroke="#E5C547" stroke-width="2.2"/>
+    <rect x="48" y="48" width="104" height="104" rx="44" stroke="#1546D8" stroke-width="2.2" stroke-opacity=".5"/>
+    <rect x="60" y="60" width="80" height="80" rx="34" stroke="#0B1F4D" stroke-width="2.2" stroke-opacity=".35"/>
+    <path d="M66 74h68M66 126h68M100 74v52" stroke="#0B1F4D" stroke-width="17" stroke-linecap="butt"/>
+  </svg>
+
+  <span class="chip">Next Session</span>
+
+  <h1>Fire,<br>Form <span class="amp">&amp;</span><br>Function</h1>
+
+  <div class="billing">
+    <div class="bill one">
+      <span class="no">01</span>
+      <div>
+        <h2>The Sharing Session</h2>
+        <p>A short technical sharing session for people who build &mdash; 25 minutes on fire engineering and one other topic.</p>
+      </div>
+    </div>
+    <div class="bill two">
+      <span class="no">02</span>
+      <div>
+        <h2>Live Band — Chinese R&amp;B Session</h2>
+        <p>Then a live band takes over for a Chinese R&amp;B set, and the rest of the afternoon is yours to talk to each other.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="details">
+    <div>
+      <h3>Sunday 4 October 2026</h3>
+      <p>4:00pm start<br><span class="price">$20 entry, including one non-alcoholic drink</span></p>
+    </div>
+    <div>
+      <h3 class="venue-name">acidity. bar &amp; coffee</h3>
+      <p>3/240 Victoria Street<br>Richmond VIC 3121</p>
+    </div>
+  </div>
+
+  <p class="audience">For builders, architects, developers, building surveyors and engineers</p>
+</main>
+
+<footer>
+  <div class="stripes" aria-hidden="true">
+    <i style="background:#C74837"></i>
+    <i style="background:#F47A21"></i>
+    <i style="background:#E5C547"></i>
+    <i style="background:#D7FF39"></i>
+  </div>
+  <div class="qr"><img src="qr-oct2026.png" alt=""></div>
+  <div class="cta">
+    <div class="big">40 places only.<br>Register early.</div>
+    <div class="url">events.lingenious.com.au/oct2026</div>
+    <div class="addr">Lingenious Consulting, Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
+  </div>
+</footer>
+
+</body>
+</html>

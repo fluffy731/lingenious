@@ -65,32 +65,33 @@ window.LINGENIOUS_EVENTS = [
     locationZh: "Acidity Bar and Coffee，Richmond",
     format: "In person",
     formatZh: "线下",
-    costLabel: "$15 entry, including one non-alcoholic drink",
-    costLabelZh: "入场费 15 澳元，含一杯无酒精饮品",
+    costLabel: "$20 entry, including one non-alcoholic drink",
+    costLabelZh: "入场费 20 澳元，含一杯无酒精饮品",
     capacityLabel: "40 places only",
     capacityLabelZh: "仅限 40 个名额",
     audience: "For builders, architects, developers, building surveyors and engineers",
     audienceZh: "适合建筑商、建筑师、开发商、建筑审查师及工程师",
     summary:
       "A short technical sharing session for people who build. 25 minutes on " +
-      "fire engineering and one other topic, then the rest of the afternoon is " +
-      "yours to talk to each other.",
+      "fire engineering and one other topic, then a live band takes over for a " +
+      "Chinese R&B set and the rest of the afternoon is yours to talk to each other.",
     summaryZh:
       "一场面向建造行业从业者的简短技术分享会。25 分钟聚焦消防工程及另一议题，" +
-      "其余时间留给大家自由交流。",
-    poster: "assets/events/fire-form-function-oct2026.jpg",
+      "随后由乐队带来一场中文 R&B 现场演出，其余时间留给大家自由交流。",
+    poster: "assets/events/fire-form-function-oct2026-v2.jpg",
     posterAlt:
-      "Poster for Fire, Form & Function — a short technical sharing session on Sunday 4 October 2026, " +
-      "4:00pm at Acidity Bar and Coffee, 3/240 Victoria Street, Richmond VIC 3121. " +
-      "$15 entry including one non-alcoholic drink. 40 places only.",
+      "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
+      "Chinese R&B set, Sunday 4 October 2026, 4:00pm at acidity. bar & coffee, " +
+      "3/240 Victoria Street, Richmond VIC 3121. $20 entry including one non-alcoholic drink. " +
+      "40 places only.",
     url: "https://events.lingenious.com.au/oct2026",
     urlLabel: "Event site",
     urlLabelZh: "活动网站",
     registerUrl: "https://events.lingenious.com.au/oct2026",
     registerLabel: "Register for this event",
     registerLabelZh: "报名参加",
-    topics: ["Fire Engineering", "Technical Sharing"],
-    topicsZh: ["Fire Engineering（消防工程）", "Technical Sharing（技术分享）"]
+    topics: ["Fire Engineering", "Technical Sharing", "Live Music"],
+    topicsZh: ["Fire Engineering（消防工程）", "Technical Sharing（技术分享）", "Live Music（现场音乐）"]
   }
 
   /* Template — copy, fill in, and drop the poster into assets/events/:
