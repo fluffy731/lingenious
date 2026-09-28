@@ -151,7 +151,12 @@
 
     out += '<a class="btn btn-secondary" href="contact.html" data-zh="咨询此活动">Ask us about this event</a>';
 
-    return '<div class="event-actions">' + out + "</div>";
+    var note = ev.registerNote
+      ? '<p class="event-register-note"' + zhAttr(ev.registerNoteZh) + ">" +
+        escapeHtml(ev.registerNote) + "</p>"
+      : "";
+
+    return '<div class="event-actions">' + out + "</div>" + note;
   }
 
   function featuredHTML(ev) {

@@ -19,7 +19,8 @@
     location      short location shown on cards (venue + suburb)
     format        e.g. "In person", "Online", "Hybrid"
     costLabel     entry cost. Payment is NOT taken on this site — see below.
-    capacityLabel e.g. "40 places only"
+    capacityLabel the seat cap, e.g. "Seats are limited to 40". State the cap only —
+                  never a live "N left" count, which a static page cannot know.
     audience      who the session is for, worded as a full phrase ("For builders, ...")
     summary       1-2 sentences for the card body
     poster        path to poster artwork. Portrait (A-series) reads best.
@@ -32,12 +33,13 @@
                   the same place). Registration lives off-site, on the event's
                   own page, which can track remaining places.
     registerLabel link text for the primary call to action
+    registerNote  optional line under the buttons, e.g. how a place is confirmed
     topics        tag chips, rendered with .card-tag
 
   Chinese (Simplified) counterparts, matching the site's data-zh convention:
     nameZh, dateLabelZh, timeLabelZh, venueZh, addressZh, locationZh, formatZh,
     costLabelZh, capacityLabelZh, audienceZh, summaryZh, urlLabelZh,
-    registerLabelZh, topicsZh
+    registerLabelZh, registerNoteZh, topicsZh
   Each is optional. When one is missing the renderer falls back to the English
   value, so a half-translated entry degrades gracefully instead of rendering
   blank. topicsZh is positional — it lines up index-for-index with topics.
@@ -51,12 +53,12 @@ window.LINGENIOUS_EVENTS = [
     name: "Fire, Form & Function",
     nameZh: "Fire, Form & Function（防火、形态与功能）",
     draft: false,
-    dateLabel: "Sunday 4 October 2026",
-    dateLabelZh: "2026 年 10 月 4 日（星期日）",
-    timeLabel: "4:00pm start",
-    timeLabelZh: "下午 4:00 开始",
-    startDate: "2026-10-04",
-    dateConfirmed: true,
+    dateLabel: "Saturday 17 October 2026",
+    dateLabelZh: "2026 年 10 月 17 日（星期六）",
+    timeLabel: "4:30pm start",
+    timeLabelZh: "下午 4:30 开始",
+    startDate: "2026-10-17",
+    dateConfirmed: false,
     venue: "Acidity Bar and Coffee",
     venueZh: "Acidity Bar and Coffee",
     address: "3/240 Victoria Street, Richmond VIC 3121",
@@ -65,10 +67,10 @@ window.LINGENIOUS_EVENTS = [
     locationZh: "Acidity Bar and Coffee，Richmond",
     format: "In person",
     formatZh: "线下",
-    costLabel: "$20 entry, including one non-alcoholic drink",
-    costLabelZh: "入场费 20 澳元，含一杯无酒精饮品",
-    capacityLabel: "40 places only",
-    capacityLabelZh: "仅限 40 个名额",
+    costLabel: "$25 entry, including one non-alcoholic drink",
+    costLabelZh: "入场费 25 澳元，含一杯无酒精饮品",
+    capacityLabel: "Seats are limited to 40",
+    capacityLabelZh: "座位限 40 个",
     audience: "For builders, architects, developers, building surveyors and engineers",
     audienceZh: "适合建筑商、建筑师、开发商、建筑审查师及工程师",
     summary:
@@ -78,18 +80,20 @@ window.LINGENIOUS_EVENTS = [
     summaryZh:
       "一场面向建造行业从业者的简短技术分享会。25 分钟聚焦消防工程及另一议题，" +
       "随后由乐队带来一场中文 R&B 现场演出，其余时间留给大家自由交流。",
-    poster: "assets/events/fire-form-function-oct2026-v2.jpg",
+    poster: "assets/events/fire-form-function-oct2026-v3.jpg",
     posterAlt:
       "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
-      "Chinese R&B set, Sunday 4 October 2026, 4:00pm at acidity. bar & coffee, " +
-      "3/240 Victoria Street, Richmond VIC 3121. $20 entry including one non-alcoholic drink. " +
-      "40 places only.",
+      "Chinese R&B set, Saturday 17 October 2026 (date to be confirmed), 4:30pm at " +
+      "acidity. bar & coffee, 3/240 Victoria Street, Richmond VIC 3121. " +
+      "$25 entry including one non-alcoholic drink. Seats are limited to 40.",
     url: "https://events.lingenious.com.au/oct2026",
     urlLabel: "Event site",
     urlLabelZh: "活动网站",
     registerUrl: "https://events.lingenious.com.au/oct2026",
     registerLabel: "Register for this event",
     registerLabelZh: "报名参加",
+    registerNote: "Register early — we'll email you to confirm whether you have a seat.",
+    registerNoteZh: "建议尽早报名——我们将通过电子邮件确认您是否获得座位。",
     topics: ["Fire Engineering", "Technical Sharing", "Live Music"],
     topicsZh: ["Fire Engineering（消防工程）", "Technical Sharing（技术分享）", "Live Music（现场音乐）"]
   }

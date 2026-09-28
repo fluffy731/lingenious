@@ -696,6 +696,7 @@ body.search-open{overflow:hidden;}
   text-transform:uppercase;letter-spacing:.06em;color:#8592A6;margin-bottom:5px;
 }
 .event-actions{display:flex;flex-wrap:wrap;gap:12px;}
+.event-register-note{font-size:13.5px;color:#5B6B82;margin-top:14px;max-width:520px;}
 
 /* Event cards */
 .event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
