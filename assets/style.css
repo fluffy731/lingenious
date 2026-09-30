@@ -752,6 +752,14 @@ body.poster-open{overflow:hidden;}
 }
 
 /* EVENTS — address / capacity / audience line under the facts grid */
+.event-speakers{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 26px;margin:-8px 0 22px;}
+.event-speakers-label{
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:#8592A6;
+}
+.event-speaker{display:inline-flex;align-items:baseline;gap:8px;font-size:14px;}
+.event-speaker strong{color:var(--navy);font-weight:600;}
+.event-speaker span{color:#5B6B82;font-size:13px;}
 .event-note{font-size:13px;color:#5B6B82;margin:-14px 0 24px;}
 .event-note-sep{color:#B8C4D4;}
 

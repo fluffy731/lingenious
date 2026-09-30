@@ -98,6 +98,9 @@
   }
   .bill.two h2{color:var(--rust);}
   .bill p{font-size:25px;line-height:1.42;color:#3C4759;}
+  .bill .speakers{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:18px;}
+  .bill .speakers span{display:flex;flex-direction:column;font-size:20px;color:#5B6B82;line-height:1.3;}
+  .bill .speakers strong{font-size:23px;color:var(--navy);font-weight:600;}
 
   /* ---- details ---- */
   .rule{height:2px;background:var(--navy);margin-top:auto;}
@@ -171,15 +174,19 @@
     <div class="bill one">
       <span class="no">01</span>
       <div>
-        <h2>The Sharing Session</h2>
-        <p>A short technical sharing session for people who build &mdash; 25 minutes on fire engineering and one other topic.</p>
+        <h2>The Presentation</h2>
+        <p>Roughly 40 minutes for people who build, on fire engineering and design.</p>
+        <div class="speakers">
+          <span><strong>Addison Tam</strong>Fire Safety Engineer</span>
+          <span><strong>Wilton Wong</strong>Registered Architect</span>
+        </div>
       </div>
     </div>
     <div class="bill two">
       <span class="no">02</span>
       <div>
-        <h2>Live Band — Chinese R&amp;B Session</h2>
-        <p>Then a live band takes over for a Chinese R&amp;B set, and the rest of the afternoon is yours to talk to each other.</p>
+        <h2>Live Band &amp; Networking</h2>
+        <p>Then a live band takes over for a Chinese R&amp;B set, and the rest of the evening is for networking.</p>
       </div>
     </div>
   </div>
@@ -212,7 +219,6 @@
     <div class="big">Seats limited<br>to 40.</div>
     <div class="seatnote">Register early &mdash; we&rsquo;ll email you to confirm whether you have a seat.</div>
     <div class="url">events.lingenious.com.au/oct2026</div>
-    <div class="addr">Lingenious Consulting, Level 2, 18 Prospect Street, Box Hill VIC 3128</div>
   </div>
 </footer>
 

@@ -124,6 +124,20 @@
     }).join('<span class="event-note-sep" aria-hidden="true"> &middot; </span>') + "</p>";
   }
 
+  function speakersHTML(ev) {
+    var list = ev.speakers || [];
+    if (!list.length) return "";
+    return '<div class="event-speakers">' +
+      '<span class="event-speakers-label" data-zh="主讲人">Speakers</span>' +
+      list.map(function (sp) {
+        return '<span class="event-speaker">' +
+          '<strong>' + escapeHtml(sp.name) + "</strong>" +
+          (sp.role ? '<span' + zhAttr(sp.roleZh) + ">" + escapeHtml(sp.role) + "</span>" : "") +
+          "</span>";
+      }).join("") +
+      "</div>";
+  }
+
   function actionsHTML(ev) {
     var out = "";
 
@@ -168,6 +182,7 @@
         "<h2" + zhAttr(ev.nameZh) + ">" + escapeHtml(ev.name) + "</h2>" +
         "<p" + zhAttr(ev.summaryZh) + ">" + escapeHtml(ev.summary) + "</p>" +
         factsHTML(ev) +
+        speakersHTML(ev) +
         noteHTML(ev) +
         actionsHTML(ev) +
         topicsHTML(ev) +

@@ -21,6 +21,7 @@
     costLabel     entry cost. Payment is NOT taken on this site — see below.
     capacityLabel the seat cap, e.g. "Seats are limited to 40". State the cap only —
                   never a live "N left" count, which a static page cannot know.
+    speakers      optional [{ name, role, roleZh }] shown as their own block
     audience      who the session is for, worded as a full phrase ("For builders, ...")
     summary       1-2 sentences for the card body
     poster        path to poster artwork. Portrait (A-series) reads best.
@@ -71,19 +72,24 @@ window.LINGENIOUS_EVENTS = [
     costLabelZh: "入场费 25 澳元，含一杯无酒精饮品",
     capacityLabel: "Seats are limited to 40",
     capacityLabelZh: "座位限 40 个",
+    speakers: [
+      { name: "Addison Tam", role: "Fire Safety Engineer", roleZh: "消防安全工程师" },
+      { name: "Wilton Wong", role: "Registered Architect", roleZh: "注册建筑师" }
+    ],
     audience: "For builders, architects, developers, building surveyors and engineers",
     audienceZh: "适合建筑商、建筑师、开发商、建筑审查师及工程师",
     summary:
-      "A short technical sharing session for people who build. 25 minutes on " +
-      "fire engineering and one other topic, then a live band takes over for a " +
-      "Chinese R&B set and the rest of the afternoon is yours to talk to each other.",
+      "A technical sharing session for people who build. Roughly 40 minutes from " +
+      "Addison Tam and Wilton Wong, then a live band takes over for a Chinese R&B " +
+      "set and the rest of the evening is for networking.",
     summaryZh:
-      "一场面向建造行业从业者的简短技术分享会。25 分钟聚焦消防工程及另一议题，" +
-      "随后由乐队带来一场中文 R&B 现场演出，其余时间留给大家自由交流。",
-    poster: "assets/events/fire-form-function-oct2026-v3.jpg",
+      "一场面向建造行业从业者的技术分享会。由 Addison Tam 与 Wilton Wong 带来约 40 分钟的分享，" +
+      "随后由乐队呈现中文 R&B 现场演出，其余时间用于自由交流。",
+    poster: "assets/events/fire-form-function-oct2026-v4.jpg",
     posterAlt:
       "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
-      "Chinese R&B set, Saturday 17 October 2026 (date to be confirmed), 4:30pm at " +
+      "Chinese R&B set, with Addison Tam and Wilton Wong speaking. " +
+      "Saturday 17 October 2026 (date to be confirmed), 4:30pm at " +
       "acidity. bar & coffee, 3/240 Victoria Street, Richmond VIC 3121. " +
       "$25 entry including one non-alcoholic drink. Seats are limited to 40.",
     url: "https://events.lingenious.com.au/oct2026",
@@ -110,8 +116,8 @@ window.LINGENIOUS_EVENTS = [
     timeLabelZh: "下午 5:30 开始",
     startDate: "2027-03-18",
     dateConfirmed: true,
-    venue: "Lingenious Consulting",
-    address: "Level 2, 18 Prospect Street, Box Hill VIC 3128",
+    venue: "Venue name",
+    address: "Street address, Suburb VIC 0000",
     location: "Box Hill, Victoria",
     locationZh: "维多利亚州 Box Hill",
     format: "In person",
