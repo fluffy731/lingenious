@@ -21,7 +21,7 @@
     costLabel     entry cost. Payment is NOT taken on this site — see below.
     capacityLabel the seat cap, e.g. "Seats are limited to 40". State the cap only —
                   never a live "N left" count, which a static page cannot know.
-    speakers      optional [{ name, role, roleZh }] shown as their own block
+    speakers      optional [{ name, role, roleZh, photo }] shown as their own block
     audience      who the session is for, worded as a full phrase ("For builders, ...")
     summary       1-2 sentences for the card body
     poster        path to poster artwork. Portrait (A-series) reads best.
@@ -73,7 +73,7 @@ window.LINGENIOUS_EVENTS = [
     capacityLabel: "Seats are limited to 40",
     capacityLabelZh: "座位限 40 个",
     speakers: [
-      { name: "Addison Tam", role: "Fire Safety Engineer", roleZh: "消防安全工程师" },
+      { name: "Addison Tam", role: "Fire Safety Engineer", roleZh: "消防安全工程师", photo: "assets/events/addison-tam.jpg" },
       { name: "Wilton Wong", role: "Registered Architect", roleZh: "注册建筑师" }
     ],
     audience: "For builders, architects, developers, building surveyors and engineers",
@@ -85,7 +85,7 @@ window.LINGENIOUS_EVENTS = [
     summaryZh:
       "一场面向建造行业从业者的技术分享会。由 Addison Tam 与 Wilton Wong 带来约 40 分钟的分享，" +
       "随后由乐队呈现中文 R&B 现场演出，其余时间用于自由交流。",
-    poster: "assets/events/fire-form-function-oct2026-v4.jpg",
+    poster: "assets/events/fire-form-function-oct2026-v5.jpg",
     posterAlt:
       "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
       "Chinese R&B set, with Addison Tam and Wilton Wong speaking. " +

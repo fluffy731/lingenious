@@ -757,7 +757,8 @@ body.poster-open{overflow:hidden;}
   font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.06em;
   text-transform:uppercase;color:#8592A6;
 }
-.event-speaker{display:inline-flex;align-items:baseline;gap:8px;font-size:14px;}
+.event-speaker{display:inline-flex;align-items:center;gap:9px;font-size:14px;}
+.event-speaker-photo{width:34px;height:34px;border-radius:50%;object-fit:cover;flex-shrink:0;}
 .event-speaker strong{color:var(--navy);font-weight:600;}
 .event-speaker span{color:#5B6B82;font-size:13px;}
 .event-note{font-size:13px;color:#5B6B82;margin:-14px 0 24px;}

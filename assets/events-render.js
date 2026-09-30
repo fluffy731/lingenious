@@ -131,6 +131,9 @@
       '<span class="event-speakers-label" data-zh="主讲人">Speakers</span>' +
       list.map(function (sp) {
         return '<span class="event-speaker">' +
+          (sp.photo
+            ? '<img class="event-speaker-photo" src="' + escapeHtml(sp.photo) + '" alt="" loading="lazy">'
+            : "") +
           '<strong>' + escapeHtml(sp.name) + "</strong>" +
           (sp.role ? '<span' + zhAttr(sp.roleZh) + ">" + escapeHtml(sp.role) + "</span>" : "") +
           "</span>";
