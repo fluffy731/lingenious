@@ -59,7 +59,7 @@ window.LINGENIOUS_EVENTS = [
     timeLabel: "4:30pm start",
     timeLabelZh: "下午 4:30 开始",
     startDate: "2026-10-17",
-    dateConfirmed: false,
+    dateConfirmed: true,
     venue: "acidity. bar & coffee",
     venueZh: "acidity. bar & coffee",
     address: "3/240 Victoria Street, Richmond VIC 3121",
@@ -85,11 +85,11 @@ window.LINGENIOUS_EVENTS = [
     summaryZh:
       "一场面向建造行业从业者的技术分享会。由 Addison Tam 与 Wilton Wong 带来约 40 分钟的分享，" +
       "随后由乐队呈现中文 R&B 现场演出，其余时间用于自由交流。",
-    poster: "assets/events/fire-form-function-oct2026-v5.jpg",
+    poster: "assets/events/fire-form-function-oct2026-v6.jpg",
     posterAlt:
       "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
       "Chinese R&B set, with Addison Tam and Wilton Wong speaking. " +
-      "Saturday 17 October 2026 (date to be confirmed), 4:30pm at " +
+      "Saturday 17 October 2026, 4:30pm at " +
       "acidity. bar & coffee, 3/240 Victoria Street, Richmond VIC 3121. " +
       "$25 entry including one non-alcoholic drink. Seats are limited to 40.",
     url: "https://events.lingenious.com.au/oct2026",
