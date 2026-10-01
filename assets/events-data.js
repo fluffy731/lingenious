@@ -51,13 +51,13 @@
 window.LINGENIOUS_EVENTS = [
   {
     id: "oct2026",
-    name: "Fire, Form & Function",
-    nameZh: "Fire, Form & Function（防火、形态与功能）",
+    name: "Fire, Forms & Function",
+    nameZh: "Fire, Forms & Function（防火、形态与功能）",
     draft: false,
     dateLabel: "Saturday 17 October 2026",
     dateLabelZh: "2026 年 10 月 17 日（星期六）",
-    timeLabel: "4:30pm start",
-    timeLabelZh: "下午 4:30 开始",
+    timeLabel: "4:30pm – 6:30pm",
+    timeLabelZh: "下午 4:30 – 6:30",
     startDate: "2026-10-17",
     dateConfirmed: true,
     venue: "acidity. bar & coffee",
@@ -73,35 +73,35 @@ window.LINGENIOUS_EVENTS = [
     capacityLabel: "Seats are limited to 40",
     capacityLabelZh: "座位限 40 个",
     speakers: [
-      { name: "Addison Tam", role: "Fire Safety Engineer", roleZh: "消防安全工程师", photo: "assets/events/addison-tam.jpg" },
-      { name: "Wilton Wong", role: "Registered Architect", roleZh: "注册建筑师" }
+      { name: "Addison Tam", role: "Director, ProAct · Fire Safety Engineer", roleZh: "ProAct 董事 · 消防安全工程师", photo: "assets/events/addison-tam.jpg" },
+      { name: "Wilton Wong", role: "Director, Collabuild · Principal Architect", roleZh: "Collabuild 董事 · 首席建筑师" }
     ],
     audience: "For builders, architects, developers, building surveyors and engineers",
     audienceZh: "适合建筑商、建筑师、开发商、建筑审查师及工程师",
     summary:
-      "A technical sharing session for people who build. Roughly 40 minutes from " +
-      "Addison Tam and Wilton Wong, then a live band takes over for a Chinese R&B " +
-      "set and the rest of the evening is for networking.",
+      "A small room full of people who build. Approx. 40 minutes on fire engineering " +
+      "and design from Addison Tam and Wilton Wong, a live Chinese R&B set from Calico " +
+      "Duo, and the rest of the evening to meet each other over a drink.",
     summaryZh:
-      "一场面向建造行业从业者的技术分享会。由 Addison Tam 与 Wilton Wong 带来约 40 分钟的分享，" +
-      "随后由乐队呈现中文 R&B 现场演出，其余时间用于自由交流。",
-    poster: "assets/events/fire-form-function-oct2026-v6.jpg",
+      "一场面向建造行业从业者的小型聚会。由 Addison Tam 与 Wilton Wong 带来约 40 分钟的消防工程与设计分享，" +
+      "随后由 Calico Duo 呈现中文 R&B 现场演出，其余时间供大家小酌交流。",
+    poster: "assets/events/fire-forms-function-oct2026-v7.jpg",
     posterAlt:
-      "Poster for Fire, Form & Function — a technical sharing session followed by a live band " +
-      "Chinese R&B set, with Addison Tam and Wilton Wong speaking. " +
-      "Saturday 17 October 2026, 4:30pm at " +
-      "acidity. bar & coffee, 3/240 Victoria Street, Richmond VIC 3121. " +
-      "$25 entry including one non-alcoholic drink. Seats are limited to 40.",
+      "Poster for Fire, Forms & Function — Saturday 17 October 2026, 4:30pm to 6:30pm at "
+      + "acidity. bar & coffee, 3/240 Victoria Street, Richmond. A 40-minute talk on fire "
+      + "engineering and design from Addison Tam and Wilton Wong, a live Chinese R&B set from "
+      + "Calico Duo featuring Yolanda Li, then networking. General entry $25 including one "
+      + "non-alcoholic drink. 40 spots, applications close 14 October.",
     url: "https://events.lingenious.com.au/oct2026",
     urlLabel: "Event site",
     urlLabelZh: "活动网站",
     registerUrl: "https://events.lingenious.com.au/oct2026",
     registerLabel: "Register for this event",
     registerLabelZh: "报名参加",
-    registerNote: "Register early — we'll email you to confirm whether you have a seat.",
-    registerNoteZh: "建议尽早报名——我们将通过电子邮件确认您是否获得座位。",
-    topics: ["Fire Engineering", "Technical Sharing", "Live Music"],
-    topicsZh: ["Fire Engineering（消防工程）", "Technical Sharing（技术分享）", "Live Music（现场音乐）"]
+    registerNote: "Applications close 14 October. Entry is by email confirmation only, checked at the door.",
+    registerNoteZh: "报名于 10 月 14 日截止。入场仅凭电子邮件确认函，入口处查验。",
+    topics: ["Fire Engineering", "Live Set", "Networking"],
+    topicsZh: ["Fire Engineering（消防工程）", "Live Set（现场演出）", "Networking（交流）"]
   }
 
   /* Template — copy, fill in, and drop the poster into assets/events/:
